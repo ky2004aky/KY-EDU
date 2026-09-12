@@ -1,0 +1,19 @@
+{
+  "name": "ky-edu",
+  "version": "1.0.0",
+  "description": "A full-stack Indian Education, Career Stream Guidance & Sarkari Exam Gateway built with **PHP 8.2**, **React 18**, and **MongoDB 8.0**, featuring full CRUD operations, live circular updates, interactive eligibility calculators, and side-by-side exam comparisons.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "start": "npm --prefix frontend run dev",
+    "frontend": "npm --prefix frontend run dev",
+    "backend": "php -S 0.0.0.0:8000 -t backend",
+    "build": "npm --prefix frontend run build",
+    "seed": "php backend/seed_comprehensive_exams.php",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

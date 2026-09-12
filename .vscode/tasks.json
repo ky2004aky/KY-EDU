@@ -1,0 +1,54 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "1. Start Backend (PHP)",
+      "type": "shell",
+      "command": "php -S 0.0.0.0:8000 -t backend",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "group": "ky_edu_servers"
+      }
+    },
+    {
+      "label": "2. Start Frontend (React Vite)",
+      "type": "shell",
+      "command": "npm run dev",
+      "options": {
+        "cwd": "${workspaceFolder}/frontend"
+      },
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "group": "ky_edu_servers"
+      }
+    },
+    {
+      "label": "3. Seed Database (MongoDB)",
+      "type": "shell",
+      "command": "php backend/api/seed.php",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      }
+    },
+    {
+      "label": "Start KY EDU (Both Servers)",
+      "dependsOn": [
+        "1. Start Backend (PHP)",
+        "2. Start Frontend (React Vite)"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}

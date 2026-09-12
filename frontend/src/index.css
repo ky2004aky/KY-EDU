@@ -1,0 +1,359 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --apple-ease: cubic-bezier(0.16, 1, 0.3, 1);
+    --apple-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --apple-bounce: cubic-bezier(0.25, 1, 0.5, 1);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f6f7fb;
+    color: #111827;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* AMOLED True-Black Mode */
+  html.dark body,
+  .dark body {
+    background-color: #000000;
+    color: #f8fafc;
+  }
+
+  /* Universal Buttery Apple Transition for Interactive Elements */
+  button, a, input, select, textarea {
+    transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+}
+
+/* macOS Smooth Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.35);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.65);
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.16);
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+/* ========================================================================== */
+/* macOS LIQUID GLASS SYSTEM (macOS Sequoia & VisionOS Liquid Refraction)       */
+/* ========================================================================== */
+
+/* Core Liquid Glass Surface */
+.apple-glass,
+.liquid-glass {
+  background: rgba(255, 255, 255, 0.76);
+  backdrop-filter: blur(36px) saturate(210%);
+  -webkit-backdrop-filter: blur(36px) saturate(210%);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.04), 
+              inset 0 1px 1px 0 rgba(255, 255, 255, 0.95);
+  position: relative;
+}
+
+/* AMOLED Dark Liquid Glass */
+.dark .apple-glass,
+.dark .liquid-glass {
+  background: rgba(12, 14, 20, 0.68);
+  backdrop-filter: blur(36px) saturate(220%);
+  -webkit-backdrop-filter: blur(36px) saturate(220%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.95), 
+              inset 0 1px 0 0 rgba(255, 255, 255, 0.16),
+              inset 0 -1px 0 0 rgba(0, 0, 0, 0.6);
+}
+
+/* Liquid Glass Cards with Dynamic Caustic Glow & Spring Lift */
+.apple-glass-card,
+.liquid-glass-card {
+  background: rgba(255, 255, 255, 0.84);
+  backdrop-filter: blur(28px) saturate(190%);
+  -webkit-backdrop-filter: blur(28px) saturate(190%);
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  box-shadow: 0 6px 20px -4px rgba(0, 0, 0, 0.04), 
+              0 1px 3px rgba(0, 0, 0, 0.02),
+              inset 0 1px 0 0 rgba(255, 255, 255, 0.9);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              background-color 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.apple-glass-card:hover,
+.liquid-glass-card:hover {
+  transform: translateY(-5px) scale(1.01);
+  box-shadow: 0 20px 42px -10px rgba(40, 116, 240, 0.16), 
+              0 6px 16px rgba(0, 0, 0, 0.05),
+              inset 0 1px 0 0 rgba(255, 255, 255, 1);
+  border-color: rgba(40, 116, 240, 0.4);
+}
+
+.apple-glass-card:active,
+.liquid-glass-card:active {
+  transform: scale(0.985);
+  transition-duration: 0.12s;
+}
+
+/* AMOLED Dark Card Style */
+.dark .apple-glass-card,
+.dark .liquid-glass-card {
+  background: rgba(14, 16, 24, 0.62);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow: 0 12px 36px -10px rgba(0, 0, 0, 0.8), 
+              inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+}
+
+.dark .apple-glass-card:hover,
+.dark .liquid-glass-card:hover {
+  transform: translateY(-5px) scale(1.01);
+  background: rgba(18, 22, 34, 0.75);
+  box-shadow: 0 24px 55px -12px rgba(0, 0, 0, 0.95), 
+              0 0 28px -4px rgba(59, 130, 246, 0.3),
+              inset 0 1px 0 0 rgba(255, 255, 255, 0.22);
+  border-color: rgba(96, 165, 250, 0.35);
+}
+
+/* Liquid Pill Badges & Buttons */
+.apple-glass-pill,
+.liquid-glass-pill {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.05),
+              inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.dark .apple-glass-pill,
+.dark .liquid-glass-pill {
+  background: rgba(26, 32, 48, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 14px -2px rgba(0, 0, 0, 0.6),
+              inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+/* macOS Specular Liquid Light Shimmer Effect */
+.liquid-shimmer::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.08) 35%,
+    rgba(255, 255, 255, 0.22) 50%,
+    rgba(255, 255, 255, 0.08) 65%,
+    transparent 80%
+  );
+  transform: rotate(30deg) translateX(-120%);
+  transition: transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+.liquid-shimmer:hover::after {
+  transform: rotate(30deg) translateX(120%);
+}
+
+/* macOS Window Header Bar */
+.macos-window-header {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(24px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.dark .macos-window-header {
+  background: rgba(15, 17, 26, 0.85);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* macOS Window Traffic Light Controls */
+.macos-traffic-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.2s ease;
+  cursor: pointer;
+}
+.macos-traffic-dot:hover {
+  transform: scale(1.15);
+  filter: brightness(1.1);
+}
+.macos-traffic-close {
+  background-color: #ff5f56;
+  border: 1px solid rgba(224, 68, 62, 0.8);
+  box-shadow: 0 1px 4px rgba(255, 95, 86, 0.4);
+}
+.macos-traffic-minimize {
+  background-color: #ffbd2e;
+  border: 1px solid rgba(222, 161, 35, 0.8);
+  box-shadow: 0 1px 4px rgba(255, 189, 46, 0.4);
+}
+.macos-traffic-expand {
+  background-color: #27c93f;
+  border: 1px solid rgba(26, 171, 42, 0.8);
+  box-shadow: 0 1px 4px rgba(39, 201, 63, 0.4);
+}
+
+/* ========================================================================== */
+/* BUTTERY SMOOTH PHYSICS ANIMATIONS (Apple Spring Curves)                     */
+/* ========================================================================== */
+
+@keyframes apple-spring-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.93) translateY(14px);
+  }
+  65% {
+    opacity: 1;
+    transform: scale(1.01) translateY(-2px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-apple-spring {
+  animation: apple-spring-in 0.44s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes liquid-pulse-glow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+.animate-liquid-glow {
+  animation: liquid-pulse-glow 6s ease-in-out infinite;
+}
+
+/* Ambient Floating Caustics for AMOLED Depth */
+@keyframes liquid-orb-1 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate(35px, -45px) scale(1.1) rotate(45deg);
+  }
+  66% {
+    transform: translate(-30px, 30px) scale(0.92) rotate(-30deg);
+  }
+}
+
+@keyframes liquid-orb-2 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translate(-45px, 35px) scale(1.08) rotate(-45deg);
+  }
+  66% {
+    transform: translate(25px, -25px) scale(0.95) rotate(30deg);
+  }
+}
+
+@keyframes liquid-orb-3 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(20px, 25px) scale(1.15);
+  }
+}
+
+.animate-liquid-orb-1 {
+  animation: liquid-orb-1 20s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
+}
+
+.animate-liquid-orb-2 {
+  animation: liquid-orb-2 26s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate-reverse;
+}
+
+.animate-liquid-orb-3 {
+  animation: liquid-orb-3 18s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* ========================================================================== */
+/* Mobile & Tablet Optimizations (iOS / Android / iPadOS)                     */
+/* ========================================================================== */
+
+/* iOS Safe Area Support for Dynamic Island, Notch & Home Bar */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .safe-bottom {
+    padding-bottom: calc(0.5rem + env(safe-area-inset-bottom));
+  }
+}
+
+/* Prevent auto-zoom in iOS Safari when tapping inputs */
+@media screen and (max-width: 768px) {
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="search"],
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Smooth Touch Scrolling */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+

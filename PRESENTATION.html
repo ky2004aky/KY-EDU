@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KY EDU - Project Presentation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2874f0;
+      --primary-dark: #1254bf;
+      --secondary: #fb641b;
+      --accent: #ffe500;
+      --bg: #f1f2f4;
+      --card-bg: #ffffff;
+      --text: #212121;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      user-select: none;
+    }
+
+    /* Top Control Bar */
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 10px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      z-index: 10;
+    }
+
+    .brand {
+      font-size: 1.25rem;
+      font-weight: 900;
+      font-style: italic;
+      letter-spacing: 0.5px;
+    }
+
+    .brand span {
+      color: var(--accent);
+    }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn {
+      background: rgba(255,255,255,0.18);
+      color: white;
+      border: 1px solid rgba(255,255,255,0.3);
+      padding: 6px 14px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .btn:hover {
+      background: rgba(255,255,255,0.3);
+    }
+
+    .btn-orange {
+      background: var(--secondary);
+      border-color: var(--secondary);
+    }
+    .btn-orange:hover {
+      background: #e05615;
+    }
+
+    .slide-counter {
+      font-size: 0.85rem;
+      font-weight: 800;
+      background: rgba(0,0,0,0.15);
+      padding: 4px 12px;
+      border-radius: 12px;
+    }
+
+    /* Main Slide Stage */
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .slide-container {
+      width: 100%;
+      max-width: 1100px;
+      min-height: 640px;
+      background: var(--card-bg);
+      border-radius: 8px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      border: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slide {
+      display: none;
+      flex: 1;
+      padding: 48px 56px;
+      flex-direction: column;
+    }
+
+    .slide.active {
+      display: flex;
+      animation: fadeIn 0.25s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Typography & Layout inside Slide */
+    .slide-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+
+    .slide-title {
+      font-size: 1.85rem;
+      font-weight: 900;
+      color: var(--text);
+      line-height: 1.25;
+      margin-bottom: 24px;
+      border-bottom: 2px solid #edf2f7;
+      padding-bottom: 12px;
+    }
+
+    .slide-body {
+      flex: 1;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #334155;
+    }
+
+    /* Title Slide Specifics */
+    .title-slide-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .title-banner {
+      background: linear-gradient(135deg, #2874f0, #1254bf);
+      color: white;
+      padding: 10px 24px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .big-title {
+      font-size: 3rem;
+      font-weight: 900;
+      color: var(--primary);
+      letter-spacing: -1px;
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+
+    .big-title span {
+      color: var(--secondary);
+    }
+
+    .sub-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #475569;
+      max-width: 750px;
+      margin-bottom: 36px;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 20px 32px;
+      text-align: left;
+      width: 100%;
+      max-width: 700px;
+      font-size: 0.88rem;
+    }
+
+    .meta-item strong {
+      color: var(--text);
+      display: block;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-muted);
+      margin-bottom: 2px;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-size: 0.88rem;
+    }
+
+    th {
+      background: #f1f5f9;
+      color: #1e293b;
+      font-weight: 800;
+      text-align: left;
+      padding: 10px 14px;
+      border-bottom: 2px solid #cbd5e1;
+    }
+
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e2e8f0;
+      color: #334155;
+    }
+
+    tr:nth-child(even) {
+      background: #fafafa;
+    }
+
+    /* Grid cards */
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 18px 20px;
+    }
+
+    .card h4 {
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card p, .card li {
+      font-size: 0.88rem;
+      color: #475569;
+      line-height: 1.5;
+    }
+
+    ul.feature-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul.feature-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 10px;
+      font-size: 0.93rem;
+      line-height: 1.55;
+    }
+
+    ul.feature-list li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+      font-weight: 900;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      background: #dbeafe;
+      color: #1d4ed8;
+    }
+
+    .badge-orange {
+      background: #ffedd5;
+      color: #c2410c;
+    }
+
+    .badge-green {
+      background: #dcfce7;
+      color: #15803d;
+    }
+
+    /* Pre / Code Blocks for Architecture */
+    pre.diagram {
+      background: #0f172a;
+      color: #38bdf8;
+      font-family: 'Courier New', monospace;
+      font-size: 0.78rem;
+      line-height: 1.35;
+      padding: 16px 20px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+
+    /* Footer / Progress */
+    footer {
+      background: white;
+      border-top: 1px solid var(--border);
+      padding: 10px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .progress-bar {
+      height: 4px;
+      background: #e2e8f0;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--primary);
+      width: 6.25%;
+      transition: width 0.2s ease;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Controls -->
+  <header>
+    <div class="brand">KY <span>EDU</span> • Project Presentation</div>
+    <div class="controls">
+      <span class="slide-counter" id="counter">1 / 16</span>
+      <button class="btn" onclick="prevSlide()">◀ Previous</button>
+      <button class="btn btn-orange" onclick="nextSlide()">Next ▶</button>
+      <button class="btn" onclick="toggleFullscreen()">⛶ Fullscreen</button>
+    </div>
+  </header>
+
+  <!-- Slide Stage -->
+  <main>
+    <div class="slide-container">
+
+      <!-- SLIDE 1: TITLE SLIDE -->
+      <div class="slide active">
+        <div class="title-slide-content">
+          <div class="title-banner">Final Year Academic Project Presentation</div>
+          <h1 class="big-title">KY <span>EDU</span></h1>
+          <p class="sub-title">Indian Career Stream Guidance & Sarkari Examination Gateway</p>
+          
+          <div class="meta-grid">
+            <div class="meta-item">
+              <strong>Presented By</strong>
+              [Your Name / Team Members]
+            </div>
+            <div class="meta-item">
+              <strong>Department</strong>
+              Computer Science & Engineering / IT
+            </div>
+            <div class="meta-item">
+              <strong>Guided By</strong>
+              [Internal Project Supervisor / Guide]
+            </div>
+            <div class="meta-item">
+              <strong>Technology Stack</strong>
+              React 19 • Vite • PHP 8.2 • MongoDB 8.0
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 2: PROBLEM STATEMENT -->
+      <div class="slide">
+        <span class="slide-tag">1. Context & Motivation</span>
+        <h2 class="slide-title">Problem Statement & Background</h2>
+        <div class="slide-body">
+          <div class="grid-2">
+            <div class="card">
+              <h4>🚨 The Aspirant's Challenge</h4>
+              <ul class="feature-list" style="margin-top: 10px;">
+                <li>Millions of students pass 10th, 12th, ITI, Polytechnic, B.Tech, Agriculture, or Law every year.</li>
+                <li>Students struggle to identify which central/state recruitments they are legally eligible for.</li>
+                <li>Complex eligibility relaxation rules (OBC/SC/ST/PwD) lead to invalid form applications and rejected fees.</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h4>⚠️ Flaws in Existing Portals</h4>
+              <ul class="feature-list" style="margin-top: 10px;">
+                <li><strong>Extreme Ad Clutter</strong>: 10+ spam banners, popups, and clickbait download links per page.</li>
+                <li><strong>No Stream Categorization</strong>: Notifications dumped in chronological lists without academic filtering.</li>
+                <li><strong>Zero Preparation Insight</strong>: No guidance on high-yield chapters, syllabus weights, or booklists.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 3: LITERATURE REVIEW -->
+      <div class="slide">
+        <span class="slide-tag">2. Literature Review</span>
+        <h2 class="slide-title">Comparison with Existing Systems</h2>
+        <div class="slide-body">
+          <table>
+            <thead>
+              <tr>
+                <th>Feature / Metric</th>
+                <th>Legacy Portals (Sarkari Result, FreeJobAlert)</th>
+                <th>KY EDU Gateway (Proposed System)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Interface Design</strong></td>
+                <td>Cluttered, flashing ads, slow loading</td>
+                <td><span class="badge badge-green">100% Ad-Free</span> Flipkart-style clean UI</td>
+              </tr>
+              <tr>
+                <td><strong>Stream-Wise Filtering</strong></td>
+                <td>Unavailable (flat lists only)</td>
+                <td><span class="badge badge-green">12 Academic Streams</span> (PCM, Agriculture, ITI, Law)</td>
+              </tr>
+              <tr>
+                <td><strong>Board Categories</strong></td>
+                <td>Generic (Jobs, Results)</td>
+                <td><span class="badge badge-green">10 Commission Boards</span> (UPSC, SSC, RRB, AIIMS)</td>
+              </tr>
+              <tr>
+                <td><strong>Eligibility Evaluation</strong></td>
+                <td>Manual reading of complex 80-page PDFs</td>
+                <td><span class="badge badge-green">Interactive Multi-Factor Calculator</span></td>
+              </tr>
+              <tr>
+                <td><strong>Preparation Guidance</strong></td>
+                <td>None</td>
+                <td><span class="badge badge-green">Standard Indian Booklists</span> & Weightage Breakdown</td>
+              </tr>
+              <tr>
+                <td><strong>Administrative Control</strong></td>
+                <td>Unauthenticated forms</td>
+                <td><span class="badge badge-green">Token & PIN Protected</span> Admin Portal</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- SLIDE 4: OBJECTIVES -->
+      <div class="slide">
+        <span class="slide-tag">3. System Goals</span>
+        <h2 class="slide-title">Key Objectives of KY EDU</h2>
+        <div class="slide-body">
+          <div class="grid-3">
+            <div class="card">
+              <h4>🎯 1. Stream Discovery</h4>
+              <p>Connect candidates to verified exams based strictly on their academic streams (10th, 12th PCM, Commerce, Agriculture, ITI, B.Tech, Law, Nursing).</p>
+            </div>
+            <div class="card">
+              <h4>⚡ 2. Smart Search</h4>
+              <p>Instant omnibar with auto-suggestions and tokenized search matching titles, posts, qualifications, and pay scales without false negatives.</p>
+            </div>
+            <div class="card">
+              <h4>⚖️ 3. Eligibility Calculator</h4>
+              <p>Auto-evaluate candidate qualification, age ceilings, reservation relaxations (OBC/SC/ST/PwD), and final-year appearing rules.</p>
+            </div>
+            <div class="card">
+              <h4>📚 4. Standard Booklists</h4>
+              <p>Equip aspirants with authoritative Indian textbooks (M. Laxmikanth, RS Aggarwal, Spectrum) and high-yield scoring chapters.</p>
+            </div>
+            <div class="card">
+              <h4>🔒 5. Protected Admin</h4>
+              <p>Isolate exam updates and circular broadcasting behind multi-factor PIN (123456) and Bearer token authentication.</p>
+            </div>
+            <div class="card">
+              <h4>📊 6. Multi-View Formats</h4>
+              <p>Offer 4 view layouts: Cards Grid (Flipkart Style), Sarkari Table, Fast Scanner, and Stage Pipeline Timeline.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 5: SYSTEM ARCHITECTURE -->
+      <div class="slide">
+        <span class="slide-tag">4. System Design</span>
+        <h2 class="slide-title">Three-Tier System Architecture</h2>
+        <div class="slide-body">
+          <pre class="diagram">
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                       1. PRESENTATION LAYER (CLIENT)                        │
+│                   React 19 SPA • Vite 8 • Tailwind CSS 4                    │
+│                      Running at http://localhost:5173                       │
+│  - Flipkart-Style UI Components           - UIFormat & Theme Context        │
+│  - Interactive Eligibility Matcher        - Real-Time Search Omnibar        │
+└──────────────────────────────────────┬──────────────────────────────────────┘
+                                       │ JSON REST HTTP Requests
+                                       │ Bearer Authorization Token
+                                       ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                        2. APPLICATION LAYER (BACKEND)                       │
+│                   PHP 8.2 Modular REST API Architecture                     │
+│                      Running at http://localhost:8000                       │
+│  - CORS & Error Handling Middleware       - Token Auth Guard (PIN: 123456)  │
+│  - Exams Controller (CRUD & Updates)      - Eligibility Evaluation Engine   │
+└──────────────────────────────────────┬──────────────────────────────────────┘
+                                       │ Native BSON Driver
+                                       │ (MongoDB\Driver\Manager)
+                                       ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                          3. DATA STORE LAYER (NoSQL)                        │
+│                           MongoDB Community Server 8.0                      │
+│                 Database: ky_edu_db • mongodb://localhost:27017             │
+│  - exams (20 Indian recruitments)         - users (Student study profiles)  │
+│  - careers (Degree roadmaps & steps)      - updates (Live Sarkari ticker)   │
+└─────────────────────────────────────────────────────────────────────────────┘</pre>
+        </div>
+      </div>
+
+      <!-- SLIDE 6: ENVIRONMENT -->
+      <div class="slide">
+        <span class="slide-tag">5. Technical Specifications</span>
+        <h2 class="slide-title">Hardware & Software Specifications</h2>
+        <div class="slide-body">
+          <div class="grid-2">
+            <div class="card">
+              <h4>💻 Software Requirements</h4>
+              <ul class="feature-list" style="margin-top: 8px;">
+                <li><strong>Operating System</strong>: Windows 10 / 11 / Linux</li>
+                <li><strong>Frontend Stack</strong>: React 19, Vite 8, Tailwind CSS, Lucide Icons</li>
+                <li><strong>Backend Stack</strong>: PHP 8.2 Engine with native <code>php_mongodb</code> driver</li>
+                <li><strong>Database</strong>: MongoDB 8.0 (NoSQL Document Store)</li>
+                <li><strong>Runtime Environment</strong>: Node.js v20+ LTS & PHP Built-in Server</li>
+                <li><strong>Code Editor</strong>: Visual Studio Code</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h4>🖥️ Hardware Requirements</h4>
+              <ul class="feature-list" style="margin-top: 8px;">
+                <li><strong>Processor</strong>: Intel Core i3/i5 or AMD Ryzen 3/5</li>
+                <li><strong>RAM</strong>: 4 GB Minimum (8 GB Recommended for concurrent runtime)</li>
+                <li><strong>Storage</strong>: 10 GB SSD / HDD available space</li>
+                <li><strong>Display Resolution</strong>: 1366x768 or 1920x1080</li>
+                <li><strong>Network</strong>: Localhost / Intranet / Internet</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 7: STUDENT MODULES -->
+      <div class="slide">
+        <span class="slide-tag">6. Functional Modules</span>
+        <h2 class="slide-title">Student / Aspirant Panel Modules</h2>
+        <div class="slide-body">
+          <div class="grid-3">
+            <div class="card">
+              <h4>🔍 Smart Omnibar</h4>
+              <p>Live search with auto-suggestions dropdown showing exam title, category, and total posts in real-time as you type.</p>
+            </div>
+            <div class="card">
+              <h4>🏷️ Dual Filter Chips</h4>
+              <p>Flipkart Blue (#2874f0) for 10 Commission Boards and Vibrant Orange (#fb641b) for 12 Academic Streams.</p>
+            </div>
+            <div class="card">
+              <h4>📖 Booklists & Syllabus</h4>
+              <p>Detailed weightage percentages, high-yield chapters, and recommended textbooks by Indian authors.</p>
+            </div>
+            <div class="card">
+              <h4>⚖️ Eligibility Matcher</h4>
+              <p>14 recognized Indian qualifications, passing status, percentage, and category relaxation evaluation.</p>
+            </div>
+            <div class="card">
+              <h4>🚀 Career Roadmaps</h4>
+              <p>Step-by-step career path roadmaps for ITI, Polytechnic, Agriculture, Law, and Civil Services.</p>
+            </div>
+            <div class="card">
+              <h4>🎓 Student Profile</h4>
+              <p>Saves student standard and department for one-click personalized "Matched Sarkari Exams" filtering.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 8: ADMIN MODULES -->
+      <div class="slide">
+        <span class="slide-tag">7. Administration & Control</span>
+        <h2 class="slide-title">Protected Admin Portal Modules</h2>
+        <div class="slide-body">
+          <div class="grid-2">
+            <div class="card">
+              <h4>🔐 1. Multi-Tier Authentication</h4>
+              <ul class="feature-list" style="margin-top: 8px;">
+                <li>Quick 6-Digit PIN access (<code>123456</code>) for fast access.</li>
+                <li>SuperAdmin credentials (<code>admin@kyedu.in</code>).</li>
+                <li>Automatic generation of Bearer tokens for all CRUD requests.</li>
+                <li>Unauthorized mutating calls return <code>403 Forbidden</code>.</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h4>📊 2. Executive Analytics Dashboard</h4>
+              <ul class="feature-list" style="margin-top: 8px;">
+                <li>Live counters for Active Exams, Pathways, and Live Circulars.</li>
+                <li>Student department breakdown distribution chart.</li>
+                <li>Recent activity audit feed for notices and exams.</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h4>✏️ 3. Full CRUD Management</h4>
+              <ul class="feature-list" style="margin-top: 8px;">
+                <li>Create new exams with multi-stage exam tiers and salaries.</li>
+                <li>Modify existing posts, syllabus topics, and eligibility.</li>
+                <li>Delete outdated or expired notifications from MongoDB.</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h4>📢 4. Live Notice Ticker Broadcaster</h4>
+              <ul class="feature-list" style="margin-top: 8px;">
+                <li>Broadcast time-sensitive circulars (Admit Cards, Results).</li>
+                <li>Directly updates the amber announcement ticker on the homepage.</li>
+                <li>Export registered student data to CSV format.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 9: DFD -->
+      <div class="slide">
+        <span class="slide-tag">8. Detailed Planning</span>
+        <h2 class="slide-title">Data Flow & Actor Interactions (DFD)</h2>
+        <div class="slide-body">
+          <pre class="diagram">
+                        ┌───────────────────────────────┐
+                        │      Aspirant / Student       │
+                        └───────────────┬───────────────┘
+                                        │
+           1. Search Query, Stream Filters, Eligibility Inputs, Profile Details
+                                        │
+                                        ▼
+  ┌───────────────────────────────────────────────────────────────────────────┐
+  │                           KY EDU Web Engine                               │
+  │            (React SPA Client + PHP 8.2 JSON RESTful Controller)           │
+  └─────────────────────────────┬───────────────────────────────▲─────────────┘
+                                │                               │
+             Query / Update BSON│             5. Circulars / Auth Token
+                                ▼                               │
+  ┌─────────────────────────────┴─────────┐     ┌───────────────┴─────────────┐
+  │       MongoDB Store (ky_edu_db)       │     │     Portal Administrator    │
+  │  exams • users • careers • updates    │     │      (PIN: 123456)          │
+  └───────────────────────────────────────┘     └─────────────────────────────┘</pre>
+        </div>
+      </div>
+
+      <!-- SLIDE 10: DATABASE DESIGN -->
+      <div class="slide">
+        <span class="slide-tag">9. Database Architecture</span>
+        <h2 class="slide-title">MongoDB Document Schema & Collections</h2>
+        <div class="slide-body">
+          <div class="grid-2">
+            <div class="card">
+              <h4>📁 `exams` Collection (20 Documents)</h4>
+              <p><code>_id</code>, <code>title</code>, <code>shortName</code>, <code>conductingBody</code>, <code>category</code>, <code>stream</code>, <code>vacancies</code>, <code>posts[]</code>, <code>eligibility{}</code>, <code>salary{}</code>, <code>stages[]</code>, <code>subjectDetails[]</code>, <code>timeline[]</code></p>
+            </div>
+            <div class="card">
+              <h4>📁 `users` Collection (Student Profiles)</h4>
+              <p><code>_id</code>, <code>name</code>, <code>email</code>, <code>password</code>, <code>age</code>, <code>std</code> (10th/12th/B.Tech), <code>department</code>, <code>createdAt</code></p>
+            </div>
+            <div class="card">
+              <h4>📁 `careers` Collection (Degree Roadmaps)</h4>
+              <p><code>_id</code>, <code>stream</code>, <code>title</code>, <code>overview</code>, <code>popularCourses[]</code>, <code>topRoles[]</code>, <code>averageStartingSalary</code>, <code>roadmapSteps[]</code></p>
+            </div>
+            <div class="card">
+              <h4>📁 `updates` Collection (Live Circulars)</h4>
+              <p><code>_id</code>, <code>title</code>, <code>date</code>, <code>examShortName</code>, <code>badge</code>, <code>summary</code>, <code>link</code>, <code>createdAt</code></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 11: 20 AUTHENTIC EXAMS -->
+      <div class="slide">
+        <span class="slide-tag">10. Content & Data Coverage</span>
+        <h2 class="slide-title">20 Authentic Indian Recruitments Covered</h2>
+        <div class="slide-body">
+          <table>
+            <thead>
+              <tr>
+                <th>Educational Stream</th>
+                <th>Examinations Populated in MongoDB</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>10th Pass / ITI Trades</strong></td>
+                <td>SSC MTS (10th Pass) • RRC Group D (10th/ITI) • RRB ALP & ITI Tech</td>
+              </tr>
+              <tr>
+                <td><strong>12th Pass (Any Stream / PCM)</strong></td>
+                <td>SSC CHSL (10+2) • UPSC NDA (10+2 PCM) • State Police (12th/Grad)</td>
+              </tr>
+              <tr>
+                <td><strong>Commerce & Banking / Finance</strong></td>
+                <td>IBPS / SBI PO • SEBI Grade A (Finance/Law) • SSC CGL (Auditor)</td>
+              </tr>
+              <tr>
+                <td><strong>Teaching & Education</strong></td>
+                <td>CTET (Central Teacher Eligibility Test - B.Ed / D.El.Ed)</td>
+              </tr>
+              <tr>
+                <td><strong>Computer Science & IT</strong></td>
+                <td>ISRO Scientist / Engineer (CS/IT) • NIMCET (MCA Entrance)</td>
+              </tr>
+              <tr>
+                <td><strong>Technical & Engineering</strong></td>
+                <td>SSC Junior Engineer (JE) • RRB ALP & ITI Tech</td>
+              </tr>
+              <tr>
+                <td><strong>Medical, Nursing & Pharmacy</strong></td>
+                <td>AIIMS NORCET (Nursing Officer Level 7) • ESIC Pharmacist</td>
+              </tr>
+              <tr>
+                <td><strong>Agriculture & Allied</strong></td>
+                <td>IBPS SO AFO (Agricultural Field Officer)</td>
+              </tr>
+              <tr>
+                <td><strong>Law & Judiciary</strong></td>
+                <td>State Judicial Service (PCS-J) • SEBI Grade A (Law)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- SLIDE 12: TESTING -->
+      <div class="slide">
+        <span class="slide-tag">11. Quality Assurance</span>
+        <h2 class="slide-title">Testing & Verification Results</h2>
+        <div class="slide-body">
+          <table>
+            <thead>
+              <tr>
+                <th>Test ID</th>
+                <th>Feature Tested</th>
+                <th>Test Input / Action</th>
+                <th>Observed Outcome</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>TC-01</strong></td>
+                <td>Public REST Read API</td>
+                <td><code>GET /api/exams.php</code></td>
+                <td>Returns 20 exams in JSON format with status 200</td>
+                <td><span class="badge badge-green">PASS</span></td>
+              </tr>
+              <tr>
+                <td><strong>TC-02</strong></td>
+                <td>Anti-Tampering Security</td>
+                <td>Unauthenticated <code>POST /api/exams.php</code></td>
+                <td>Blocked with 403 Forbidden (authRequired: true)</td>
+                <td><span class="badge badge-green">PASS</span></td>
+              </tr>
+              <tr>
+                <td><strong>TC-03</strong></td>
+                <td>Admin Quick PIN</td>
+                <td>Submit PIN <code>123456</code></td>
+                <td>Admin session verified, Bearer token issued</td>
+                <td><span class="badge badge-green">PASS</span></td>
+              </tr>
+              <tr>
+                <td><strong>TC-04</strong></td>
+                <td>Smart Search Acronym</td>
+                <td>Query "nda" in Omnibar</td>
+                <td>Matches only UPSC NDA, eliminates false substrings</td>
+                <td><span class="badge badge-green">PASS</span></td>
+              </tr>
+              <tr>
+                <td><strong>TC-05</strong></td>
+                <td>Live Circular Ticker</td>
+                <td>Post new notice via Admin</td>
+                <td>Notice appears immediately on homepage banner</td>
+                <td><span class="badge badge-green">PASS</span></td>
+              </tr>
+              <tr>
+                <td><strong>TC-06</strong></td>
+                <td>Production Build Speed</td>
+                <td><code>npm run build</code> via Vite 8</td>
+                <td>Compiles cleanly in <strong>340ms</strong> with 0 errors</td>
+                <td><span class="badge badge-green">PASS</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- SLIDE 13: ADVANTAGES -->
+      <div class="slide">
+        <span class="slide-tag">12. Benefits</span>
+        <h2 class="slide-title">Key Advantages & Social Impact</h2>
+        <div class="slide-body">
+          <div class="grid-2">
+            <div class="card">
+              <h4>🚫 1. 100% Ad-Free Learning Canvas</h4>
+              <p>Eliminates the deceptive popups, malware redirects, and ad noise prevalent on legacy recruitment websites.</p>
+            </div>
+            <div class="card">
+              <h4>🌾 2. Empowering Non-Traditional Streams</h4>
+              <p>First dedicated portal to prioritize ITI Craftsmen, Polytechnic Diploma holders, and B.Sc Agriculture graduates alongside Civil Services.</p>
+            </div>
+            <div class="card">
+              <h4>💰 3. Financial Transparency</h4>
+              <p>Displays clear 7th CPC Pay Matrices, starting in-hand salaries, and official government perks upfront.</p>
+            </div>
+            <div class="card">
+              <h4>📖 4. Free Reference Booklists</h4>
+              <p>Democratizes high-quality book recommendations (Laxmikanth, RS Aggarwal, Spectrum) for tier-2 and rural aspirants without coaching.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 14: FUTURE ENHANCEMENTS -->
+      <div class="slide">
+        <span class="slide-tag">13. Roadmap</span>
+        <h2 class="slide-title">Future Scope & Enhancements</h2>
+        <div class="slide-body">
+          <div class="grid-3">
+            <div class="card">
+              <h4>🤖 AI Mock Test Engine</h4>
+              <p>Automatic generation of topic-wise practice quizzes based on high-yield syllabus percentages.</p>
+            </div>
+            <div class="card">
+              <h4>📱 Mobile Application</h4>
+              <p>Cross-platform React Native iOS and Android app with instant push notifications for deadlines.</p>
+            </div>
+            <div class="card">
+              <h4>🌐 Regional Languages</h4>
+              <p>Full vernacular support in Hindi, Marathi, Gujarati, Bengali, and Tamil for rural aspirants.</p>
+            </div>
+            <div class="card">
+              <h4>💬 WhatsApp Alert Bot</h4>
+              <p>Direct circular notifications and admit card links sent automatically to candidate mobile numbers.</p>
+            </div>
+            <div class="card">
+              <h4>🏛️ Commission Webhook Sync</h4>
+              <p>Automated real-time scraping and synchronization with official UPSC, SSC, and NTA gazettes.</p>
+            </div>
+            <div class="card">
+              <h4>👥 Aspirant Discussion Forum</h4>
+              <p>Peer-to-peer Q&A community for strategy sharing and syllabus guidance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 15: CONCLUSION -->
+      <div class="slide">
+        <span class="slide-tag">14. Conclusion</span>
+        <h2 class="slide-title">Conclusion</h2>
+        <div class="slide-body">
+          <div class="card" style="margin-bottom: 20px;">
+            <h4>🏆 Summary of Accomplishments</h4>
+            <ul class="feature-list" style="margin-top: 8px;">
+              <li>Successfully architected and deployed <strong>KY EDU</strong>, a comprehensive Indian career and recruitment gateway.</li>
+              <li>Integrated modern technologies: <strong>React 19 SPA</strong>, <strong>Tailwind CSS</strong>, <strong>PHP 8.2 REST API</strong>, and <strong>MongoDB 8.0 NoSQL</strong>.</li>
+              <li>Solved major student pain points: ad clutter, lack of stream filtering, inaccurate eligibility, and missing book recommendations.</li>
+              <li>Engineered an isolated, token-protected Admin Portal with 6-digit PIN login and real-time notice broadcasting.</li>
+            </ul>
+          </div>
+          <p style="font-size: 0.95rem; color: #475569; line-height: 1.6;">
+            <strong>Final Takeaway:</strong> KY EDU transforms how students discover government opportunities, empowering millions of Indian aspirants with transparent, verified, and personalized educational guidance.
+          </p>
+        </div>
+      </div>
+
+      <!-- SLIDE 16: THANK YOU -->
+      <div class="slide">
+        <div class="title-slide-content">
+          <div class="title-banner">Project Viva & Evaluation</div>
+          <h1 class="big-title">THANK <span>YOU!</span></h1>
+          <p class="sub-title">Questions & Discussion</p>
+          
+          <div class="meta-grid" style="max-width: 600px;">
+            <div class="meta-item">
+              <strong>Project Portal</strong>
+              http://localhost:5173
+            </div>
+            <div class="meta-item">
+              <strong>Backend REST API</strong>
+              http://localhost:8000
+            </div>
+            <div class="meta-item">
+              <strong>Admin Quick PIN</strong>
+              123456
+            </div>
+            <div class="meta-item">
+              <strong>Database</strong>
+              MongoDB (`ky_edu_db`)
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Progress Line -->
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer Nav Hint -->
+  <footer>
+    <div>Navigate using <strong>Left/Right Arrow keys</strong> or <strong>Spacebar</strong></div>
+    <div>KY EDU • Academic Project Presentation</div>
+  </footer>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+    const counterEl = document.getElementById('counter');
+    const progressFill = document.getElementById('progressFill');
+
+    function showSlide(index) {
+      if (index < 0) index = 0;
+      if (index >= totalSlides) index = totalSlides - 1;
+      
+      slides.forEach((s, idx) => {
+        s.classList.toggle('active', idx === index);
+      });
+
+      currentSlide = index;
+      counterEl.textContent = `${currentSlide + 1} / ${totalSlides}`;
+      progressFill.style.width = `${((currentSlide + 1) / totalSlides) * 100}%`;
+    }
+
+    function nextSlide() {
+      if (currentSlide < totalSlides - 1) {
+        showSlide(currentSlide + 1);
+      }
+    }
+
+    function prevSlide() {
+      if (currentSlide > 0) {
+        showSlide(currentSlide - 1);
+      }
+    }
+
+    function toggleFullscreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(err => alert(err.message));
+      } else {
+        document.exitFullscreen();
+      }
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
+        nextSlide();
+      } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
+        prevSlide();
+      } else if (e.key === 'f' || e.key === 'F') {
+        toggleFullscreen();
+      } else if (e.key === 'Home') {
+        showSlide(0);
+      } else if (e.key === 'End') {
+        showSlide(totalSlides - 1);
+      }
+    });
+  </script>
+</body>
+</html>

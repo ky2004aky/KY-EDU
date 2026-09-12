@@ -1,0 +1,4443 @@
+{
+  "exams": [
+    {
+      "title": "UPSC Civil Services Examination (CSE)",
+      "shortName": "UPSC CSE",
+      "conductingBody": "Union Public Service Commission (UPSC)",
+      "category": "UPSC",
+      "stream": "Any Stream",
+      "featured": true,
+      "status": "Active",
+      "vacancies": 1056,
+      "posts": [
+        "IAS (Indian Administrative Service)",
+        "IPS (Indian Police Service)",
+        "IFS (Indian Foreign Service)",
+        "IRS (Indian Revenue Service)",
+        "IAAS"
+      ],
+      "eligibility": {
+        "minAge": 21,
+        "maxAge": 32,
+        "education": "Graduation in any discipline from a recognized University (Regular, Distance, IGNOU or NIOS)",
+        "educationLevel": "Graduate",
+        "attempts": "General: 6 | OBC: 9 | SC/ST: Unlimited (till age ceiling)",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 3
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          },
+          {
+            "category": "PwD",
+            "relaxationYears": 10
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "Level 10 to Level 17 (7th CPC)",
+        "payScale": "₹56,100 - ₹2,50,000 (Cabinet Secretary)",
+        "inHandEstimate": "₹75,000 - ₹1,20,000 / month initially + Subsidized Bungalow + Official Vehicle",
+        "perks": [
+          "Official Residence (Bungalow)",
+          "Chauffeur Driven Vehicle",
+          "Free Medical at CGHS Hospitals",
+          "Lifetime Pension/NPS"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "Stage 1: Preliminary Exam",
+          "type": "Objective (MCQ)",
+          "marks": "GS Paper 1 (200) + CSAT (200 - 33% Qualifying)",
+          "negativeMarking": "1/3rd mark deduction"
+        },
+        {
+          "stage": "Stage 2: Mains Examination",
+          "type": "Descriptive (9 Papers)",
+          "marks": "1750 Marks (Essay, GS I-IV, Optional I & II)",
+          "negativeMarking": "None"
+        },
+        {
+          "stage": "Stage 3: Personality Test (Interview)",
+          "type": "In-person Board Interview at Dholpur House, New Delhi",
+          "marks": "275 Marks",
+          "negativeMarking": "None"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "Indian Polity & Governance",
+          "weightage": "15 - 20% in Prelims & GS-II Mains",
+          "keyTopics": [
+            "Preamble, Fundamental Rights & DPSP",
+            "Parliament, President & Prime Minister",
+            "Judiciary: Supreme Court & Judicial Review",
+            "Constitutional & Non-Constitutional Bodies",
+            "Federalism, Center-State Relations & Local Governance"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Indian Polity",
+              "author": "M. Laxmikanth",
+              "type": "Primary Bible"
+            },
+            {
+              "title": "Introduction to the Constitution of India",
+              "author": "Dr. D.D. Basu",
+              "type": "Advanced Reference"
+            },
+            {
+              "title": "NCERT Class 11: Indian Constitution at Work",
+              "author": "NCERT",
+              "type": "Foundation"
+            }
+          ],
+          "prepStrategy": "Read Laxmikanth cover-to-cover 3-4 times. Link articles with recent landmark Supreme Court verdicts and parliamentary bills."
+        },
+        {
+          "subjectName": "Modern Indian History & Culture",
+          "weightage": "12 - 15% in Prelims & GS-I Mains",
+          "keyTopics": [
+            "Advent of Europeans & British Expansion",
+            "1857 Revolt & Peasant/Tribal Uprisings",
+            "Indian National Congress & Freedom Struggle",
+            "Gandhian Era & Revolutionary Nationalism",
+            "Temple Architecture, Classical Dances & UNESCO Heritage"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "A Brief History of Modern India",
+              "author": "Rajiv Ahir (Spectrum)",
+              "type": "Primary Reference"
+            },
+            {
+              "title": "India’s Struggle for Independence",
+              "author": "Bipan Chandra",
+              "type": "Analytical Reading"
+            },
+            {
+              "title": "Indian Art and Culture",
+              "author": "Nitin Singhania",
+              "type": "Culture Bible"
+            }
+          ],
+          "prepStrategy": "Create chronological timelines for freedom movements, viceroy tenures, and social reform movements."
+        },
+        {
+          "subjectName": "Indian Economy & Budget",
+          "weightage": "15 - 18% in Prelims & GS-III Mains",
+          "keyTopics": [
+            "National Income, GDP & Inflation Metrics",
+            "Monetary Policy Committee & RBI Tools",
+            "Fiscal Deficit, Union Budget & Taxation (GST)",
+            "Agriculture & MSP, Subsidies & Food Security",
+            "External Sector: BoP, FDI, Forex & Trade Policy"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Indian Economy",
+              "author": "Ramesh Singh / Nitin Singhania",
+              "type": "Conceptual Book"
+            },
+            {
+              "title": "Economic Survey & Union Budget Summary",
+              "author": "Ministry of Finance, GoI",
+              "type": "Annual Must-Read"
+            },
+            {
+              "title": "NCERT Class 11 & 12 Macroeconomics",
+              "author": "NCERT",
+              "type": "Foundation"
+            }
+          ],
+          "prepStrategy": "Master conceptual terms (CRR, Repo, Capital Account) and thoroughly read the annual Economic Survey executive summary."
+        },
+        {
+          "subjectName": "Geography, Environment & Climate Change",
+          "weightage": "18 - 22% in Prelims & GS-I/GS-III",
+          "keyTopics": [
+            "Geomorphology, Climatology & Oceanography",
+            "Indian River Systems, Monsoons & Soils",
+            "National Parks, Wildlife Sanctuaries & Ramsar Sites",
+            "Biodiversity, IUCN Red List Species of India",
+            "UNFCCC COP Summits, Paris Agreement & Carbon Markets"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Certificate Physical and Human Geography",
+              "author": "G.C. Leong",
+              "type": "Core Physical"
+            },
+            {
+              "title": "NCERT Geography Class 11 & 12 (4 Books)",
+              "author": "NCERT",
+              "type": "Essential Base"
+            },
+            {
+              "title": "Environment & Ecology",
+              "author": "Shankar IAS Academy / PMF IAS",
+              "type": "Environment Bible"
+            }
+          ],
+          "prepStrategy": "Do daily Atlas map-pointing of critical passes, straits, rivers, and wildlife sanctuaries in the news."
+        }
+      ],
+      "syllabusHighlights": [
+        "Indian Polity, Constitution & Governance",
+        "Modern Indian History & Freedom Struggle",
+        "Physical, Human & Economic Geography",
+        "Macro Indian Economy & Annual Budget",
+        "Environment, Ecology & Biodiversity",
+        "Ethics, Integrity & Aptitude (GS Paper IV)"
+      ],
+      "importantDates": {
+        "notificationDate": "2026-02-14",
+        "applicationDeadline": "2026-03-05",
+        "examDate": "2026-05-24"
+      },
+      "officialWebsite": "https://upsc.gov.in",
+      "applyLink": "https://upsconline.nic.in",
+      "updates": [
+        {
+          "id": "upd_101",
+          "title": "UPSC CSE 2026 Notification & Apply Online Portal Active",
+          "type": "Notification",
+          "date": "2026-02-14",
+          "description": "Official notification released for 1,056 vacancies across IAS, IPS, IFS and Central Group A/B services.",
+          "link": "https://upsconline.nic.in"
+        }
+      ],
+      "tags": [
+        "All India Service",
+        "Highest Prestige",
+        "IAS",
+        "Group A Gazetted"
+      ],
+      "createdAt": "2026-09-12 23:31:29",
+      "updatedAt": "2026-09-12 23:31:29"
+    },
+    {
+      "title": "SSC Combined Graduate Level Examination (CGL)",
+      "shortName": "SSC CGL",
+      "conductingBody": "Staff Selection Commission (SSC)",
+      "category": "SSC",
+      "stream": "Any Stream",
+      "featured": true,
+      "status": "Active",
+      "vacancies": 17727,
+      "posts": [
+        "Assistant Section Officer (CSS, MEA, IB)",
+        "Income Tax Inspector (CBDT)",
+        "Central Excise Inspector (CBIC)",
+        "Sub-Inspector (CBI)",
+        "Auditor (CAG)",
+        "Accountant"
+      ],
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 30,
+        "education": "Bachelor Degree in any discipline from a recognized University",
+        "educationLevel": "Graduate",
+        "attempts": "Unlimited within age ceiling",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 3
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          },
+          {
+            "category": "PwD",
+            "relaxationYears": 10
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "Pay Level 4 (₹25,500) to Level 8 (₹47,600)",
+        "payScale": "₹44,900 - ₹1,42,400 (For 4600 GP Inspector Posts)",
+        "inHandEstimate": "₹65,000 - ₹82,000 / month in X Class Cities (Delhi, Mumbai)",
+        "perks": [
+          "HRA 30% in Metros",
+          "Dearness Allowance (DA 50%+)",
+          "Transport Allowance",
+          "CGHS Medical Cover"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "Tier 1: Computer Based Test",
+          "type": "Computer-Based MCQ (100 Qs / 200 Marks)",
+          "marks": "Reasoning (50), GA (50), Quant (50), English (50)",
+          "negativeMarking": "0.50 marks per wrong answer"
+        },
+        {
+          "stage": "Tier 2: Computer Based Test & Typing",
+          "type": "Paper I (Maths, Reasoning, English, GA, Computer) + DEST Data Entry Speed Test",
+          "marks": "390 Marks Merit",
+          "negativeMarking": "1 mark per wrong answer"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "Quantitative Aptitude & Advanced Maths",
+          "weightage": "30% (Tier 1: 50 Marks, Tier 2: 90 Marks)",
+          "keyTopics": [
+            "Arithmetic: Percentage, Profit & Loss, Ratio, Time & Work",
+            "Advanced Maths: Geometry & Triangles, Trigonometry, Algebra, Mensuration 2D/3D",
+            "Data Interpretation (Bar Graphs, Pie Charts)"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Quantitative Aptitude for Competitive Examinations",
+              "author": "Dr. R.S. Aggarwal",
+              "type": "Basics"
+            },
+            {
+              "title": "Advance Maths for General Competitions",
+              "author": "Rakesh Yadav",
+              "type": "Advanced Problem Solving"
+            },
+            {
+              "title": "SSC Mathematics 7300+ Chapterwise",
+              "author": "Kiran Publications",
+              "type": "Previous Year Questions"
+            }
+          ],
+          "prepStrategy": "Memorize tables up to 30, squares up to 50, cubes up to 30. Solve previous 5 years papers with timer."
+        },
+        {
+          "subjectName": "English Language & Comprehension",
+          "weightage": "35% (Tier 1: 50 Marks, Tier 2: 135 Marks)",
+          "keyTopics": [
+            "Error Spotting & Sentence Improvement",
+            "Active-Passive Voice & Direct-Indirect Speech",
+            "Vocabulary: Synonyms, Antonyms, One Word Substitutions, Idioms",
+            "Reading Comprehension & Cloze Tests"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Word Power Made Easy",
+              "author": "Norman Lewis",
+              "type": "Vocabulary Builder"
+            },
+            {
+              "title": "Plinth to Paramount / English for General Competitions",
+              "author": "Neetu Singh (KD Campus)",
+              "type": "Grammar Rule Book"
+            },
+            {
+              "title": "Objective General English",
+              "author": "S.P. Bakshi (Arihant)",
+              "type": "Practice Workbook"
+            }
+          ],
+          "prepStrategy": "Read daily editorial of The Hindu/Indian Express. Master Neetu Singh volume 1 grammar rules thoroughly."
+        }
+      ],
+      "syllabusHighlights": [
+        "Quantitative Aptitude & Advanced Mathematics",
+        "General Intelligence & Logical Reasoning",
+        "English Language, Grammar & Comprehension",
+        "General Awareness & Static GK",
+        "Computer Proficiency & Data Entry Speed"
+      ],
+      "importantDates": {
+        "notificationDate": "2026-06-24",
+        "applicationDeadline": "2026-07-27",
+        "examDate": "2026-09-20"
+      },
+      "officialWebsite": "https://ssc.gov.in",
+      "applyLink": "https://ssc.gov.in/portal/apply",
+      "updates": [],
+      "tags": [
+        "Group B Non-Gazetted",
+        "Desk & Field Jobs",
+        "Huge Vacancies",
+        "Central Ministry"
+      ],
+      "createdAt": "2026-09-12 23:31:29",
+      "updatedAt": "2026-09-12 23:31:29"
+    },
+    {
+      "title": "Railway Assistant Loco Pilot & Technician (RRB ALP / Tech)",
+      "shortName": "RRB ALP & ITI Tech",
+      "conductingBody": "Railway Recruitment Boards (RRB)",
+      "category": "Railways",
+      "stream": "ITI / Polytechnic / Engineering",
+      "featured": true,
+      "status": "Active",
+      "vacancies": 18799,
+      "posts": [
+        "Assistant Loco Pilot (Electric / Diesel Locomotive)",
+        "Technician Grade III in Electrical, Mechanical, Signal & Telecommunication"
+      ],
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 33,
+        "education": "Matriculation/10th Pass PLUS ITI in approved trade (Electrician, Fitter, Welder, Wireman, Machinist) OR 3-Year Diploma in Mech/Elec/Automobile OR B.Tech Engineering",
+        "educationLevel": "ITI / Polytechnic / 10th",
+        "attempts": "No limit till max age",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 3
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          },
+          {
+            "category": "Ex-Servicemen",
+            "relaxationYears": 5
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "Level 2 (7th CPC Pay Matrix)",
+        "payScale": "₹19,900 - ₹63,200 (Basic Pay)",
+        "inHandEstimate": "₹45,000 - ₹65,000 / month (Including Running Kilometer Allowance ₹3.75 - ₹4.50 / km)",
+        "perks": [
+          "Running Kilometre Allowance (KMA up to ₹25,000/mo)",
+          "Night Duty & Overtime Allowance",
+          "Free All-India Railway Family Pass",
+          "Railway Colony Quarters"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "CBT 1: Screening Test",
+          "type": "75 Questions / 60 Mins (Maths 20, Reasoning 25, Gen Science 20, GA 10)",
+          "marks": "75 Marks",
+          "negativeMarking": "1/3rd deduction"
+        },
+        {
+          "stage": "CBT 2 Part A (Merit)",
+          "type": "100 Questions / 90 Mins (Maths, Reasoning, Basic Science & Engineering 40)",
+          "marks": "100 Marks (70% weightage for ALP)",
+          "negativeMarking": "1/3rd deduction"
+        },
+        {
+          "stage": "CBT 2 Part B (Trade Test)",
+          "type": "75 Questions / 60 Mins (Relevant ITI / Diploma Trade Syllabus)",
+          "marks": "Qualifying (Minimum 35% score mandatory)",
+          "negativeMarking": "1/3rd deduction"
+        },
+        {
+          "stage": "CBAT: Computer Based Aptitude Test (For ALP)",
+          "type": "5 Battery Tests (Memory, Direction, Depth Perception, Concentration, Perceptual Speed)",
+          "marks": "30% weightage (T-score 42 in each battery)",
+          "negativeMarking": "NO Negative Marking in CBAT"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "Basic Science & Engineering Drawing",
+          "weightage": "40% in CBT-2 Part A",
+          "keyTopics": [
+            "Engineering Drawing: Projections, Views, Lines, Geometric Figures",
+            "Units & Measurements, Mass, Weight & Density",
+            "Work, Power & Energy, Speed & Velocity",
+            "Heat & Temperature, Basic Electricity & Levers",
+            "Occupational Safety, Health & IT Literacy"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Basic Science and Engineering for RRB ALP & Technician",
+              "author": "Rukmini Prakashan (Platform)",
+              "type": "Dedicated Guide"
+            },
+            {
+              "title": "Engineering Drawing Basics",
+              "author": "N.D. Bhatt",
+              "type": "Reference Manual"
+            }
+          ],
+          "prepStrategy": "Practice numerical calculations on Work-Power-Energy and Ohm’s Law. Learn standard drawing symbols."
+        },
+        {
+          "subjectName": "Core ITI / Technical Trade Syllabus",
+          "weightage": "100% in CBT-2 Part B (Qualifying 35%)",
+          "keyTopics": [
+            "Electrician: AC/DC Motors, Transformers, Winding, Earthing",
+            "Fitter: Lathe, Milling, Precision Measuring Instruments (Vernier, Micrometer)",
+            "Welder: Arc, Gas, TIG/MIG Welding, Safety"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "NIMI ITI Trade Theory Textbooks (Electrician / Fitter)",
+              "author": "National Instructional Media Institute (NIMI)",
+              "type": "Official Curriculum"
+            },
+            {
+              "title": "Youth Competition Times RRB Technical Chapterwise Solved Papers",
+              "author": "YCT Editorial Board",
+              "type": "Past Year Bank"
+            }
+          ],
+          "prepStrategy": "Do not ignore Part B! Even if you score 95/100 in Part A, failing Part B disqualifies you."
+        }
+      ],
+      "syllabusHighlights": [
+        "Mathematics & Mental Ability",
+        "General Science (Physics, Chemistry & Biology Class 9-10)",
+        "Basic Science & Engineering Concepts",
+        "Relevant ITI Technical Trade Syllabus",
+        "Psycho Aptitude Battery Test"
+      ],
+      "importantDates": {
+        "notificationDate": "2026-01-20",
+        "applicationDeadline": "2026-02-19",
+        "examDate": "2026-08-18"
+      },
+      "officialWebsite": "https://indianrailways.gov.in",
+      "applyLink": "https://rrbapply.gov.in",
+      "updates": [],
+      "tags": [
+        "ITI Govt Job",
+        "Polytechnic Entry",
+        "High Running Allowance",
+        "Railway Loco Pilot"
+      ],
+      "createdAt": "2026-09-12 23:31:29",
+      "updatedAt": "2026-09-12 23:31:29"
+    },
+    {
+      "title": "SSC Junior Engineer Examination (SSC JE)",
+      "shortName": "SSC JE",
+      "conductingBody": "Staff Selection Commission (SSC)",
+      "category": "SSC",
+      "stream": "Polytechnic / B.Tech Engineering",
+      "featured": true,
+      "status": "Active",
+      "vacancies": 1765,
+      "posts": [
+        "Junior Engineer (Civil, Mechanical, Electrical) in CPWD, MES, Border Roads Organisation (BRO), Central Water Commission (CWC)"
+      ],
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 30,
+        "education": "3-Year Diploma in Civil/Mechanical/Electrical Engineering from a recognized Institute OR Degree in Engineering (B.Tech)",
+        "educationLevel": "Polytechnic / B.Tech",
+        "attempts": "No limit within age limit",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 3
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          },
+          {
+            "category": "PwD",
+            "relaxationYears": 10
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "Level 6 (7th CPC Pay Matrix)",
+        "payScale": "₹35,400 - ₹1,12,400",
+        "inHandEstimate": "₹50,000 - ₹62,000 / month",
+        "perks": [
+          "CPWD / Central Quarters",
+          "Site Inspection Allowances",
+          "Medical CGHS Facilities",
+          "Fast Promotion to Assistant Engineer (AE)"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "Paper 1: Computer Based Exam",
+          "type": "200 Qs / 2 Hours (General Intelligence 50, General Awareness 50, General Engineering 100)",
+          "marks": "200 Marks",
+          "negativeMarking": "0.25 marks deduction"
+        },
+        {
+          "stage": "Paper 2: Computer Based Technical",
+          "type": "100 Qs / 2 Hours (Core Engineering Branch: Civil/Mech/Elec)",
+          "marks": "300 Marks (Each Q = 3 Marks)",
+          "negativeMarking": "1 mark deduction per wrong answer"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "Core Civil / Electrical / Mechanical Engineering",
+          "weightage": "50% in Paper-1 & 100% in Paper-2",
+          "keyTopics": [
+            "Civil: Building Materials, Surveying, Soil Mechanics, Hydraulics, RCC & Steel Design",
+            "Electrical: Circuit Law, Magnetic Circuit, AC Fundamentals, Electrical Machines, Switchgear",
+            "Mechanical: Thermodynamics, Fluid Mechanics, Strength of Materials, IC Engines"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "SSC JE Topicwise Objective Solved Papers",
+              "author": "Made Easy Publications",
+              "type": "Gold Standard"
+            },
+            {
+              "title": "Civil / Electrical Engineering Handbooks",
+              "author": "Made Easy / Youth Competition",
+              "type": "Quick Formula Sheet"
+            }
+          ],
+          "prepStrategy": "Master IS Codes (IS 456 for Civil), standard circuit formulas, and previous 10 years solved papers."
+        }
+      ],
+      "syllabusHighlights": [
+        "Core Engineering Discipline (Civil / Mech / Elec)",
+        "General Intelligence & Reasoning",
+        "General Awareness & Engineering Applications"
+      ],
+      "importantDates": {
+        "notificationDate": "2026-03-28",
+        "applicationDeadline": "2026-04-18",
+        "examDate": "2026-06-12"
+      },
+      "officialWebsite": "https://ssc.gov.in",
+      "applyLink": "https://ssc.gov.in",
+      "updates": [],
+      "tags": [
+        "Diploma Govt Job",
+        "CPWD & MES",
+        "Junior Engineer",
+        "Technical Career"
+      ],
+      "createdAt": "2026-09-12 23:31:29",
+      "updatedAt": "2026-09-12 23:31:29"
+    },
+    {
+      "title": "IBPS Agriculture Field Officer (IBPS SO AFO)",
+      "shortName": "IBPS SO AFO",
+      "conductingBody": "Institute of Banking Personnel Selection (IBPS)",
+      "category": "Banking",
+      "stream": "B.Sc Agriculture / Allied",
+      "featured": true,
+      "status": "Upcoming",
+      "vacancies": 950,
+      "posts": [
+        "Agriculture Field Officer (Scale I) across 11 Public Sector Commercial Banks"
+      ],
+      "eligibility": {
+        "minAge": 20,
+        "maxAge": 30,
+        "education": "4-Year Degree in Agriculture / Horticulture / Animal Husbandry / Veterinary Science / Dairy Science / Fishery Science / Agri Engineering",
+        "educationLevel": "B.Sc Agriculture",
+        "attempts": "No limit within age ceiling",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 3
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          },
+          {
+            "category": "PwD",
+            "relaxationYears": 10
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "Scale I Officer (JMGS-I)",
+        "payScale": "₹48,480 - ₹85,920",
+        "inHandEstimate": "₹65,000 - ₹75,000 / month + Leased Accommodation",
+        "perks": [
+          "Bank Quarter / Leased Flat",
+          "Fuel Allowance (45 Litres/month)",
+          "Staff Loan Concession",
+          "Medical Cover"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "Prelims Examination",
+          "type": "Online CBT (150 Qs / 125 Marks in 120 mins) - English, Reasoning, Quantitative Aptitude",
+          "marks": "125 Marks (Qualifying)",
+          "negativeMarking": "0.25 marks"
+        },
+        {
+          "stage": "Mains Examination",
+          "type": "Professional Agriculture Knowledge (60 Questions / 60 Marks in 45 mins)",
+          "marks": "60 Marks (80% Merit weightage)",
+          "negativeMarking": "0.25 marks"
+        },
+        {
+          "stage": "Interview",
+          "type": "In-person Panel Interview",
+          "marks": "100 Marks (20% weightage)",
+          "negativeMarking": "None"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "Professional Agricultural Knowledge",
+          "weightage": "100% of Mains Merit Evaluation",
+          "keyTopics": [
+            "Agronomy & Field Crops (Cereals, Pulses, Oilseeds)",
+            "Soil Science, Fertilizer Calculations & Nutrient Deficiencies",
+            "Horticulture, Floriculture & Post Harvest Tech",
+            "Animal Husbandry, Dairy & Poultry Management",
+            "Govt Schemes: PMFBY, PM-KISAN, KCC, NABARD Norms & Priority Sector Lending"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Nem Raj Sunda - A Competitive Book of Agriculture",
+              "author": "Nem Raj Sunda",
+              "type": "Must-Read Agriculture Bible"
+            },
+            {
+              "title": "Fundamentals of Agriculture (Vol 1 & 2)",
+              "author": "Arun Katyayan",
+              "type": "In-depth Textbook"
+            },
+            {
+              "title": "NABARD Annual Report & Agri Current Schemes",
+              "author": "NABARD",
+              "type": "Current Updates"
+            }
+          ],
+          "prepStrategy": "Memorize Nem Raj Sunda fact-sheets, latest crop production statistics, and Priority Sector Lending (PSL) guidelines."
+        }
+      ],
+      "syllabusHighlights": [
+        "Agronomy, Crop Physiology & Seed Technology",
+        "Soil Chemistry, Irrigation & Watershed Management",
+        "Livestock, Dairy & Animal Husbandry",
+        "NABARD Priority Sector Guidelines & Rural Banking Schemes"
+      ],
+      "importantDates": {
+        "notificationDate": "2026-08-01",
+        "applicationDeadline": "2026-08-28",
+        "examDate": "2026-11-10"
+      },
+      "officialWebsite": "https://ibps.in",
+      "applyLink": "https://ibps.in",
+      "updates": [],
+      "tags": [
+        "Agriculture Degree",
+        "Bank Scale I Officer",
+        "High Salary",
+        "Rural Development"
+      ],
+      "createdAt": "2026-09-12 23:31:29",
+      "updatedAt": "2026-09-12 23:31:29"
+    },
+    {
+      "title": "AIIMS Nursing Officer Recruitment (NORCET)",
+      "shortName": "AIIMS NORCET",
+      "conductingBody": "All India Institute of Medical Sciences (AIIMS, New Delhi)",
+      "category": "Medical",
+      "stream": "Nursing / Medical Sciences",
+      "featured": true,
+      "status": "Active",
+      "vacancies": 3800,
+      "posts": [
+        "Nursing Officer in AIIMS New Delhi and all state AIIMS institutes (Rishikesh, Bhopal, Jodhpur, Patna, etc.)"
+      ],
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 30,
+        "education": "B.Sc (Hons.) Nursing / B.Sc Nursing from an INC recognized institute OR Diploma in General Nursing Midwifery (GNM) with 2 years hospital experience",
+        "educationLevel": "B.Sc Nursing / GNM",
+        "attempts": "No limit within age bracket",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 3
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          },
+          {
+            "category": "PwD",
+            "relaxationYears": 10
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "Level 7 (7th CPC Pay Matrix)",
+        "payScale": "₹44,900 - ₹1,42,400",
+        "inHandEstimate": "₹72,000 - ₹85,000 / month (Including Nursing Allowance & Night Duty Allowance)",
+        "perks": [
+          "Nursing Allowance (₹7,200/mo)",
+          "Uniform Allowance",
+          "Residential Campus Quarters in AIIMS",
+          "Medical Care at AIIMS"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "NORCET Prelims",
+          "type": "Online CBT (100 Questions / 90 Mins) - 80 Qs Nursing Subject + 20 Qs GA/Aptitude",
+          "marks": "100 Marks (Qualifying for Stage 2)",
+          "negativeMarking": "1/3rd deduction"
+        },
+        {
+          "stage": "NORCET Mains",
+          "type": "Clinical Scenario & Critical Patient Care Case Studies (100 Questions / 90 Mins)",
+          "marks": "100 Marks (Merit for AIIMS allocation)",
+          "negativeMarking": "1/3rd deduction"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "Nursing Foundation & Medical-Surgical Nursing",
+          "weightage": "50% of Clinical Questions",
+          "keyTopics": [
+            "Emergency Trauma Care & CPR Guidelines",
+            "Medication Dosage Calculations & IV Infusion Rates",
+            "Infection Control, Sterilization & BMW Rules",
+            "Cardiovascular, Renal, Neuro & Endocrine Disorders"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Target High - Review for Nursing Competitive Exams",
+              "author": "Muthuvenkatachalam Srinivasan",
+              "type": "Nursing MCQ Bible"
+            },
+            {
+              "title": "Comprehensive Guide for Nursing Competitive Exam (PR Yadav)",
+              "author": "P.R. Yadav",
+              "type": "Concept & Practice"
+            }
+          ],
+          "prepStrategy": "Practice clinical triage scenarios, ECG interpretation, and emergency drug calculations."
+        }
+      ],
+      "syllabusHighlights": [
+        "Anatomy, Physiology & Medical-Surgical Nursing",
+        "Pediatric, Psychiatric & Community Health Nursing",
+        "Pharmacology, Emergency Patient Care & Hospital Protocols"
+      ],
+      "importantDates": {
+        "notificationDate": "2026-02-26",
+        "applicationDeadline": "2026-03-17",
+        "examDate": "2026-04-14"
+      },
+      "officialWebsite": "https://aiimsexams.ac.in",
+      "applyLink": "https://aiimsexams.ac.in",
+      "updates": [],
+      "tags": [
+        "Nursing Career",
+        "AIIMS Hospitals",
+        "Level 7 Pay",
+        "Central Govt Healthcare"
+      ],
+      "createdAt": "2026-09-12 23:31:29",
+      "updatedAt": "2026-09-12 23:31:29"
+    },
+    {
+      "title": "State Judicial Service Examination (Civil Judge / PCS-J)",
+      "shortName": "Judiciary (PCS-J)",
+      "conductingBody": "State High Courts & State Public Service Commissions",
+      "category": "Law / Judiciary",
+      "stream": "Law (LL.B / B.A. LL.B)",
+      "featured": true,
+      "status": "Active",
+      "vacancies": 303,
+      "posts": [
+        "Civil Judge (Junior Division) / Judicial Magistrate 1st Class"
+      ],
+      "eligibility": {
+        "minAge": 22,
+        "maxAge": 35,
+        "education": "Bachelor of Laws (LL.B 3-year or 5-year integrated course) from an institution recognized by the Bar Council of India (BCI)",
+        "educationLevel": "Law (LL.B)",
+        "attempts": "Standard 4 to 6 attempts depending on state rules",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 3
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "Junior Division Judicial Cadre (Shetty Commission)",
+        "payScale": "₹77,840 - ₹1,36,520 (Basic Pay)",
+        "inHandEstimate": "₹95,000 - ₹1,20,000 / month + Judiciary Bungalow & Security",
+        "perks": [
+          "Judicial Bungalow",
+          "Court Armed Security Guard",
+          "Chauffeur Driven Vehicle",
+          "Sumptuary & Electricity Allowances"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "Preliminary Examination",
+          "type": "MCQ on Substantive & Procedural Law + General Knowledge",
+          "marks": "150 - 200 Marks (Screening)",
+          "negativeMarking": "0.33 deduction"
+        },
+        {
+          "stage": "Mains Examination",
+          "type": "Subjective Descriptive (Civil Law 1, Civil Law 2, Criminal Law, English & Hindi Translation)",
+          "marks": "800 - 1000 Marks",
+          "negativeMarking": "None"
+        },
+        {
+          "stage": "Viva-Voce (Interview)",
+          "type": "Interview before High Court Judges Panel",
+          "marks": "100 - 150 Marks",
+          "negativeMarking": "None"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "Criminal Law (BNS, BNSS, BSA / IPC, CrPC, Evidence)",
+          "weightage": "30% of Total Law Evaluation",
+          "keyTopics": [
+            "Bharatiya Nyaya Sanhita (BNS) - Offences against body & property",
+            "Bharatiya Nagarik Suraksha Sanhita (BNSS) - Bail, FIR, Trial procedures",
+            "Bharatiya Sakshya Adhiniyam (BSA) - Relevance, Admissions, Confessions"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Criminal Law & Procedure Bare Acts with Commentary",
+              "author": "Universal / LexisNexis",
+              "type": "Bare Act Mastery"
+            },
+            {
+              "title": "The Law of Evidence",
+              "author": "Batuk Lal / Ratanlal & Dhirajlal",
+              "type": "Standard Treatise"
+            }
+          ],
+          "prepStrategy": "Memorize Bare Act section numbers, exceptions, and landmark High Court / Supreme Court precedents."
+        }
+      ],
+      "syllabusHighlights": [
+        "Code of Civil Procedure (CPC) & Law of Contract",
+        "Criminal Laws (BNS, BNSS & Evidence)",
+        "Constitution of India, Transfer of Property & Torts",
+        "Local State Laws & Judgment Writing"
+      ],
+      "importantDates": {
+        "notificationDate": "2026-03-01",
+        "applicationDeadline": "2026-03-31",
+        "examDate": "2026-06-25"
+      },
+      "officialWebsite": "https://highcourt.gov.in",
+      "applyLink": "https://highcourt.gov.in",
+      "updates": [],
+      "tags": [
+        "Judiciary",
+        "Judge Post",
+        "Courtroom Power",
+        "Gazetted Judicial Officer"
+      ],
+      "createdAt": "2026-09-12 23:31:29",
+      "updatedAt": "2026-09-12 23:31:29"
+    },
+    {
+      "title": "National Defence Academy & Naval Academy Examination (NDA)",
+      "shortName": "UPSC NDA (10+2)",
+      "conductingBody": "Union Public Service Commission (UPSC)",
+      "category": "Defense",
+      "stream": "Science (PCM) / 12th Pass",
+      "featured": true,
+      "status": "Active",
+      "vacancies": 404,
+      "posts": [
+        "Army Wing Cadet",
+        "Air Force Wing Cadet",
+        "Naval Academy Cadet (10+2 Cadet Entry)"
+      ],
+      "eligibility": {
+        "minAge": 16.5,
+        "maxAge": 19.5,
+        "education": "12th Class Pass of 10+2 pattern (Army Wing) OR 12th Class pass with Physics, Chemistry and Maths (Air Force and Navy)",
+        "educationLevel": "12th",
+        "attempts": "No limit till age ceiling (16.5 - 19.5 years)",
+        "ageRelaxation": []
+      },
+      "salary": {
+        "payLevel": "Level 10 (Lieutenant / Flying Officer / Sub-Lt)",
+        "payScale": "₹56,100 - ₹1,77,500",
+        "inHandEstimate": "₹85,000 / month + Military Service Pay (MSP ₹15,500) + Free Ration & Accommodation",
+        "perks": [
+          "Defence Officers Mess Accommodation",
+          "Free Military Medical (Command Hospitals)",
+          "Subsidized CSD Canteen",
+          "Lifelong Prestige"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "Stage 1: Written Examination",
+          "type": "OMR Objective (Maths 300 + GAT 600)",
+          "marks": "900 Marks",
+          "negativeMarking": "1/3rd deduction"
+        },
+        {
+          "stage": "Stage 2: SSB 5-Day Interview",
+          "type": "Psychological Tests, Group Tasks (GTO) & Personal Interview",
+          "marks": "900 Marks",
+          "negativeMarking": "None"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "Mathematics (Class 11 & 12)",
+          "weightage": "300 Marks (120 Questions)",
+          "keyTopics": [
+            "Trigonometry & Heights/Distances",
+            "Differential Calculus & Integration",
+            "Matrices & Determinants",
+            "Coordinate Geometry & 3D",
+            "Probability & Statistics"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Mathematics for NDA & NA",
+              "author": "Dr. R.S. Aggarwal",
+              "type": "Core Bible"
+            },
+            {
+              "title": "NCERT Mathematics Class 11 & 12",
+              "author": "NCERT",
+              "type": "Foundation"
+            }
+          ],
+          "prepStrategy": "Master calculus, trigonometry, and vectors. Solve 10 years NDA previous year papers."
+        },
+        {
+          "subjectName": "General Ability Test (GAT)",
+          "weightage": "600 Marks (English 200 + General Knowledge 400)",
+          "keyTopics": [
+            "English Grammar & Vocabulary",
+            "Physics & Chemistry (10th/12th level)",
+            "Indian History & Geography",
+            "Current Affairs & Defence Updates"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Pathfinder for NDA & NA",
+              "author": "Arihant Experts",
+              "type": "All-in-One Manual"
+            },
+            {
+              "title": "Word Power Made Easy",
+              "author": "Norman Lewis",
+              "type": "English Vocabulary"
+            }
+          ],
+          "prepStrategy": "Focus on basic NCERT science fundamentals and daily newspaper headlines."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-04-12",
+          "event": "NDA I Written Examination Conducted nationwide",
+          "status": "Upcoming"
+        }
+      ],
+      "createdAt": "2026-09-12 23:31:29",
+      "updatedAt": "2026-09-12 23:31:29"
+    },
+    {
+      "title": "SSC Combined Higher Secondary Level Examination (CHSL 10+2)",
+      "shortName": "SSC CHSL (10+2)",
+      "conductingBody": "Staff Selection Commission (SSC)",
+      "category": "SSC",
+      "stream": "Any Stream (Arts / Commerce / Science)",
+      "featured": true,
+      "status": "Active",
+      "vacancies": 4500,
+      "posts": [
+        "Lower Division Clerk (LDC)",
+        "Junior Secretariat Assistant (JSA)",
+        "Data Entry Operator (DEO)"
+      ],
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 27,
+        "education": "Must have passed 12th Standard or equivalent examination from a recognized Board or University",
+        "educationLevel": "12th",
+        "attempts": "No limit till age ceiling",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 3
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          },
+          {
+            "category": "PwD",
+            "relaxationYears": 10
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "Level 2 (₹19,900 - ₹63,200) to Level 4 (₹25,500 - ₹81,100)",
+        "payScale": "₹19,900 - ₹81,100 (7th CPC)",
+        "inHandEstimate": "₹36,000 - ₹44,000 / month in Metro Cities (X Category)",
+        "perks": [
+          "Central Govt Medical Card (CGHS)",
+          "House Rent Allowance (HRA 30%)",
+          "DA + Transport Allowance"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "Tier 1: Computer Based Examination",
+          "type": "CBT MCQ (100 Questions)",
+          "marks": "200 Marks (Q.A, English, Reasoning, G.A)",
+          "negativeMarking": "0.50 marks per wrong answer"
+        },
+        {
+          "stage": "Tier 2: Mathematical + English + Typing Test",
+          "type": "CBT Objective + Data Entry Skill Test",
+          "marks": "360 Marks + Typing Qualifying",
+          "negativeMarking": "1 mark deduction"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "Quantitative Aptitude (Arithmetic & Advanced)",
+          "weightage": "25% in Tier 1 & Sectional in Tier 2",
+          "keyTopics": [
+            "Percentage, Profit & Loss, Ratio",
+            "Time & Work, Speed & Distance",
+            "Algebra & Geometry Theorems",
+            "Trigonometry & Mensuration 2D/3D"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Quantitative Aptitude for Competitive Examinations",
+              "author": "Dr. R.S. Aggarwal",
+              "type": "Foundational Practice"
+            },
+            {
+              "title": "Fast Track Objective Arithmetic",
+              "author": "Rajesh Verma",
+              "type": "Shortcuts Manual"
+            }
+          ],
+          "prepStrategy": "Practice 30 arithmetic calculations daily. Learn cube roots, squares up to 50, and tables up to 30."
+        },
+        {
+          "subjectName": "English Language & Comprehension",
+          "weightage": "25% in Tier 1 & 135 Marks in Tier 2",
+          "keyTopics": [
+            "Spotting the Error & Fill in Blanks",
+            "Synonyms, Antonyms & Spelling Rules",
+            "Idioms & Phrases, One Word Substitution",
+            "Cloze Test & Reading Passages"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Objective General English",
+              "author": "S.P. Bakshi",
+              "type": "Grammar Rules Bible"
+            },
+            {
+              "title": "English for General Competitions",
+              "author": "Neetu Singh (KD Campus)",
+              "type": "Hindi-English Bilingual"
+            }
+          ],
+          "prepStrategy": "Memorize 20 new vocabulary words and 10 idioms daily."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-05-15",
+          "event": "Tier 1 Computer Based Exam Schedule",
+          "status": "Upcoming"
+        }
+      ],
+      "createdAt": "2026-09-12 23:31:29",
+      "updatedAt": "2026-09-12 23:31:29"
+    },
+    {
+      "title": "SSC Multi-Tasking (Non-Technical) Staff & Havaldar Examination",
+      "shortName": "SSC MTS (10th Pass)",
+      "conductingBody": "Staff Selection Commission (SSC)",
+      "category": "SSC",
+      "stream": "Any Stream (Matriculation)",
+      "featured": true,
+      "status": "Active",
+      "vacancies": 8326,
+      "posts": [
+        "Multi-Tasking Staff (MTS)",
+        "Havaldar in CBIC & CBN (Customs & Narcotics)"
+      ],
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 27,
+        "education": "Must have passed Matriculation (10th Class) Examination from a recognized Board",
+        "educationLevel": "10th",
+        "attempts": "No limit till age ceiling",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 3
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          },
+          {
+            "category": "PwD",
+            "relaxationYears": 10
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "Level 1 (7th CPC Matrix)",
+        "payScale": "₹18,000 - ₹56,900 (Grade Pay ₹1,800)",
+        "inHandEstimate": "₹29,000 - ₹34,000 / month in X Cities",
+        "perks": [
+          "Stable Central Government Employment",
+          "CGHS Medical Care",
+          "Paid Leave & Pension Fund"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "Session 1: Numerical & Reasoning",
+          "type": "Computer Based MCQ (Qualifying, No Negative Marking)",
+          "marks": "120 Marks",
+          "negativeMarking": "None"
+        },
+        {
+          "stage": "Session 2: General Awareness & English",
+          "type": "Computer Based MCQ (Decides Final Merit List)",
+          "marks": "150 Marks (50 Questions)",
+          "negativeMarking": "1 mark deduction per mistake"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "General Awareness & Static GK",
+          "weightage": "50% of Merit Rank (75 Marks)",
+          "keyTopics": [
+            "Indian Geography, Rivers & National Parks",
+            "Constitution of India, Fundamental Rights",
+            "Indian History & Freedom Struggle",
+            "Sports, Awards & Scientific Inventions"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Lucent General Knowledge",
+              "author": "Lucent Publication",
+              "type": "Must-Read Bible"
+            },
+            {
+              "title": "Speedy Samanya Gyan",
+              "author": "Speedy Publication",
+              "type": "Railway & SSC Static"
+            }
+          ],
+          "prepStrategy": "Read Lucent GK 30 minutes every morning. Revise static facts and awards."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-20",
+          "event": "Session 1 & 2 Computer Based Exam",
+          "status": "Upcoming"
+        }
+      ],
+      "createdAt": "2026-09-12 23:31:29",
+      "updatedAt": "2026-09-12 23:31:29"
+    },
+    {
+      "title": "RRC Railway Group D Level-1 Recruitment",
+      "shortName": "RRC Group D (10th/ITI)",
+      "conductingBody": "Railway Recruitment Cell (RRC / Indian Railways)",
+      "category": "Railways",
+      "stream": "Vocational / ITI Trades",
+      "featured": true,
+      "status": "Upcoming",
+      "vacancies": 32450,
+      "posts": [
+        "Track Maintainer Grade IV",
+        "Assistant Pointsman",
+        "Helper / Workshop Maintainer"
+      ],
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 33,
+        "education": "10th Pass (Matriculation) from recognized Board OR National Apprenticeship Certificate (NAC) granted by NCVT / ITI",
+        "educationLevel": "10th",
+        "attempts": "No limit till age ceiling",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 3
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          },
+          {
+            "category": "PwD",
+            "relaxationYears": 10
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "Level 1 (7th CPC)",
+        "payScale": "₹18,000 - ₹56,900",
+        "inHandEstimate": "₹26,000 - ₹32,000 / month + Railway Travel Pass for Family",
+        "perks": [
+          "Complimentary Free Railway Passes",
+          "Railway Hospital Card",
+          "Night Duty Allowance"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "Stage 1: Computer Based Test (CBT)",
+          "type": "100 Questions (Science 25, Maths 25, Reasoning 30, GA 20)",
+          "marks": "100 Marks",
+          "negativeMarking": "1/3rd mark deduction"
+        },
+        {
+          "stage": "Stage 2: Physical Efficiency Test (PET)",
+          "type": "Qualifying (Run 1000m in 4 min 15 sec + Lift 35kg weight)",
+          "marks": "Qualifying",
+          "negativeMarking": "None"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "General Science (Physics, Chemistry, Life Sciences)",
+          "weightage": "25% of Exam (25 Questions)",
+          "keyTopics": [
+            "Motion, Force & Work/Energy",
+            "Chemical Reactions & Acids/Bases",
+            "Human Anatomy, Cell Biology & Diseases",
+            "Electricity & Magnetism"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Railway Samanya Vigyan (General Science)",
+              "author": "Speedy Publication",
+              "type": "Top PYQ Book"
+            },
+            {
+              "title": "NCERT Science Class 9 & 10",
+              "author": "NCERT",
+              "type": "Core Foundation"
+            }
+          ],
+          "prepStrategy": "Thoroughly solve all previous 5 years questions of RRB Group D science."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-10",
+          "event": "Notification & Application Window Announcement",
+          "status": "Upcoming"
+        }
+      ],
+      "createdAt": "2026-09-12 23:31:29",
+      "updatedAt": "2026-09-12 23:31:29"
+    },
+    {
+      "title": "IBPS / SBI Probationary Officer Examination (Banking PO)",
+      "shortName": "IBPS / SBI PO",
+      "conductingBody": "Institute of Banking Personnel Selection & State Bank of India",
+      "category": "Banking",
+      "stream": "Commerce & Finance",
+      "featured": true,
+      "status": "Active",
+      "vacancies": 6450,
+      "posts": [
+        "Probationary Officer (PO)",
+        "Management Trainee (Junior Management Grade Scale I)"
+      ],
+      "eligibility": {
+        "minAge": 20,
+        "maxAge": 30,
+        "education": "A Degree (Graduation) in any discipline from a recognized University. Ideal for Commerce, Economics, Banking, and all graduates.",
+        "educationLevel": "Graduate",
+        "attempts": "General: 4 attempts for SBI | Unlimited for IBPS",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 3
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          },
+          {
+            "category": "PwD",
+            "relaxationYears": 10
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "Scale I Officer (JMGS-I)",
+        "payScale": "₹48,480 - ₹85,920 (12th Bipartite Settlement)",
+        "inHandEstimate": "₹62,000 - ₹72,000 / month + Bank Leased Quarters (₹25,000 - ₹35,000/mo) + Petrol Allowance",
+        "perks": [
+          "Bank Leased Official Apartment",
+          "50-60 Litres Free Petrol per month",
+          "Newspaper & Furniture Allowance",
+          "Concessional Home Loan at 4-5%"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "Phase 1: Preliminary Exam",
+          "type": "Objective Online Test (English 30, Quant 35, Reasoning 35)",
+          "marks": "100 Marks (60 Minutes with Sectional Timers)",
+          "negativeMarking": "0.25 marks deduction"
+        },
+        {
+          "stage": "Phase 2: Main Examination + Descriptive",
+          "type": "Objective 200 Marks + Essay/Letter 25 Marks",
+          "marks": "225 Marks (3.5 Hours)",
+          "negativeMarking": "0.25 marks deduction"
+        },
+        {
+          "stage": "Phase 3: Group Exercise & Personal Interview",
+          "type": "Panel Interview with Senior Bankers",
+          "marks": "50 Marks",
+          "negativeMarking": "None"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "Data Analysis & Interpretation (Quant)",
+          "weightage": "35 Marks Prelims + 60 Marks Mains",
+          "keyTopics": [
+            "Caselet DI & Radar Charts",
+            "Missing Data Interpretation & Probability",
+            "Arithmetic DI (Time/Work, Pipes, Profit)",
+            "Quadratic Inequalities & Number Series"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Quantum CAT",
+              "author": "Sarvesh K. Verma",
+              "type": "Advanced DI Reference"
+            },
+            {
+              "title": "Quantitative Aptitude for Banking Examinations",
+              "author": "Adda247 Experts",
+              "type": "Banking Special"
+            }
+          ],
+          "prepStrategy": "Solve at least 4 complex Data Interpretation sets daily with timer."
+        },
+        {
+          "subjectName": "Banking Awareness & Financial Current Affairs",
+          "weightage": "40-50 Marks in Mains Exam",
+          "keyTopics": [
+            "RBI Monetary Policy, Repo Rate & CRR/SLR",
+            "NPA Management, IBC Code & Basel III Norms",
+            "Financial Inclusion, PMJDY, UPI & Digital Rupee",
+            "Budget & Economic Survey Highlights"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Banking Awareness",
+              "author": "Arihant Experts",
+              "type": "Concepts Guide"
+            },
+            {
+              "title": "AffairsCloud Daily Current Affairs",
+              "author": "AffairsCloud",
+              "type": "Monthly Banking Capsule"
+            }
+          ],
+          "prepStrategy": "Read financial express / economic times and revise last 6 months banking news capsules."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-15",
+          "event": "Preliminary Online Examination",
+          "status": "Upcoming"
+        }
+      ],
+      "createdAt": "2026-09-12 23:31:29",
+      "updatedAt": "2026-09-12 23:31:29"
+    },
+    {
+      "title": "SEBI Grade A Assistant Manager Recruitment (Finance, Legal & IT)",
+      "shortName": "SEBI Grade A (Finance/Law)",
+      "conductingBody": "Securities and Exchange Board of India (SEBI)",
+      "category": "Banking",
+      "stream": "Commerce & Finance",
+      "featured": true,
+      "status": "Active",
+      "vacancies": 152,
+      "posts": [
+        "Assistant Manager (General Stream)",
+        "Assistant Manager (Legal)",
+        "Assistant Manager (Information Technology)"
+      ],
+      "eligibility": {
+        "minAge": 21,
+        "maxAge": 30,
+        "education": "Master's Degree in Commerce / Economics / MBA Finance OR Bachelor's Degree in Law (LL.B) OR Bachelor's in Engineering OR CA / CFA / CS",
+        "educationLevel": "Graduate",
+        "attempts": "No limit till age ceiling",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 3
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          },
+          {
+            "category": "PwD",
+            "relaxationYears": 10
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "Grade A Officer",
+        "payScale": "₹44,500 - ₹89,150 (Gross ₹1,49,000/month without accommodation)",
+        "inHandEstimate": "₹1,15,000 - ₹1,35,000 / month + SEBI Officers Colony Bandra Kurla Complex (BKC Mumbai)",
+        "perks": [
+          "Accomodation in prime Mumbai (BKC / Prabhadevi)",
+          "Medical Expenses 100% reimbursed",
+          "Book Grant & Laptop Allowance",
+          "Subsidized Education for children"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "Phase 1: Online Examination",
+          "type": "Paper 1 (GA, Quant, Reasoning, English) + Paper 2 (Commerce, Accounts, Finance, Mgmt)",
+          "marks": "200 Marks (Cut-off Qualifying)",
+          "negativeMarking": "0.25 marks deduction"
+        },
+        {
+          "stage": "Phase 2: Online Exam + Descriptive",
+          "type": "Paper 1 English Descriptive (100) + Paper 2 Core Finance/Law (100)",
+          "marks": "200 Marks (Determines Shortlist)",
+          "negativeMarking": "0.25 marks deduction"
+        },
+        {
+          "stage": "Phase 3: Interview",
+          "type": "In-person Board Interview at SEBI Bhavan, Mumbai",
+          "marks": "15% weightage",
+          "negativeMarking": "None"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "Commerce, Accountancy & Financial Management",
+          "weightage": "50% in Phase 1 & Phase 2",
+          "keyTopics": [
+            "Accounting Standards, Cash Flow & Balance Sheet",
+            "Financial Markets: Primary & Secondary Markets, SEBI Act",
+            "Corporate Governance & Companies Act 2013",
+            "Costing: Marginal Costing, Standard Costing & Budgetary Control"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Financial Management",
+              "author": "Prasanna Chandra",
+              "type": "Standard Reference"
+            },
+            {
+              "title": "Indian Financial System",
+              "author": "M.Y. Khan",
+              "type": "Financial Markets Guide"
+            }
+          ],
+          "prepStrategy": "Understand SEBI regulations, derivatives, IPO norms, and corporate valuation principles."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-25",
+          "event": "Phase 1 Online Examination Schedule",
+          "status": "Upcoming"
+        }
+      ],
+      "createdAt": "2026-09-12 23:31:29",
+      "updatedAt": "2026-09-12 23:31:29"
+    },
+    {
+      "title": "Central Teacher Eligibility Test (CTET / Central Schools)",
+      "shortName": "CTET (B.Ed / D.El.Ed)",
+      "conductingBody": "Central Board of Secondary Education (CBSE / NCTE)",
+      "category": "Teaching",
+      "stream": "Arts & Humanities",
+      "featured": true,
+      "status": "Active",
+      "vacancies": 25000,
+      "posts": [
+        "Primary Teacher (PRT - Class 1 to 5)",
+        "Trained Graduate Teacher (TGT - Class 6 to 8)",
+        "KVS / NVS / DSSSB Teacher Eligibility"
+      ],
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 45,
+        "education": "Senior Secondary (12th) with 50% + 2-Year D.El.Ed (Paper I) OR Graduation with 50% + B.Ed (Bachelor of Education) for Paper II",
+        "educationLevel": "12th",
+        "attempts": "No limit (Certificate Valid for Lifetime)",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 3
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          },
+          {
+            "category": "PwD",
+            "relaxationYears": 10
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "PRT (Level 6: ₹35,400) | TGT (Level 7: ₹44,900) | PGT (Level 8: ₹47,600)",
+        "payScale": "₹35,400 - ₹1,51,100 (7th CPC)",
+        "inHandEstimate": "₹48,000 - ₹68,000 / month in Central Kendriya Vidyalaya (KVS) & Navodaya (NVS)",
+        "perks": [
+          "Campus Staff Quarters in School",
+          "Summer Vacation 50 Days Paid Leave",
+          "Subsidized Education for 2 children"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "Paper I: Primary Teacher (Class 1-5)",
+          "type": "Child Development, Language I & II, Maths, Environmental Studies",
+          "marks": "150 Marks (90 to Qualify for Gen, 82 for Reserved)",
+          "negativeMarking": "None"
+        },
+        {
+          "stage": "Paper II: Elementary (Class 6-8)",
+          "type": "Child Development, Language I & II, Mathematics & Science OR Social Studies",
+          "marks": "150 Marks (No Negative Marking)",
+          "negativeMarking": "None"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "Child Development & Pedagogy (CDP)",
+          "weightage": "30 Questions (30 Marks) in both papers",
+          "keyTopics": [
+            "Piaget, Kohlberg & Vygotsky Theories",
+            "Concept of Inclusive Education & Children with Special Needs",
+            "Learning & Motivation, Constructivist Paradigm",
+            "Evaluation & Continuous Assessment (CCE)"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Child Development and Pedagogy",
+              "author": "Himanshi Singh (Let's LEARN)",
+              "type": "Top Popular Guide"
+            },
+            {
+              "title": "CTET & TETs Child Development and Pedagogy",
+              "author": "Arihant Experts",
+              "type": "PYQ Practice"
+            }
+          ],
+          "prepStrategy": "Understand child psychology concepts rather than rote learning. Solve last 8 CTET papers."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-07-05",
+          "event": "CTET National Examination",
+          "status": "Upcoming"
+        }
+      ],
+      "createdAt": "2026-09-12 23:31:29",
+      "updatedAt": "2026-09-12 23:31:29"
+    },
+    {
+      "title": "State Combined Civil Services Examination (State PCS / SDM / DSP)",
+      "shortName": "State PSC (PCS)",
+      "conductingBody": "State Public Service Commission (UPPSC / BPSC / MPPSC / RAS)",
+      "category": "State PSC",
+      "stream": "Arts & Humanities",
+      "featured": true,
+      "status": "Active",
+      "vacancies": 1120,
+      "posts": [
+        "Sub-Divisional Magistrate (SDM)",
+        "Deputy Superintendent of Police (DSP)",
+        "Assistant Commissioner Commercial Tax",
+        "Block Development Officer (BDO)"
+      ],
+      "eligibility": {
+        "minAge": 21,
+        "maxAge": 40,
+        "education": "Bachelor's Degree in any discipline from a recognized University in India",
+        "educationLevel": "Graduate",
+        "attempts": "No limit till age ceiling (40 years for Gen, 43 for OBC, 45 for SC/ST in UP/MP/Bihar)",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 3
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          },
+          {
+            "category": "PwD",
+            "relaxationYears": 15
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "Pay Level 10 (Pay Band ₹15,600 - ₹39,100 + Grade Pay ₹5,400)",
+        "payScale": "₹56,100 - ₹1,77,500 (7th CPC)",
+        "inHandEstimate": "₹72,000 - ₹82,000 / month + Official Sub-Divisional Bungalow + Armed Security Escort",
+        "perks": [
+          "Official Residence in Tehsil / Sub-Division",
+          "Government Vehicle with Driver",
+          "Armed Police Guard Escort",
+          "Direct Administrative Magistracy Powers"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "Stage 1: Preliminary Exam",
+          "type": "General Studies 1 (200 Marks) + CSAT Qualifying (33%)",
+          "marks": "400 Marks",
+          "negativeMarking": "1/3rd deduction"
+        },
+        {
+          "stage": "Stage 2: Mains Examination",
+          "type": "8 Descriptive Papers (General Hindi, Essay, GS Papers 1 to 6 including State Special)",
+          "marks": "1500 Marks",
+          "negativeMarking": "None"
+        },
+        {
+          "stage": "Stage 3: Personality Test",
+          "type": "Interview before State Commission Board",
+          "marks": "100 Marks",
+          "negativeMarking": "None"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "State Special History, Geography & Economy",
+          "weightage": "GS Papers 5 & 6 in Mains + 20-25 Questions in Prelims",
+          "keyTopics": [
+            "History, Culture & Tribal Heritage of the State",
+            "State Geography, Rivers, Agriculture & Soil Zones",
+            "State Budget, Economic Schemes & Welfare Policies",
+            "Panchayati Raj & State Administrative Structure"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "State Specific Comprehensive Manual (Drishti IAS State Special)",
+              "author": "Drishti IAS",
+              "type": "State Reference"
+            },
+            {
+              "title": "Ghatna Chakra State GS Pointer",
+              "author": "Samanya Adhyayan Chakra",
+              "type": "Previous Year Solved"
+            }
+          ],
+          "prepStrategy": "Dedicate 30% preparation time to state-specific geography, budget, census data, and local culture."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-06-14",
+          "event": "State PCS Prelims Examination",
+          "status": "Upcoming"
+        }
+      ],
+      "createdAt": "2026-09-12 23:31:29",
+      "updatedAt": "2026-09-12 23:31:29"
+    },
+    {
+      "title": "State Police Constable & Sub-Inspector Recruitment",
+      "shortName": "State Police (12th/Grad)",
+      "conductingBody": "State Police Recruitment & Promotion Board",
+      "category": "State PSC",
+      "stream": "Any Stream",
+      "featured": true,
+      "status": "Active",
+      "vacancies": 60244,
+      "posts": [
+        "Civil Police Constable",
+        "PAC Constable (Provincial Armed Constabulary)",
+        "Fireman & Sub-Inspector (SI)"
+      ],
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 25,
+        "education": "12th Class (10+2 Intermediate) pass from recognized Board (for Constable) OR Graduation in any stream (for Sub-Inspector)",
+        "educationLevel": "12th",
+        "attempts": "No limit till age ceiling",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 5
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          },
+          {
+            "category": "PwD",
+            "relaxationYears": 0
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "Level 3 (Constable: ₹21,700) | Level 6 (Sub-Inspector: ₹35,400)",
+        "payScale": "₹21,700 - ₹1,12,400",
+        "inHandEstimate": "₹34,000 - ₹38,000 / month (Constable) | ₹52,000 / month (SI) + Uniform Allowance",
+        "perks": [
+          "Government Police Housing",
+          "13-Month Salary Provision for Police Personnel",
+          "Free State Medical Care"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "Stage 1: Written OMR Exam",
+          "type": "150 Questions (General Knowledge, Hindi, Numerical & Mental Ability)",
+          "marks": "300 Marks (2 Hours)",
+          "negativeMarking": "0.50 marks per error"
+        },
+        {
+          "stage": "Stage 2: Physical Standard & Endurance Test",
+          "type": "Height 168 cm (Male) / 152 cm (Female) + Run 4.8 km in 25 minutes",
+          "marks": "Qualifying",
+          "negativeMarking": "None"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "Samanya Hindi (General Hindi)",
+          "weightage": "37 Questions (74 Marks)",
+          "keyTopics": [
+            "Varnamala, Sandhi, Samas",
+            "Paryayvachi, Vilom, Tatsam/Tadbhav",
+            "Ras, Chhand, Alankar",
+            "Prasiddha Kavi, Lekhak Evam Rachnayein"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Samanya Hindi",
+              "author": "Dr. Vasudev Nandan Prasad",
+              "type": "Grammar Bible"
+            },
+            {
+              "title": "Aditya Publication Samanya Hindi",
+              "author": "Aditya Experts",
+              "type": "Objective Practice"
+            }
+          ],
+          "prepStrategy": "Hindi is the highest scoring section in state police exams. Solve 50 grammar questions daily."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-08-20",
+          "event": "Physical Efficiency Test Schedule",
+          "status": "Upcoming"
+        }
+      ],
+      "createdAt": "2026-09-12 23:31:29",
+      "updatedAt": "2026-09-12 23:31:29"
+    },
+    {
+      "title": "ISRO Scientist / Engineer 'SC' (Computer Science & Information Technology)",
+      "shortName": "ISRO Scientist (CS/IT)",
+      "conductingBody": "Indian Space Research Organisation (ISRO Centralised Recruitment Board)",
+      "category": "Engineering/PSU",
+      "stream": "Engineering / Technology",
+      "featured": true,
+      "status": "Active",
+      "vacancies": 350,
+      "posts": [
+        "Scientist / Engineer 'SC' (Computer Science)",
+        "Satellite Software Development Engineer"
+      ],
+      "eligibility": {
+        "minAge": 21,
+        "maxAge": 30,
+        "education": "B.E / B.Tech or equivalent in Computer Science / Information Technology with First Class (minimum 65% marks or 6.84 CGPA)",
+        "educationLevel": "B.Tech",
+        "attempts": "No limit till age ceiling",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 3
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          },
+          {
+            "category": "PwD",
+            "relaxationYears": 10
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "Level 10 (Gazetted Scientific Post)",
+        "payScale": "₹56,100 - ₹1,77,500",
+        "inHandEstimate": "₹88,000 / month + ISRO Space Research Special Allowance + Housing in ISRO Space Colony",
+        "perks": [
+          "Residential Quarters in ISRO Space Center (Bangalore/Trivandrum/Sriharikota)",
+          "CHSS Space Health Scheme for family",
+          "Opportunity to work on Gaganyaan & Lunar Missions"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "Stage 1: Written Examination",
+          "type": "Part A Core Computer Science (80 Marks) + Part B Aptitude (20 Marks)",
+          "marks": "100 Marks",
+          "negativeMarking": "0.33 marks deduction"
+        },
+        {
+          "stage": "Stage 2: Technical Interview",
+          "type": "Pure Technical Viva with Senior Space Scientists",
+          "marks": "100 Marks (Must score 60% to Qualify)",
+          "negativeMarking": "None"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "Computer Science & Software Architecture",
+          "weightage": "80% of Written Exam + 100% of Technical Interview",
+          "keyTopics": [
+            "Algorithms, Data Structures & Complexity (Big-O)",
+            "Operating Systems, Deadlocks & Memory Virtualization",
+            "Database Systems, SQL & Normalization",
+            "Computer Networks: TCP/IP, Cryptography & Routing",
+            "Compiler Design & Theory of Computation"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Introduction to Algorithms",
+              "author": "Cormen, Leiserson, Rivest, Stein (CLRS)",
+              "type": "Algorithms Bible"
+            },
+            {
+              "title": "Operating System Concepts",
+              "author": "Silberschatz, Galvin, Gagne",
+              "type": "OS Master"
+            }
+          ],
+          "prepStrategy": "Solve GATE Computer Science previous year question papers from 2005 to 2025."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-20",
+          "event": "Written Examination in 12 Major Cities",
+          "status": "Upcoming"
+        }
+      ],
+      "createdAt": "2026-09-12 23:31:29",
+      "updatedAt": "2026-09-12 23:31:29"
+    },
+    {
+      "title": "UPSC Combined Defence Services Examination (CDS)",
+      "shortName": "UPSC CDS",
+      "conductingBody": "Union Public Service Commission (UPSC)",
+      "category": "Defense",
+      "stream": "Any Stream",
+      "featured": false,
+      "status": "Upcoming",
+      "vacancies": 459,
+      "posts": [
+        "Officer Cadets in Indian Military Academy (IMA)",
+        "Air Force Academy (AFA)",
+        "Indian Naval Academy (INA)",
+        "Officers Training Academy (OTA)"
+      ],
+      "eligibility": {
+        "minAge": 19,
+        "maxAge": 25,
+        "education": "Graduation in any discipline (B.Tech for Naval Academy / Degree with Physics & Maths for AFA)",
+        "educationLevel": "Graduate",
+        "attempts": "No limit within age ceiling",
+        "ageRelaxation": []
+      },
+      "salary": {
+        "payLevel": "Level 10 (₹56,100 - ₹1,77,500) + MSP ₹15,500",
+        "payScale": "₹56,100 - ₹1,77,500",
+        "inHandEstimate": "₹95,000 - ₹1,15,000 / month",
+        "perks": [
+          "Defence CSD Canteen",
+          "Free Military Medical",
+          "Officer Accommodations",
+          "Flying / Field Allowance"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "Written Examination",
+          "type": "IMA/INA/AFA: English (100), GK (100), Elementary Maths (100) | OTA: English + GK",
+          "marks": "300 Marks (200 for OTA)",
+          "negativeMarking": "1/3rd deduction"
+        },
+        {
+          "stage": "SSB Interview (5-Day)",
+          "type": "Officer Intelligence Rating, Psychological Tests, Group Obstacle Tasks, Interview",
+          "marks": "300 Marks (200 for OTA)",
+          "negativeMarking": "None"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "Elementary Mathematics & General Knowledge",
+          "weightage": "66% for IMA/INA/AFA",
+          "keyTopics": [
+            "Number Theory, Algebra, Trigonometry, Geometry, Mensuration",
+            "Defense Affairs, International Relations, Physical Geography, Indian Modern History"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Pathfinder for CDS Examination",
+              "author": "Arihant Publications",
+              "type": "Complete Comprehensive Guide"
+            },
+            {
+              "title": "Quantitative Aptitude for CDS",
+              "author": "R.S. Aggarwal",
+              "type": "Maths Practice"
+            }
+          ],
+          "prepStrategy": "Solve CDS mathematics papers with 1 minute per question pace. Keep updated on Indian military exercises."
+        }
+      ],
+      "syllabusHighlights": [
+        "Elementary Mathematics (Class 10 Level)",
+        "General Knowledge, Defense & Current Events",
+        "English Vocabulary, Grammar & Comprehension"
+      ],
+      "importantDates": {
+        "notificationDate": "2026-12-18",
+        "applicationDeadline": "2027-01-09",
+        "examDate": "2027-04-20"
+      },
+      "officialWebsite": "https://upsc.gov.in",
+      "applyLink": "https://upsconline.nic.in",
+      "updates": [],
+      "tags": [
+        "Armed Forces Graduate Entry",
+        "IMA Dehradun",
+        "Permanent Commission"
+      ],
+      "createdAt": "2026-09-12 23:31:29",
+      "updatedAt": "2026-09-12 23:31:29"
+    },
+    {
+      "title": "ESIC & Railway Pharmacist Allopathic Recruitment",
+      "shortName": "ESIC Pharmacist",
+      "conductingBody": "Employees' State Insurance Corporation & Railway Recruitment Board",
+      "category": "Medical",
+      "stream": "Medical & Nursing",
+      "featured": false,
+      "status": "Active",
+      "vacancies": 1250,
+      "posts": [
+        "Pharmacist (Allopathic)",
+        "Senior Pharmacist in Central ESIC Hospitals"
+      ],
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 32,
+        "education": "Degree in Pharmacy (B.Pharma) OR Diploma in Pharmacy (D.Pharma) from recognized institute + Registration as Pharmacist under Pharmacy Act 1948",
+        "educationLevel": "Diploma",
+        "attempts": "No limit till age ceiling",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 3
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          },
+          {
+            "category": "PwD",
+            "relaxationYears": 10
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "Level 5 (7th CPC)",
+        "payScale": "₹29,200 - ₹92,300",
+        "inHandEstimate": "₹43,000 - ₹48,000 / month in ESIC Model Hospitals",
+        "perks": [
+          "ESIC Central Medical Healthcare",
+          "HRA & Transport Allowance",
+          "Shift Duty & Dispensing Allowances"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "Single Stage Computer Based Test (CBT)",
+          "type": "Technical Pharmacy Subject (50 Qs / 100 Marks) + General Aptitude (50 Qs / 50 Marks)",
+          "marks": "150 Marks (120 Minutes)",
+          "negativeMarking": "0.25 marks deduction"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "Pharmacy Subject Domain",
+          "weightage": "100 Marks (67% of Merit)",
+          "keyTopics": [
+            "Pharmaceutics & Dosage Forms",
+            "Pharmacology & Toxicology: Drug Mechanisms",
+            "Pharmaceutical Chemistry & Quality Analysis",
+            "Pharmacognosy: Herbal Drugs & Plant Phytochemicals",
+            "Hospital & Clinical Pharmacy, Drug Interactions"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Comprehensive Pharmacy Review",
+              "author": "Leon Shargel",
+              "type": "International Reference"
+            },
+            {
+              "title": "Review of Pharmacy (GPAT / Pharmacist Exam)",
+              "author": "Piyush Tripathi / Inamdar",
+              "type": "Pharmacist Exam Special"
+            }
+          ],
+          "prepStrategy": "Master drug classifications, adverse effects, and hospital dispensing regulations."
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-05",
+          "event": "CBT Online Test Across India",
+          "status": "Upcoming"
+        }
+      ],
+      "createdAt": "2026-09-12 23:31:29",
+      "updatedAt": "2026-09-12 23:31:29"
+    },
+    {
+      "title": "UGC NET / JRF (University Grants Commission National Eligibility Test)",
+      "shortName": "UGC NET / JRF",
+      "conductingBody": "National Testing Agency (NTA) on behalf of UGC",
+      "category": "Teaching",
+      "stream": "Arts & Humanities",
+      "featured": true,
+      "status": "Active",
+      "vacancies": 35000,
+      "posts": [
+        "Junior Research Fellow (JRF)",
+        "Assistant Professor in Central & State Universities",
+        "Ph.D Scholar with Fellowship"
+      ],
+      "eligibility": {
+        "minAge": 21,
+        "maxAge": 30,
+        "education": "Master’s Degree or equivalent in Humanities, Social Sciences, Commerce, Computer Applications, Environmental Sciences with at least 55% marks (50% for SC/ST/OBC/PwD)",
+        "educationLevel": "Post Graduate",
+        "attempts": "Unlimited for Assistant Professor; JRF up to age ceiling (30 years)",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 5
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          },
+          {
+            "category": "Women / PwD",
+            "relaxationYears": 5
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "Level 10 (Academic Pay Scale) for Assistant Professor / ₹37,000 pm Fellowship for JRF",
+        "payScale": "₹57,700 - ₹1,82,400 (Assistant Professor UGC Pay Matrix)",
+        "inHandEstimate": "₹82,000 - ₹1,05,000 / month as Assistant Professor; JRF receives ₹37,000 + 27% HRA + Contingency",
+        "perks": [
+          "University Campus Accommodation",
+          "Conference & Research Travel Grants",
+          "Subsidized Medical",
+          "Summer & Winter Vacations"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "Paper 1: General Teaching & Research Aptitude",
+          "type": "CBT Objective (50 Questions)",
+          "marks": "100 Marks (Common to all 83 subjects)",
+          "negativeMarking": "No negative marking"
+        },
+        {
+          "stage": "Paper 2: Domain Discipline Subject",
+          "type": "CBT Objective (100 Questions)",
+          "marks": "200 Marks (Chosen post-graduate subject)",
+          "negativeMarking": "No negative marking"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "Paper 1: Teaching & Research Aptitude",
+          "weightage": "50 Questions (100 Marks) - 33.3% Total Weightage",
+          "keyTopics": [
+            "Teaching Methods, Learner Characteristics & Evaluation Systems",
+            "Research Ethics, Thesis Writing & Methods of Research",
+            "Reading Comprehension, Communication & Classroom Dynamics",
+            "Mathematical Reasoning & Data Interpretation (DI)",
+            "Information & Communication Technology (ICT) & Digital Initiatives",
+            "People, Development & Environment (SDGs, MDGs, Pollution)",
+            "Higher Education System in India & NEP 2020"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "NTA UGC NET/SET/JRF Paper 1: Teaching and Research Aptitude",
+              "author": "KVS Madaan (Pearson)",
+              "type": "Standard Primary Bible"
+            },
+            {
+              "title": "UGC NET Paper 1 Previous Years Solved Papers",
+              "author": "Arihant / Youth Competition Times",
+              "type": "PYQ Practice"
+            }
+          ],
+          "prepStrategy": "Solve 10 years of Paper 1 PYQs. Focus heavily on Higher Education statutory bodies, NEP 2020 recommendations, and ICT terminologies."
+        },
+        {
+          "subjectName": "Paper 2: Core Postgraduate Discipline (83 Subjects)",
+          "weightage": "100 Questions (200 Marks) - 66.7% Total Weightage",
+          "keyTopics": [
+            "Advanced Theories & Conceptual Frameworks of Subject",
+            "Historical Evolution of Schools of Thought",
+            "Applied Empirical Research & Case Studies",
+            "Indian & International Academic Perspectives"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Trueman’s UGC NET Core Subject Series",
+              "author": "Trueman Publishing",
+              "type": "Subject Specialized Guide"
+            },
+            {
+              "title": "Standard Postgraduate University Textbooks",
+              "author": "Standard Authors",
+              "type": "Conceptual Depth"
+            }
+          ],
+          "prepStrategy": "Revise postgraduate notes thoroughly. Master subject-specific terminology and landmark theoretical contributions."
+        }
+      ],
+      "importantDates": {
+        "notificationDate": "2026-03-20",
+        "applicationDeadline": "2026-04-25",
+        "examDate": "2026-06-15"
+      },
+      "syllabusHighlights": [
+        "Teaching & Research Aptitude",
+        "Higher Education System & NEP 2020",
+        "Core Master’s Subject Mastery",
+        "ICT & Environmental Governance",
+        "Data Interpretation"
+      ]
+    },
+    {
+      "title": "CSIR UGC NET / JRF (Council of Scientific & Industrial Research)",
+      "shortName": "CSIR NET",
+      "conductingBody": "National Testing Agency (NTA) & CSIR HRDG",
+      "category": "Teaching",
+      "stream": "Science (Life Sciences / Chemical / Physical / Mathematical)",
+      "featured": true,
+      "status": "Active",
+      "vacancies": 12000,
+      "posts": [
+        "CSIR Junior Research Fellow (JRF)",
+        "Scientist 'B' at CSIR Laboratories",
+        "Lecturer / Assistant Professor in Science Faculties"
+      ],
+      "eligibility": {
+        "minAge": 21,
+        "maxAge": 28,
+        "education": "M.Sc or equivalent degree / Integrated BS-MS / BS 4 Years / B.E. / B.Tech / B.Pharma / MBBS with minimum 55% marks (50% for SC/ST/PwD)",
+        "educationLevel": "Post Graduate",
+        "attempts": "Unlimited for Lectureship; JRF up to 28 years (relaxations apply)",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 3
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          },
+          {
+            "category": "Women / PwD",
+            "relaxationYears": 5
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "Level 10 (7th CPC) for Assistant Professor / ₹37,000 pm Fellowship for JRF",
+        "payScale": "₹57,700 - ₹1,82,400 (UGC Academic Scale)",
+        "inHandEstimate": "JRF: ₹37,000 + 27% HRA (₹46,990 / month) + ₹20,000 Annual Contingency grant",
+        "perks": [
+          "State-of-the-art CSIR Lab Access",
+          "Direct Route to Ph.D in IISc / IITs / CSIR Institutes",
+          "International Travel Support"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "Part A: General Science, Quantitative & Reasoning",
+          "type": "CBT Objective (20 Questions - Attempt 15)",
+          "marks": "30 Marks",
+          "negativeMarking": "0.5 mark deduction per wrong answer"
+        },
+        {
+          "stage": "Part B: Core Scientific Knowledge",
+          "type": "CBT Objective (40-50 Questions)",
+          "marks": "70 Marks",
+          "negativeMarking": "0.5 mark deduction per wrong answer"
+        },
+        {
+          "stage": "Part C: Higher Scientific Analytical Aptitude",
+          "type": "CBT Analytical Questions",
+          "marks": "100 Marks (High negative marking)",
+          "negativeMarking": "1 to 1.32 marks deduction"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "Chemical / Life / Physical / Mathematical Sciences",
+          "weightage": "170 Marks out of 200 Marks Total",
+          "keyTopics": [
+            "Molecules and their Interaction Relevant to Biology (Life Sciences)",
+            "Organic Reaction Mechanisms & Quantum Chemistry (Chemical Sciences)",
+            "Quantum Mechanics & Classical Electrodynamics (Physical Sciences)",
+            "Linear Algebra, Real Analysis & Topology (Mathematical Sciences)"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Lehninger Principles of Biochemistry",
+              "author": "David L. Nelson",
+              "type": "Life Sciences Bible"
+            },
+            {
+              "title": "Organic Chemistry",
+              "author": "Clayden, Greeves & Warren",
+              "type": "Chemical Sciences Bible"
+            },
+            {
+              "title": "Introduction to Quantum Mechanics",
+              "author": "David J. Griffiths",
+              "type": "Physical Sciences Core"
+            }
+          ],
+          "prepStrategy": "Focus intensely on Part C questions which test deep conceptual deductions. Practice previous 10 CSIR question papers."
+        }
+      ],
+      "importantDates": {
+        "notificationDate": "2026-03-10",
+        "applicationDeadline": "2026-04-15",
+        "examDate": "2026-06-28"
+      },
+      "syllabusHighlights": [
+        "Advanced Quantum & Molecular Chemistry",
+        "Cellular Organization & Genetics",
+        "Mathematical Models & Topology",
+        "Classical & Condensed Matter Physics",
+        "Experimental Design"
+      ]
+    },
+    {
+      "title": "UPSC Central Armed Police Forces Assistant Commandant (CAPF AC)",
+      "shortName": "UPSC CAPF",
+      "conductingBody": "Union Public Service Commission (UPSC)",
+      "category": "Defense",
+      "stream": "Any Stream",
+      "featured": true,
+      "status": "Active",
+      "vacancies": 506,
+      "posts": [
+        "Assistant Commandant (BSF - Border Security Force)",
+        "Assistant Commandant (CRPF - Central Reserve Police Force)",
+        "Assistant Commandant (CISF - Central Industrial Security Force)",
+        "Assistant Commandant (ITBP - Indo-Tibetan Border Police)",
+        "Assistant Commandant (SSB - Sashastra Seema Bal)"
+      ],
+      "eligibility": {
+        "minAge": 20,
+        "maxAge": 25,
+        "education": "Bachelor’s Degree in any discipline from a recognized University",
+        "educationLevel": "Graduate",
+        "attempts": "Unlimited up to upper age limit (25 years)",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 3
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "Level 10 (7th CPC Group A Gazetted Combat Officer)",
+        "payScale": "₹56,100 - ₹1,77,500",
+        "inHandEstimate": "₹85,000 - ₹1,15,000 / month + Risk & Hardship Allowances up to ₹25,000 in operational areas",
+        "perks": [
+          "Official Vehicle & Armed Orderlies",
+          "CSD Armed Forces Canteen",
+          "Subsidized Family Accommodation in Cantonments",
+          "Field Ration Allowances"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "Written Exam Paper 1: General Ability & Intelligence",
+          "type": "Objective MCQ (125 Questions)",
+          "marks": "250 Marks",
+          "negativeMarking": "1/3rd mark deduction"
+        },
+        {
+          "stage": "Written Exam Paper 2: General Studies, Essay & Comprehension",
+          "type": "Descriptive Conventional Paper",
+          "marks": "200 Marks",
+          "negativeMarking": "None"
+        },
+        {
+          "stage": "Physical Standards & Physical Efficiency Test (PET)",
+          "type": "100m Race (16s/18s), 800m Race (3m45s/4m45s), Long Jump, Shot Put",
+          "marks": "Qualifying Mandatory",
+          "negativeMarking": "None"
+        },
+        {
+          "stage": "Interview / Personality Test",
+          "type": "In-person Board Interview at Dholpur House, New Delhi",
+          "marks": "150 Marks",
+          "negativeMarking": "None"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "Paper 1: General Ability, Intelligence & Indian Security",
+          "weightage": "250 Marks (Decides Tier-2 evaluation cutoff)",
+          "keyTopics": [
+            "General Science & Everyday Technology",
+            "Current Events of National & International Importance",
+            "Indian Polity & Homeland Security Framework",
+            "Indian History & Geography with Strategic Borders",
+            "Quantitative Aptitude, Logical & Data Interpretation"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "CAPF Assistant Commandant Guide",
+              "author": "Arihant / Disha",
+              "type": "Complete Guide"
+            },
+            {
+              "title": "Indian Polity",
+              "author": "M. Laxmikanth",
+              "type": "Core Polity"
+            },
+            {
+              "title": "India’s Internal Security: Challenges and Solutions",
+              "author": "Bipin Rawat / Ashok Kumar IPS",
+              "type": "Internal Security"
+            }
+          ],
+          "prepStrategy": "Balance GS with daily physical fitness training. Practice time management for Paper-1 and write 2 descriptive essays weekly for Paper-2."
+        }
+      ],
+      "importantDates": {
+        "notificationDate": "2026-04-22",
+        "applicationDeadline": "2026-05-12",
+        "examDate": "2026-08-02"
+      },
+      "syllabusHighlights": [
+        "National Security & Border Management",
+        "Indian Polity & Human Rights",
+        "Physical Endurance (PET 100m/800m)",
+        "Descriptive Strategic Essay Writing",
+        "Mental Ability & Quantitative Aptitude"
+      ]
+    },
+    {
+      "title": "Intelligence Bureau Assistant Central Intelligence Officer (IB ACIO-II/Exe)",
+      "shortName": "IB ACIO",
+      "conductingBody": "Intelligence Bureau (Ministry of Home Affairs - MHA)",
+      "category": "Defense",
+      "stream": "Any Stream",
+      "featured": true,
+      "status": "Active",
+      "vacancies": 995,
+      "posts": [
+        "Assistant Central Intelligence Officer Grade-II / Executive (IB)",
+        "Field Intelligence Operative",
+        "Counter-Terrorism & Cyber Intelligence Analyst"
+      ],
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 27,
+        "education": "Graduation from a recognized University in any discipline + Basic Computer knowledge",
+        "educationLevel": "Graduate",
+        "attempts": "Unlimited up to age limit",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 3
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "Level 7 (7th CPC)",
+        "payScale": "₹44,900 - ₹1,42,400",
+        "inHandEstimate": "₹72,000 - ₹84,000 / month + 20% Special Security Allowance (SSA) over basic pay",
+        "perks": [
+          "20% Special Security Allowance (Extra ₹9,000 - ₹15,000 pm)",
+          "Cash Compensation for Duty on Holidays (30 days extra pay)",
+          "Central Government Health Scheme (CGHS)"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "Tier 1: Written Examination",
+          "type": "Objective CBT (100 Questions: Current Affairs, General Studies, Numerical, Reasoning, English)",
+          "marks": "100 Marks (1 Hour)",
+          "negativeMarking": "1/4th mark deduction"
+        },
+        {
+          "stage": "Tier 2: Descriptive Paper",
+          "type": "Essay (30 Marks) & English Comprehension / Précis (20 Marks)",
+          "marks": "50 Marks",
+          "negativeMarking": "None"
+        },
+        {
+          "stage": "Tier 3: Psychometric Assessment & Personal Interview",
+          "type": "Psychological Profiling & Interview Board",
+          "marks": "100 Marks",
+          "negativeMarking": "None"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "Current Affairs, Geopolitics & Internal Security",
+          "weightage": "40 Questions in Tier 1 + 30 Marks Essay in Tier 2",
+          "keyTopics": [
+            "National Security, Cross-Border Espionage & Cyber Warfare",
+            "Bilateral Relations with Neighboring Countries (China, Pakistan, Myanmar)",
+            "Internal Insurgency, Left Wing Extremism & Coastal Security",
+            "Major Government Policies, Defense Deals & Space Missions"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "IB ACIO Guide & Practice Papers",
+              "author": "R. Gupta / Disha Experts",
+              "type": "Exam Guide"
+            },
+            {
+              "title": "Challenges to Internal Security of India",
+              "author": "Ashok Kumar IPS",
+              "type": "Security Reference"
+            },
+            {
+              "title": "The Hindu / Indian Express Editorial Analysis",
+              "author": "National Dailies",
+              "type": "Daily Current Affairs"
+            }
+          ],
+          "prepStrategy": "Read national security and defense analysis columns daily. Focus on précis writing and crisp analytical essay articulation."
+        }
+      ],
+      "importantDates": {
+        "notificationDate": "2026-01-18",
+        "applicationDeadline": "2026-02-15",
+        "examDate": "2026-04-18"
+      },
+      "syllabusHighlights": [
+        "Geopolitical Counter-Intelligence",
+        "Current National & International Security",
+        "Analytical Reasoning & Quantitative Aptitude",
+        "Descriptive Précis & Security Essay",
+        "Psychometric Profiling"
+      ]
+    },
+    {
+      "title": "Air Force Common Admission Test (IAF AFCAT)",
+      "shortName": "IAF AFCAT",
+      "conductingBody": "Indian Air Force (IAF)",
+      "category": "Defense",
+      "stream": "Science (PCM) / Engineering / Any Stream",
+      "featured": true,
+      "status": "Active",
+      "vacancies": 317,
+      "posts": [
+        "Flying Officer (Fighter, Transport & Helicopter Pilot)",
+        "Ground Duty Technical (Aeronautical Mechanical & Electronics)",
+        "Ground Duty Non-Technical (Administration, Logistics, Accounts, Education & Meteorology)"
+      ],
+      "eligibility": {
+        "minAge": 20,
+        "maxAge": 24,
+        "education": "Flying Branch: Min 50% marks each in Maths and Physics at 10+2 + Graduation with min 60% OR B.E./B.Tech with 60%; Ground Duty Non-Tech: Graduate with 60%",
+        "educationLevel": "Graduate",
+        "attempts": "Unlimited up to age limit (20-24 Flying, 20-26 Ground Duty)",
+        "ageRelaxation": [
+          {
+            "category": "Commercial Pilot License Holders",
+            "relaxationYears": 2
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "Level 10 (7th CPC Commissioned Officer - Flying Officer)",
+        "payScale": "₹56,100 - ₹1,77,500",
+        "inHandEstimate": "₹90,000 - ₹1,25,000 / month (Flying Branch includes ₹25,000 Flying Allowance + ₹15,500 MSP)",
+        "perks": [
+          "Subsidized Air Force Officers Mess & Bungalow",
+          "Air Force Golden Jubilee Health Scheme",
+          "Military CSD Canteen",
+          "Flight Concessions"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "AFCAT Online Computer Based Examination",
+          "type": "Objective (100 Questions: General Awareness, Verbal Ability, Numerical Ability, Reasoning)",
+          "marks": "300 Marks (2 Hours)",
+          "negativeMarking": "1 mark deduction per wrong answer (+3 for correct)"
+        },
+        {
+          "stage": "Engineering Knowledge Test (EKT - For Technical Branch only)",
+          "type": "Objective (50 Questions: Mechanical, Computer Science, Electrical/Electronics)",
+          "marks": "150 Marks (45 Minutes)",
+          "negativeMarking": "1 mark deduction per wrong answer"
+        },
+        {
+          "stage": "Air Force Selection Board (AFSB Interview)",
+          "type": "5-Day Testing: Screening (OIR + PPDT), Psychological Tests, Group Tasks (GTO), Personal Interview & CPSS Pilot Aptitude Test",
+          "marks": "Recommendation Based",
+          "negativeMarking": "None"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "General Awareness, Military Aptitude & Reasoning",
+          "weightage": "55 Questions (165 Marks) in AFCAT Exam",
+          "keyTopics": [
+            "Defense Organizations, Aircraft Specifications & Weapon Systems",
+            "Indian History, Geography, Environment & Basic Science",
+            "Spatial Reasoning, Embedded Figures & Analogy",
+            "Verbal English: Error Detection, Sentence Completion, Comprehension"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "AFCAT (Flying, Technical & Ground Duty Branch)",
+              "author": "Arihant Experts",
+              "type": "Comprehensive Guide"
+            },
+            {
+              "title": "Let’s Crack SSB Interview",
+              "author": "SSBCrack",
+              "type": "AFSB Preparation Bible"
+            }
+          ],
+          "prepStrategy": "Master spatial and non-verbal reasoning. Keep thorough track of Indian Air Force procurement (Rafale, Tejas, S-400) and defense exercises."
+        }
+      ],
+      "importantDates": {
+        "notificationDate": "2026-06-01",
+        "applicationDeadline": "2026-06-30",
+        "examDate": "2026-08-23"
+      },
+      "syllabusHighlights": [
+        "Military Aviation & Aircraft Radar Systems",
+        "Spatial & Non-Verbal Military Reasoning",
+        "English Verbal Comprehension",
+        "CPSS Computerized Pilot Selection System",
+        "AFSB 5-Day Officers Assessment"
+      ]
+    },
+    {
+      "title": "UPSC Engineering Services Examination (ESE / IES)",
+      "shortName": "UPSC ESE",
+      "conductingBody": "Union Public Service Commission (UPSC)",
+      "category": "Engineering/PSU",
+      "stream": "Polytechnic / B.Tech Engineering",
+      "featured": true,
+      "status": "Active",
+      "vacancies": 454,
+      "posts": [
+        "Indian Railway Management Service (IRMS Engineering)",
+        "Central Engineering Service (CPWD)",
+        "Military Engineer Services (MES)",
+        "Central Water Engineering Service",
+        "Indian Defence Service of Engineers (IDSE)"
+      ],
+      "eligibility": {
+        "minAge": 21,
+        "maxAge": 30,
+        "education": "Degree in Engineering (B.E. / B.Tech) in Civil, Mechanical, Electrical, or Electronics & Telecommunication Engineering from a recognized University",
+        "educationLevel": "Graduate",
+        "attempts": "Unlimited up to upper age limit (30 years)",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 3
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "Level 10 (7th CPC Group A Gazetted Executive Engineer)",
+        "payScale": "₹56,100 - ₹1,77,500",
+        "inHandEstimate": "₹80,000 - ₹1,10,000 / month initially; rises to Superintending Engineer / Chief Engineer (₹2,18,200)",
+        "perks": [
+          "Official Railway / CPWD Bungalow",
+          "Official Inspection Vehicle & Driver",
+          "CGHS / Railway Hospital Free Medical Coverage",
+          "Substantial Project Allowances"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "Stage 1: Preliminary Examination",
+          "type": "Paper 1 (General Studies & Engineering Aptitude - 200 Marks) + Paper 2 (Engineering Discipline - 300 Marks)",
+          "marks": "500 Marks",
+          "negativeMarking": "1/3rd mark deduction"
+        },
+        {
+          "stage": "Stage 2: Mains Conventional Examination",
+          "type": "Two Conventional Descriptive Technical Papers (300 Marks Each)",
+          "marks": "600 Marks",
+          "negativeMarking": "Deductions for untidy handwriting / steps"
+        },
+        {
+          "stage": "Stage 3: Personality Test (Interview)",
+          "type": "Board Interview at Dholpur House, New Delhi",
+          "marks": "200 Marks",
+          "negativeMarking": "None"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "Engineering Discipline (Civil / Mech / Elec / E&T)",
+          "weightage": "300 Marks in Prelims + 600 Marks in Mains (82% of Total Written Marks)",
+          "keyTopics": [
+            "Structural Analysis, RCC & Steel Design, Geotechnical Engineering (Civil)",
+            "Thermodynamics, Heat Transfer, Fluid Mechanics & Machine Design (Mechanical)",
+            "Power Systems, Control Systems, Power Electronics & Machines (Electrical)",
+            "Analog & Digital Circuits, Signals & Systems, Microwave & Optical Comm (E&T)"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "MADE EASY ESE Previous Years Solved Papers",
+              "author": "B. Singh (MADE EASY)",
+              "type": "Mandatory Bible"
+            },
+            {
+              "title": "IES Master Conventional Practice Books",
+              "author": "Kanodia / IES Master",
+              "type": "Mains Conventional Standard"
+            }
+          ],
+          "prepStrategy": "Solve 25 years of ESE objective and conventional questions. Practice derivation steps and neat engineering diagrams with pencil and scale."
+        }
+      ],
+      "importantDates": {
+        "notificationDate": "2026-09-18",
+        "applicationDeadline": "2026-10-10",
+        "examDate": "2026-02-18"
+      },
+      "syllabusHighlights": [
+        "Core Engineering Mechanics & Design",
+        "General Studies & Engineering Ethics",
+        "Environment & Project Management",
+        "Conventional Step-by-Step Derivations",
+        "Dholpur House Board Interview"
+      ]
+    },
+    {
+      "title": "GATE PSU Recruitment (Executive Trainee / Scientist 'B')",
+      "shortName": "GATE PSU",
+      "conductingBody": "IITs / IISc & Public Sector Undertakings (ONGC, IOCL, NTPC, BHEL, PowerGrid, BARC, DRDO)",
+      "category": "Engineering/PSU",
+      "stream": "Polytechnic / B.Tech Engineering",
+      "featured": true,
+      "status": "Active",
+      "vacancies": 8500,
+      "posts": [
+        "Executive Trainee (ONGC, IOCL, GAIL, HPCL, BPCL)",
+        "Scientist 'B' (BARC Bhabha Atomic Research Centre & DRDO)",
+        "Assistant Manager (PowerGrid, NTPC, BHEL, Coal India)"
+      ],
+      "eligibility": {
+        "minAge": 21,
+        "maxAge": 28,
+        "education": "B.Tech / B.E. in relevant engineering branch with minimum 60% or 65% aggregate marks from AICTE/UGC recognized institute",
+        "educationLevel": "Graduate",
+        "attempts": "Unlimited (GATE scorecard valid for 3 years for M.Tech; 1 year for most PSU recruitments)",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 3
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          },
+          {
+            "category": "PwD",
+            "relaxationYears": 10
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "E-2 to E-3 Executive Grade (Maharatna & Navratna PSUs)",
+        "payScale": "₹60,000 - ₹1,80,000 (Basic)",
+        "inHandEstimate": "CTC ₹16.5 to ₹24.0 Lakhs per annum (₹95,000 - ₹1,35,000 in-hand monthly + 35% cafeteria perks + Performance Linked Pay)",
+        "perks": [
+          "Furnished PSU Township Flats",
+          "Free Comprehensive Medical for entire family",
+          "Annual Performance Bonus (PRP up to ₹3,00,000)",
+          "Petrol, Laptop & Furniture Allowances"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "GATE Examination",
+          "type": "Computer Based Test (65 Questions - 100 Marks: Technical, Engineering Maths, General Aptitude)",
+          "marks": "100 Marks (Score scaled to 1000)",
+          "negativeMarking": "1/3rd mark for 1-mark questions; 2/3rd for 2-mark questions"
+        },
+        {
+          "stage": "PSU Shortlisting & Group Discussion (GD) / Personal Interview (PI)",
+          "type": "Technical & Behavioral Interview conducted by Maharatna PSU board",
+          "marks": "Weightage: 85% GATE Score + 15% GD/PI",
+          "negativeMarking": "None"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "Core Engineering Technicals & Engineering Mathematics",
+          "weightage": "70 Marks Core Discipline + 15 Marks Engineering Maths + 15 Marks General Aptitude",
+          "keyTopics": [
+            "Engineering Mathematics: Calculus, Linear Algebra, Differential Equations, Complex Variables",
+            "Core Discipline Specific Numerical & Conceptual Problem Solving"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Higher Engineering Mathematics",
+              "author": "Dr. B.S. Grewal",
+              "type": "Engineering Mathematics Standard"
+            },
+            {
+              "title": "GATE Previous 30 Years Chapterwise Solved Papers",
+              "author": "MADE EASY / ACE Academy",
+              "type": "Mandatory Practice"
+            }
+          ],
+          "prepStrategy": "Focus entirely on numerical accuracy. Solve over 3,000 previous year GATE numerical questions using the official virtual scientific calculator."
+        }
+      ],
+      "importantDates": {
+        "notificationDate": "2026-08-25",
+        "applicationDeadline": "2026-10-05",
+        "examDate": "2026-02-07"
+      },
+      "syllabusHighlights": [
+        "Engineering Mathematics & Linear Algebra",
+        "Discipline Core Depth Problems",
+        "Virtual Calculator Precision Computation",
+        "PSU Maharatna Technical Interview",
+        "M.Tech / Direct Scientist Fellowship"
+      ]
+    },
+    {
+      "title": "UPSC Indian Forest Service Examination (IFoS)",
+      "shortName": "UPSC IFoS",
+      "conductingBody": "Union Public Service Commission (UPSC)",
+      "category": "UPSC",
+      "stream": "B.Sc Agriculture / Allied",
+      "featured": true,
+      "status": "Active",
+      "vacancies": 150,
+      "posts": [
+        "Assistant Conservator of Forests (ACF)",
+        "Divisional Forest Officer (DFO)",
+        "Chief Conservator of Forests (CCF)",
+        "Principal Chief Conservator of Forests (PCCF)"
+      ],
+      "eligibility": {
+        "minAge": 21,
+        "maxAge": 32,
+        "education": "Bachelor’s degree with at least one of the subjects: Animal Husbandry & Veterinary Science, Botany, Chemistry, Geology, Mathematics, Physics, Statistics, Zoology OR Bachelor’s degree in Agriculture, Forestry or in Engineering",
+        "educationLevel": "Graduate",
+        "attempts": "General: 6 | OBC: 9 | SC/ST: Unlimited",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 3
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "Level 10 to Level 17 (All India Service - Equal to IAS/IPS)",
+        "payScale": "₹56,100 - ₹2,25,000 (PCCF Head of Forest Force)",
+        "inHandEstimate": "₹75,000 - ₹1,20,000 / month initially + Subsidized Forest Bungalow + Official 4x4 Gypsys/Scorpios + Armed Forest Guards",
+        "perks": [
+          "Heritage Forest Bungalows & Resthouses",
+          "Official 4x4 Gypsy with Beacon",
+          "Wildlife Conservation Authority",
+          "Lifetime Pension/NPS"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "Stage 1: Civil Services Preliminary Examination (Screening)",
+          "type": "Civil Services Prelims (General Studies 1 + CSAT)",
+          "marks": "Screening Cutoff (Higher than CSE cutoff)",
+          "negativeMarking": "1/3rd mark deduction"
+        },
+        {
+          "stage": "Stage 2: IFoS Mains Examination",
+          "type": "6 Descriptive Papers: General English (300), General Knowledge (300) + 2 Optional Subjects (4 Papers - 200 Marks Each)",
+          "marks": "1400 Marks",
+          "negativeMarking": "None"
+        },
+        {
+          "stage": "Stage 3: Personality Test & Walking Test",
+          "type": "Interview (300 Marks) + Mandatory 25km Walk (Men in 4 hrs) / 14km (Women in 4 hrs)",
+          "marks": "300 Marks",
+          "negativeMarking": "None"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "Forestry, Wildlife & Environmental Optional Subjects",
+          "weightage": "800 Marks out of 1400 Marks in Mains (57% Weightage)",
+          "keyTopics": [
+            "Silviculture & Forest Management",
+            "Forest Protection, Agroforestry & Social Forestry",
+            "Wildlife Biology, National Parks & Tiger Reserves",
+            "Forest Mensuration & Remote Sensing / GIS in Forestry"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Indian Forestry: A Comprehensive Reference",
+              "author": "K. Manikandan & S. Prabhu IFoS",
+              "type": "IFoS Optional Bible"
+            },
+            {
+              "title": "Principle and Practice of Silviculture",
+              "author": "L.S. Khanna",
+              "type": "Silviculture Core"
+            }
+          ],
+          "prepStrategy": "Score high in Civil Services Prelims as IFoS cutoff is 10-15 marks higher than IAS cutoff. Choose complementary science optionals like Forestry + Agriculture."
+        }
+      ],
+      "importantDates": {
+        "notificationDate": "2026-02-14",
+        "applicationDeadline": "2026-03-05",
+        "examDate": "2026-05-24"
+      },
+      "syllabusHighlights": [
+        "Forestry & Silviculture Systems",
+        "Wildlife Protection & Ecological Laws",
+        "General English & Knowledge",
+        "Science Optionals (Botany/Forestry/Geology)",
+        "25km Physical Endurance Walk"
+      ]
+    },
+    {
+      "title": "Reserve Bank of India Grade 'B' Officer Recruitment (RBI Grade B)",
+      "shortName": "RBI Grade B",
+      "conductingBody": "Reserve Bank of India Services Board (RBISB)",
+      "category": "Banking",
+      "stream": "Commerce & Finance",
+      "featured": true,
+      "status": "Active",
+      "vacancies": 291,
+      "posts": [
+        "Grade 'B' (General) - Monetary Policy, Banking Supervision, Foreign Exchange",
+        "Grade 'B' (DEPR - Department of Economic & Policy Research)",
+        "Grade 'B' (DSIM - Department of Statistics & Information Management)"
+      ],
+      "eligibility": {
+        "minAge": 21,
+        "maxAge": 30,
+        "education": "Graduation in any discipline with minimum 60% marks (50% for SC/ST/PwBD) or Post-Graduation with min 55% marks",
+        "educationLevel": "Graduate",
+        "attempts": "General: 6 attempts for Phase-1; SC/ST/OBC/PwD: No restriction",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 3
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          },
+          {
+            "category": "M.Phil / Ph.D",
+            "relaxationYears": 4
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "Grade B Officer (Central Banking Executive)",
+        "payScale": "₹55,200 - ₹99,750 (Basic)",
+        "inHandEstimate": "₹1,16,000 / month gross emoluments initially + Luxury RBI Officer Quarters in prime Mumbai/Metro cities",
+        "perks": [
+          "RBI Luxury Residential Enclaves",
+          "Sodexo Meal Coupons (₹4,500 pm)",
+          "Book Grant, Briefcase & Spectacle Allowances",
+          "Reimbursement of Educational & Medical Expenses"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "Phase 1: Online Objective Screening Examination",
+          "type": "200 Questions (General Awareness 80, Reasoning 60, English 30, Quantitative Aptitude 30)",
+          "marks": "200 Marks (120 Minutes)",
+          "negativeMarking": "0.25 marks deduction per wrong answer"
+        },
+        {
+          "stage": "Phase 2: Online Examination (Descriptive + Objective)",
+          "type": "Paper 1 (Economic & Social Issues - 100) + Paper 2 (English Writing Skills - 100) + Paper 3 (Finance & Management - 100)",
+          "marks": "300 Marks",
+          "negativeMarking": "Applicable on objective portions"
+        },
+        {
+          "stage": "Phase 3: Interview",
+          "type": "Personal Interview Board at RBI Central Office",
+          "marks": "75 Marks",
+          "negativeMarking": "None"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "Economic & Social Issues (ESI) and Finance & Management (FM)",
+          "weightage": "200 Marks out of 300 in Phase-2 + Direct relevance in Interview",
+          "keyTopics": [
+            "Financial System: Structure of RBI, Commercial Banks, NBFCs & SEBI",
+            "Financial Markets: Money Market, Forex Market, Capital Market Instruments",
+            "Monetary Policy, Fiscal Policy & Inflation Targeting Framework",
+            "Management & Organizational Behavior: Leadership, Motivation & Corporate Governance"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Indian Economy: Performance and Policies",
+              "author": "Uma Kapila",
+              "type": "ESI Standard Reference"
+            },
+            {
+              "title": "Financial Management",
+              "author": "Prasanna Chandra",
+              "type": "FM Concept Builder"
+            },
+            {
+              "title": "RBI Annual Report & Financial Stability Report",
+              "author": "Reserve Bank of India",
+              "type": "Must-Read Reports"
+            }
+          ],
+          "prepStrategy": "Read RBI notifications, monthly bulletins, and speeches of the RBI Governor. Practice typing 500-word descriptive economics answers within 20 minutes on a keyboard."
+        }
+      ],
+      "importantDates": {
+        "notificationDate": "2026-05-15",
+        "applicationDeadline": "2026-06-10",
+        "examDate": "2026-07-25"
+      },
+      "syllabusHighlights": [
+        "Monetary Policy & Central Banking Framework",
+        "Financial Markets & Corporate Governance",
+        "Macroeconomics & Social Development",
+        "Descriptive Keyboard Essay & Précis",
+        "High-Speed Quantitative Reasoning"
+      ]
+    },
+    {
+      "title": "NABARD Assistant Manager Recruitment (NABARD Grade A)",
+      "shortName": "NABARD Grade A",
+      "conductingBody": "National Bank for Agriculture and Rural Development (NABARD)",
+      "category": "Banking",
+      "stream": "B.Sc Agriculture / Allied",
+      "featured": true,
+      "status": "Active",
+      "vacancies": 150,
+      "posts": [
+        "Assistant Manager (Rural Development Banking Service - RDBS)",
+        "Assistant Manager (Rajbhasha)",
+        "Assistant Manager (Protocol & Security Service)"
+      ],
+      "eligibility": {
+        "minAge": 21,
+        "maxAge": 30,
+        "education": "Bachelor’s Degree in any subject with minimum 60% marks (SC/ST/PWBD: 55%) OR Post Graduate with 55%; Specialist streams require Agriculture, Fisheries, Forestry, IT or Finance",
+        "educationLevel": "Graduate",
+        "attempts": "Unlimited up to age limit",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 3
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "Assistant Manager (Scale-1 Officer)",
+        "payScale": "₹44,500 - ₹89,150",
+        "inHandEstimate": "₹1,00,000 / month gross emoluments initially + Bank Quarters or generous Lease Accommodation",
+        "perks": [
+          "Official Residential Quarters in State Capitals",
+          "Dispensary & Medical Facilities",
+          "Book Grant & Newspaper Allowances",
+          "Subsidized Loan Facilities for Home and Vehicle"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "Phase 1: Preliminary Online Examination",
+          "type": "Composite Paper of 200 Questions: Reasoning, English, Computer, Quant, Decision Making, General Awareness, Eco & Social Issues, Agriculture & Rural Development",
+          "marks": "200 Marks (120 Minutes)",
+          "negativeMarking": "1/4th mark deduction"
+        },
+        {
+          "stage": "Phase 2: Main Examination",
+          "type": "Paper 1 (General English Descriptive - 100 Marks) + Paper 2 (Economic & Social Issues + Agriculture & Rural Development - 100 Marks)",
+          "marks": "200 Marks",
+          "negativeMarking": "Applicable on objective portions"
+        },
+        {
+          "stage": "Phase 3: Interview",
+          "type": "Personal Interview",
+          "marks": "50 Marks",
+          "negativeMarking": "None"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "Agriculture & Rural Development (ARD)",
+          "weightage": "40 Marks in Prelims + 50 Marks in Mains (Deciding section)",
+          "keyTopics": [
+            "Agriculture in India: Agronomy, Cropping Systems & Meteorology",
+            "Soil & Water Conservation, Irrigation Schemes (PMKSY)",
+            "Animal Husbandry, Poultry, Fisheries & Forestry",
+            "Rural Development: Panchayati Raj, Self Help Groups (SHGs) & Priority Sector Lending"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Agriculture at a Glance",
+              "author": "R.K. Sharma",
+              "type": "Agriculture Core"
+            },
+            {
+              "title": "NABARD Grade A Guide",
+              "author": "Edutap / Oliveboard",
+              "type": "ARD & ESI Guide"
+            }
+          ],
+          "prepStrategy": "Focus on Ministry of Agriculture schemes, NABARD annual report, and census of agriculture and livestock data."
+        }
+      ],
+      "importantDates": {
+        "notificationDate": "2026-07-05",
+        "applicationDeadline": "2026-07-28",
+        "examDate": "2026-09-02"
+      },
+      "syllabusHighlights": [
+        "Agriculture & Cropping Systems",
+        "Rural Banking & Priority Sector Lending",
+        "Economic & Social Issues",
+        "Decision Making & Quantitative Aptitude",
+        "Descriptive English Writing"
+      ]
+    },
+    {
+      "title": "AAI Junior Executive Air Traffic Control (AAI JE ATC)",
+      "shortName": "AAI ATC",
+      "conductingBody": "Airports Authority of India (AAI - Min of Civil Aviation)",
+      "category": "Engineering/PSU",
+      "stream": "Science (PCM) / 12th Pass",
+      "featured": true,
+      "status": "Active",
+      "vacancies": 496,
+      "posts": [
+        "Junior Executive (Air Traffic Control)",
+        "Radar & Aerodrome Controller",
+        "Air Traffic Management Specialist"
+      ],
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 27,
+        "education": "Full-time 3-year Bachelor’s Degree in Science (B.Sc) with Physics and Mathematics OR Bachelor’s Degree in Engineering in any discipline (Physics and Mathematics must be subjects in any one semester)",
+        "educationLevel": "Graduate",
+        "attempts": "Unlimited up to age 27",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 3
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "Executive Grade (E-1 Junior Executive)",
+        "payScale": "₹40,000 - ₹1,40,000",
+        "inHandEstimate": "CTC approx ₹13.5 to ₹15.0 Lakhs per annum (₹75,000 - ₹95,000 / month in-hand + ATC Rating Allowance + Night Shift Allowance)",
+        "perks": [
+          "Stress & Rating Allowance",
+          "AAI Airport Township Accommodation",
+          "Comprehensive Medical & Health Coverage",
+          "Annual Leave Travel Concession"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "Online Computer Based Test (CBT)",
+          "type": "Part A (English 20, Reasoning 15, General Aptitude 15, GK 10) + Part B (Physics 30, Mathematics 30 - 10+2 Level)",
+          "marks": "120 Marks (120 Minutes)",
+          "negativeMarking": "No negative marking"
+        },
+        {
+          "stage": "Voice Test & Psychoactive Substances Test",
+          "type": "Voice Quality, Accent & Clarity in English + Drug/Alcohol Screening",
+          "marks": "Qualifying Mandatory",
+          "negativeMarking": "None"
+        },
+        {
+          "stage": "Document Verification & Medical Fitness Test",
+          "type": "Class-3 Medical Assessment for Air Traffic Controllers",
+          "marks": "Qualifying",
+          "negativeMarking": "None"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "Part B: Physics & Mathematics (10+2 & Advanced Concept)",
+          "weightage": "60 Questions out of 120 (50% Weightage)",
+          "keyTopics": [
+            "Physics: Electrodynamics, Modern Physics, Optics, Thermodynamics, Waves & Mechanics",
+            "Mathematics: Calculus, Definite Integrals, Differential Equations, 3D Geometry, Probability & Matrices"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Concepts of Physics (Vol 1 & 2)",
+              "author": "Dr. H.C. Verma",
+              "type": "Physics Bible"
+            },
+            {
+              "title": "Class 11 & 12 Mathematics (Exemplar)",
+              "author": "NCERT / R.D. Sharma",
+              "type": "Maths Foundation"
+            }
+          ],
+          "prepStrategy": "Since there is no negative marking, accuracy and speed are key. Revise 11th and 12th CBSE PCM concepts and solve 30 full-length mock tests."
+        }
+      ],
+      "importantDates": {
+        "notificationDate": "2026-03-28",
+        "applicationDeadline": "2026-04-30",
+        "examDate": "2026-06-12"
+      },
+      "syllabusHighlights": [
+        "10+2 Physics (Optics & Electromagnetism)",
+        "Higher Mathematics & Differential Calculus",
+        "Voice Clarity & Accent Assessment",
+        "Class-3 Aviation Medical Standards",
+        "Radar Coordination Skills"
+      ]
+    },
+    {
+      "title": "RRB Non-Technical Popular Categories (RRB NTPC)",
+      "shortName": "RRB NTPC",
+      "conductingBody": "Railway Recruitment Boards (RRBs - Ministry of Railways)",
+      "category": "Railways",
+      "stream": "Any Stream",
+      "featured": true,
+      "status": "Active",
+      "vacancies": 35281,
+      "posts": [
+        "Station Master (Level 6)",
+        "Goods Train Manager (Level 5)",
+        "Senior Commercial cum Ticket Clerk (Level 5)",
+        "Junior Accounts Assistant (Level 5)",
+        "Commercial cum Ticket Clerk (Level 3)",
+        "Junior Clerk cum Typist (Level 2)"
+      ],
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 36,
+        "education": "Graduate Posts: University Degree in any stream; 12th Level Posts: 12th Pass (+2 Stage) with at least 50% marks",
+        "educationLevel": "Graduate",
+        "attempts": "Unlimited up to upper age limit",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 3
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "Level 2 to Level 6 (7th CPC)",
+        "payScale": "₹19,900 to ₹35,400 Basic",
+        "inHandEstimate": "₹32,000 to ₹65,000 / month (Includes Running Allowance for Goods Guards & Night Duty Allowance for Station Masters)",
+        "perks": [
+          "Free Railway Passes for all-India travel for family",
+          "Railway Colonies Accommodation",
+          "Railway Hospitals Medical Treatment",
+          "Overtime & Running Allowance"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "CBT Stage 1: Computer Based Screening Test",
+          "type": "Objective (100 Questions: General Awareness 40, Mathematics 30, General Intelligence 30)",
+          "marks": "100 Marks (90 Minutes)",
+          "negativeMarking": "1/3rd mark deduction"
+        },
+        {
+          "stage": "CBT Stage 2: Computer Based Mains Test",
+          "type": "Objective (120 Questions: General Awareness 50, Mathematics 35, General Intelligence 35)",
+          "marks": "120 Marks (90 Minutes)",
+          "negativeMarking": "1/3rd mark deduction"
+        },
+        {
+          "stage": "Computer Based Aptitude Test (CBAT) / Typing Skill Test",
+          "type": "Psycho Test for Station Masters; Typing for Clerks (30 WPM Eng / 25 WPM Hindi)",
+          "marks": "Qualifying Mandatory",
+          "negativeMarking": "None"
+        },
+        {
+          "stage": "Document Verification & Medical Examination",
+          "type": "Rigorous A-2 / A-3 / B-2 Medical Standards (Vision test without glasses for Station Master)",
+          "marks": "Mandatory Medical",
+          "negativeMarking": "None"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "General Awareness & Indian Railways Knowledge",
+          "weightage": "40 Questions in CBT 1 + 50 Questions in CBT 2",
+          "keyTopics": [
+            "History & Culture of India, Freedom Struggle",
+            "Indian Constitution, Political System & Panchayati Raj",
+            "General Science: Physics, Chemistry & Biology (Class 10 CBSE)",
+            "Indian Railways: Routes, Zones, Vande Bharat & Modernization Projects"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "General Knowledge",
+              "author": "Lucent Publishing",
+              "type": "General Knowledge Bible"
+            },
+            {
+              "title": "RRB NTPC Solved Papers",
+              "author": "Platform / Rukmini Prakashan",
+              "type": "PYQ Practice"
+            }
+          ],
+          "prepStrategy": "Lucent GK + Speedy Science cover 80% of the questions. Practice high-speed calculation to complete 120 questions in 90 minutes in CBT-2."
+        }
+      ],
+      "importantDates": {
+        "notificationDate": "2026-08-10",
+        "applicationDeadline": "2026-09-15",
+        "examDate": "2026-11-20"
+      },
+      "syllabusHighlights": [
+        "Arithmetic & Commercial Calculations",
+        "General Science (CBSE 10th Physics/Chem/Bio)",
+        "Indian Railways History & Zones",
+        "Typing Speed (30 WPM English / 25 WPM Hindi)",
+        "Computer Based Aptitude Psycho Test"
+      ]
+    },
+    {
+      "title": "FSSAI Central Food Safety Officer & Technical Officer Recruitment",
+      "shortName": "FSSAI CFSO",
+      "conductingBody": "Food Safety and Standards Authority of India (FSSAI - MoHFW)",
+      "category": "Medical",
+      "stream": "Medical & Nursing",
+      "featured": true,
+      "status": "Active",
+      "vacancies": 254,
+      "posts": [
+        "Central Food Safety Officer (CFSO)",
+        "Technical Officer (Food Testing & Standardization)",
+        "Food Analyst"
+      ],
+      "eligibility": {
+        "minAge": 21,
+        "maxAge": 30,
+        "education": "Degree in Food Technology / Dairy Technology / Biotechnology / Oil Technology / Agricultural Science / Veterinary Sciences / Bio-Chemistry / Microbiology OR Masters Degree in Chemistry OR Degree in Medicine",
+        "educationLevel": "Graduate",
+        "attempts": "Unlimited up to age 30",
+        "ageRelaxation": [
+          {
+            "category": "OBC",
+            "relaxationYears": 3
+          },
+          {
+            "category": "SC/ST",
+            "relaxationYears": 5
+          }
+        ]
+      },
+      "salary": {
+        "payLevel": "Level 7 (7th CPC Group B Gazetted Post)",
+        "payScale": "₹44,900 - ₹1,42,400",
+        "inHandEstimate": "₹68,000 - ₹82,000 / month + Field inspection allowances",
+        "perks": [
+          "Statutory Enforcement Powers under FSS Act 2006",
+          "Central Government Health Scheme (CGHS)",
+          "Government Quarters in Metro Port Cities & HQ",
+          "Official Transport for Seizures and Inspections"
+        ]
+      },
+      "stages": [
+        {
+          "stage": "CBT Stage 1: Computer Based Written Examination",
+          "type": "Objective (120 Questions: General Aptitude 40, Functional Knowledge 80)",
+          "marks": "120 Marks (180 Minutes)",
+          "negativeMarking": "1 mark deduction per wrong answer (+4 for correct)"
+        },
+        {
+          "stage": "CBT Stage 2: Technical Written Assessment",
+          "type": "Specialized Subject Assessment (Food Chemistry, Microbiology, Food Processing)",
+          "marks": "100 Marks",
+          "negativeMarking": "Applicable"
+        },
+        {
+          "stage": "Document Verification & Background Clearance",
+          "type": "Verification of AICTE/ICAR Degrees and Experience",
+          "marks": "Qualifying",
+          "negativeMarking": "None"
+        }
+      ],
+      "subjectDetails": [
+        {
+          "subjectName": "Food Safety Ecosystem & Functional Knowledge of FSSA 2006",
+          "weightage": "80 Questions in CBT 1 + 100 Marks in CBT 2",
+          "keyTopics": [
+            "Food Safety and Standards Act 2006: Rules, Regulations & Statutory Authorities",
+            "Food Chemistry: Macro & Micro Nutrients, Enzymes, Food Additives & Contaminants",
+            "Food Microbiology: Spoilage Organisms, Pathogens, Fermentation & Toxin Detection",
+            "Principles of Food Preservation, Processing, Packaging & Labeling Standards (Codex)"
+          ],
+          "recommendedBooks": [
+            {
+              "title": "Food Science",
+              "author": "B. Srilakshmi",
+              "type": "Food Science Core"
+            },
+            {
+              "title": "FSSAI Act, Rules and Regulations Official Manual",
+              "author": "FSSAI Publications",
+              "type": "Statutory Manual"
+            },
+            {
+              "title": "Food Microbiology",
+              "author": "Frazier & Westhoff",
+              "type": "Microbiology Reference"
+            }
+          ],
+          "prepStrategy": "Read the FSS Act 2006 chapters and schedule definitions. Master food preservation methods and microbiological testing protocols."
+        }
+      ],
+      "importantDates": {
+        "notificationDate": "2026-05-12",
+        "applicationDeadline": "2026-06-08",
+        "examDate": "2026-08-14"
+      },
+      "syllabusHighlights": [
+        "Food Safety and Standards Act 2006",
+        "Food Chemistry & Microbiology",
+        "Preservation & Packaging Technology",
+        "Codex Alimentarius Standards",
+        "Inspection & Seizure Powers"
+      ]
+    }
+  ],
+  "careers": [
+    {
+      "stream": "B.Sc Agriculture & Allied",
+      "title": "Agricultural Sciences, Horticulture & Rural Banking",
+      "overview": "4-year professional degree leading to high-demand government posts in Public Sector Banks (AFO), NABARD, Food Corporation of India, and State Agriculture Departments.",
+      "popularCourses": [
+        "B.Sc (Hons) Agriculture",
+        "B.Sc Horticulture",
+        "B.Tech Agricultural Engineering",
+        "B.Sc Forestry"
+      ],
+      "keyEntranceExams": [
+        "CUET-ICAR AIEEA (UG)",
+        "State Agriculture CET (UPCATET, MHT-CET, KCET)",
+        "IBPS AFO",
+        "NABARD Grade A"
+      ],
+      "topRoles": [
+        "Agriculture Field Officer (Scale I)",
+        "Assistant Manager (NABARD)",
+        "District Agriculture Officer (DAO)",
+        "Quality Control Inspector"
+      ],
+      "averageStartingSalary": "₹6,50,000 - ₹12,00,000 / year",
+      "topEmployers": [
+        "State Bank of India",
+        "NABARD",
+        "FCI",
+        "ICAR Institutes",
+        "Bayer CropScience",
+        "ITC Agri"
+      ],
+      "growthOutlook": "Very High",
+      "roadmapSteps": [
+        {
+          "step": 1,
+          "title": "12th Science (PCB/PCM/Agri)",
+          "desc": "Pass with minimum 50% marks."
+        },
+        {
+          "step": 2,
+          "title": "Qualify ICAR / State CET",
+          "desc": "Secure admission in ICAR-accredited State Agriculture University."
+        },
+        {
+          "step": 3,
+          "title": "RAWE & Industrial Attachment",
+          "desc": "Complete Rural Agricultural Work Experience in 7th/8th semester."
+        },
+        {
+          "step": 4,
+          "title": "Appear for IBPS SO AFO or State PSC",
+          "desc": "Join as Class-1/Scale-1 gazetted or bank officer."
+        }
+      ],
+      "relatedGovtExams": [
+        "IBPS SO AFO",
+        "NABARD Grade A",
+        "UPSC CSE",
+        "State Agriculture Officer"
+      ],
+      "createdAt": "2026-09-12 23:31:29",
+      "updatedAt": "2026-09-12 23:31:29"
+    },
+    {
+      "stream": "10th & ITI Trades",
+      "title": "Industrial Training Institutes (ITI) & Technical Vocations",
+      "overview": "1-2 year hands-on technical trades (Electrician, Fitter, Welder, Machinist, COPA) providing immediate job security in Railways, Defense Labs, State Electricity Boards, and Public Sector Units.",
+      "popularCourses": [
+        "ITI Electrician (2 Years)",
+        "ITI Fitter (2 Years)",
+        "ITI Welder (1 Year)",
+        "Computer Operator & Programming Assistant (COPA)"
+      ],
+      "keyEntranceExams": [
+        "State ITI Merit Admission",
+        "RRB Technician CBT",
+        "DRDO CEPTAM",
+        "ISRO Technician B"
+      ],
+      "topRoles": [
+        "Railway Technician",
+        "Assistant Loco Pilot",
+        "DRDO Senior Technician",
+        "State DISCOM Line Operator"
+      ],
+      "averageStartingSalary": "₹3,00,000 - ₹5,50,000 / year",
+      "topEmployers": [
+        "Indian Railways",
+        "BHEL",
+        "DRDO",
+        "ISRO",
+        "Tata Steel",
+        "Maruti Suzuki",
+        "State Electricity Boards"
+      ],
+      "growthOutlook": "High",
+      "roadmapSteps": [
+        {
+          "step": 1,
+          "title": "Complete 10th Boards",
+          "desc": "Pass 10th with Science and Maths."
+        },
+        {
+          "step": 2,
+          "title": "Enroll in NCVT Approved ITI",
+          "desc": "Select in-demand trade like Electrician, Fitter or Welder."
+        },
+        {
+          "step": 3,
+          "title": "Complete Apprenticeship (NAC)",
+          "desc": "1 year National Apprenticeship Certificate for bonus marks in Railways and PSUs."
+        },
+        {
+          "step": 4,
+          "title": "Appear for Technical Govt Exams",
+          "desc": "Apply for RRB ALP, RRB Technician, DRDO CEPTAM, or Naval Dockyard."
+        }
+      ],
+      "relatedGovtExams": [
+        "RRB ALP & ITI Tech",
+        "DRDO CEPTAM",
+        "SSC MTS & Havaldar"
+      ],
+      "createdAt": "2026-09-12 23:31:29",
+      "updatedAt": "2026-09-12 23:31:29"
+    },
+    {
+      "stream": "Law & Judicial Services",
+      "title": "Judiciary, Legal Counsel, Public Prosecution & Corporate Law",
+      "overview": "Premier avenue for law graduates aspiring for judicial magistrates (Civil Judge PCS-J), corporate counsel, high court advocacy, and public policy formulation.",
+      "popularCourses": [
+        "5-Year Integrated B.A. LL.B",
+        "3-Year LL.B (Post-Graduation)",
+        "LL.M (Master of Laws)"
+      ],
+      "keyEntranceExams": [
+        "CLAT (Common Law Admission Test)",
+        "State Judicial Services (PCS-J)",
+        "SEBI Grade A Legal",
+        "IBPS SO Law"
+      ],
+      "topRoles": [
+        "Civil Judge / Judicial Magistrate",
+        "SEBI Legal Officer",
+        "Judge Advocate General (JAG - Indian Army)",
+        "Corporate Counsel"
+      ],
+      "averageStartingSalary": "₹8,00,000 - ₹18,00,000 / year",
+      "topEmployers": [
+        "State High Courts & District Courts",
+        "Securities & Exchange Board of India (SEBI)",
+        "Indian Army (JAG)",
+        "Top Law Firms"
+      ],
+      "growthOutlook": "Very High",
+      "roadmapSteps": [
+        {
+          "step": 1,
+          "title": "Crack CLAT or State Law CET",
+          "desc": "Enroll in National Law University (NLU) or recognized Law College."
+        },
+        {
+          "step": 2,
+          "title": "Master Bare Acts & Trial Procedures",
+          "desc": "Focus on CrPC/BNSS, CPC, Evidence/BSA, and Constitution."
+        },
+        {
+          "step": 3,
+          "title": "Enroll with Bar Council of India",
+          "desc": "Obtain provisional advocate license."
+        },
+        {
+          "step": 4,
+          "title": "Qualify State Judicial Service (PCS-J)",
+          "desc": "Take oath as Civil Judge (Junior Division) with immediate judicial authority."
+        }
+      ],
+      "relatedGovtExams": [
+        "Judiciary (PCS-J)",
+        "SEBI Grade A Legal",
+        "IBPS SO Law",
+        "UPSC CSE"
+      ],
+      "createdAt": "2026-09-12 23:31:29",
+      "updatedAt": "2026-09-12 23:31:29"
+    },
+    {
+      "stream": "Medical & Allied Sciences",
+      "title": "Medicine, Nursing, Pharmacy & Healthcare Services",
+      "overview": "Covers human healthcare, clinical treatment, hospital nursing, and drug control management with immense job security and public gratitude.",
+      "popularCourses": [
+        "MBBS (Doctor of Medicine)",
+        "B.Sc Nursing (4-Year)",
+        "B.Pharm / Pharm.D",
+        "BDS (Dental)",
+        "BAMS / BHMS (AYUSH)"
+      ],
+      "keyEntranceExams": [
+        "NEET-UG",
+        "AIIMS NORCET",
+        "UPSC Combined Medical Services (CMS)",
+        "State Drug Inspector"
+      ],
+      "topRoles": [
+        "Medical Officer / Doctor",
+        "AIIMS Nursing Officer",
+        "Central Drug Inspector",
+        "Hospital Superintendent"
+      ],
+      "averageStartingSalary": "₹7,50,000 - ₹16,00,000 / year",
+      "topEmployers": [
+        "AIIMS New Delhi & Regional AIIMS",
+        "Armed Forces Medical Services (AFMS)",
+        "Railways Health Services",
+        "Fortis / Apollo"
+      ],
+      "growthOutlook": "Very High",
+      "roadmapSteps": [
+        {
+          "step": 1,
+          "title": "12th Science PCB",
+          "desc": "Focus on Biology, Chemistry, and Physics."
+        },
+        {
+          "step": 2,
+          "title": "Clear NEET-UG / State Nursing CET",
+          "desc": "Join medical college or INC-recognized nursing college."
+        },
+        {
+          "step": 3,
+          "title": "Degree Course & Clinical Rotations",
+          "desc": "Hands-on patient care and ICU/OT rotations."
+        },
+        {
+          "step": 4,
+          "title": "UPSC CMS or AIIMS NORCET",
+          "desc": "Join as Medical Officer or Nursing Officer with Level 7-10 7th CPC salary."
+        }
+      ],
+      "relatedGovtExams": [
+        "AIIMS NORCET",
+        "UPSC CMS",
+        "State Medical Officer"
+      ],
+      "createdAt": "2026-09-12 23:31:29",
+      "updatedAt": "2026-09-12 23:31:29"
+    },
+    {
+      "stream": "Open Schooling (NIOS/IGNOU)",
+      "title": "Open Schooling, Distance Degrees & Affirmative Equality",
+      "overview": "Students who completed 10th/12th via NIOS (National Institute of Open Schooling) or Graduation via IGNOU / State Open Universities are 100% EQUALLY ELIGIBLE for all Govt Exams (UPSC, SSC, Banking, Railways) as per Gazette Notifications of India.",
+      "popularCourses": [
+        "NIOS Senior Secondary (12th)",
+        "IGNOU Bachelor of Arts / Commerce / Science",
+        "BCA via Distance"
+      ],
+      "keyEntranceExams": [
+        "UPSC Civil Services Exam",
+        "SSC CGL & CHSL",
+        "IBPS PO & Clerk",
+        "RRB NTPC"
+      ],
+      "topRoles": [
+        "Civil Servant (IAS/IPS)",
+        "Central Ministry Assistant Section Officer",
+        "Bank Probationary Officer",
+        "Station Master"
+      ],
+      "averageStartingSalary": "₹5,00,000 - ₹12,00,000 / year",
+      "topEmployers": [
+        "Government of India",
+        "Reserve Bank of India",
+        "Public Sector Commercial Banks",
+        "Indian Railways"
+      ],
+      "growthOutlook": "High",
+      "roadmapSteps": [
+        {
+          "step": 1,
+          "title": "NIOS 12th / IGNOU Graduation",
+          "desc": "Certified recognized equivalence by Ministry of Education & UGC."
+        },
+        {
+          "step": 2,
+          "title": "Zero Discrimination Rule",
+          "desc": "UPSC, SSC, IBPS, and State PSCs evaluate strictly based on competitive exam merit."
+        },
+        {
+          "step": 3,
+          "title": "Dedicated Preparation",
+          "desc": "Focus on General Studies, Quantitative Aptitude, and Current Affairs."
+        },
+        {
+          "step": 4,
+          "title": "Success & Appointment",
+          "desc": "Multiple NIOS and IGNOU alumni clear UPSC and SSC with top all-India ranks every year."
+        }
+      ],
+      "relatedGovtExams": [
+        "UPSC CSE",
+        "SSC CGL",
+        "IBPS PO",
+        "RRB NTPC"
+      ],
+      "createdAt": "2026-09-12 23:31:29",
+      "updatedAt": "2026-09-12 23:31:29"
+    },
+    {
+      "stream": "Polytechnic Diploma",
+      "title": "Polytechnic Engineering & Junior Engineering Cadres",
+      "overview": "3-year professional engineering diploma that allows direct lateral entry into 2nd year B.Tech or immediate junior engineering jobs in CPWD, Railways, MES, and private industries.",
+      "popularCourses": [
+        "Diploma in Civil Engineering",
+        "Diploma in Mechanical Engineering",
+        "Diploma in Electrical Engineering",
+        "Diploma in Computer Science"
+      ],
+      "keyEntranceExams": [
+        "State PolyCET / JEECUP",
+        "SSC Junior Engineer (JE)",
+        "RRB JE",
+        "State PWD / Discoms"
+      ],
+      "topRoles": [
+        "Junior Engineer (JE)",
+        "Site Supervisor",
+        "Sub-Divisional Engineer Apprentice",
+        "Technical Officer"
+      ],
+      "averageStartingSalary": "₹4,00,000 - ₹6,50,000 / year",
+      "topEmployers": [
+        "CPWD",
+        "Military Engineer Services (MES)",
+        "Indian Railways",
+        "Larsen & Toubro",
+        "DMRC"
+      ],
+      "growthOutlook": "Very High",
+      "roadmapSteps": [
+        {
+          "step": 1,
+          "title": "Clear State PolyCET",
+          "desc": "Join Government Polytechnic College."
+        },
+        {
+          "step": 2,
+          "title": "3-Year Diploma Curriculum",
+          "desc": "Master surveying, structural mechanics, circuit design, or CAD."
+        },
+        {
+          "step": 3,
+          "title": "Crack SSC JE or RRB JE",
+          "desc": "Prepare core technical objective MCQs."
+        },
+        {
+          "step": 4,
+          "title": "Lateral Entry B.Tech Option",
+          "desc": "Optionally join 2nd year B.Tech via LEET while preparing for competitive exams."
+        }
+      ],
+      "relatedGovtExams": [
+        "SSC JE",
+        "RRB ALP & ITI Tech",
+        "DRDO CEPTAM"
+      ],
+      "createdAt": "2026-09-12 23:31:29",
+      "updatedAt": "2026-09-12 23:31:29"
+    },
+    {
+      "stream": "Aviation & Aerospace",
+      "title": "Civil Aviation, Aerospace Engineering & Air Traffic Operations",
+      "overview": "One of the fastest-growing sectors in India with massive fleet expansions (Air India, IndiGo), drone ecosystems, and new greenfield international airports (Jewar, Navi Mumbai).",
+      "popularCourses": [
+        "B.Sc in Aviation / Commercial Pilot License (CPL)",
+        "B.Tech in Aerospace / Aeronautical Engineering",
+        "Aircraft Maintenance Engineering (AME - DGCA approved)",
+        "B.Sc with Physics & Maths for AAI ATC"
+      ],
+      "keyEntranceExams": [
+        "IGRUA Entrance Exam (Commercial Pilot)",
+        "AAI ATC Junior Executive Examination",
+        "JEE Main & Advanced (Aerospace in IITs)",
+        "DGCA Modular Examinations"
+      ],
+      "topRoles": [
+        "Commercial Airline Pilot (Captain)",
+        "Air Traffic Controller (AAI)",
+        "Aircraft Maintenance Engineer",
+        "Aerospace Flight Dynamics Engineer"
+      ],
+      "averageStartingSalary": "₹12,00,000 - ₹35,00,000 / year (First Officer Pilot starts at ₹1.8 - ₹3.0 Lakhs/month)",
+      "topEmployers": [
+        "Airports Authority of India (AAI)",
+        "Air India & IndiGo Airlines",
+        "ISRO & DRDO Aeronautical Labs",
+        "Boeing & Airbus India"
+      ],
+      "growthOutlook": "Very High",
+      "roadmapSteps": [
+        {
+          "step": 1,
+          "title": "12th Science with Physics & Maths",
+          "desc": "Achieve at least 55-60% marks in Physics and Mathematics."
+        },
+        {
+          "step": 2,
+          "title": "Choose Trajectory (Flying, ATC, or Engineering)",
+          "desc": "Enroll in flying school for CPL or appear for AAI ATC / B.Tech Aerospace."
+        },
+        {
+          "step": 3,
+          "title": "Complete 200 Flying Hours / Technical Training",
+          "desc": "DGCA medical certification (Class 1) and cross-country instrument rating."
+        },
+        {
+          "step": 4,
+          "title": "Join Commercial Airline or AAI",
+          "desc": "Begin as First Officer Pilot or Junior Executive ATC with high starting remuneration."
+        }
+      ],
+      "relatedGovtExams": [
+        "AAI ATC Junior Executive",
+        "IAF AFCAT",
+        "Indian Coast Guard Pilot",
+        "DRDO Aerospace Scientist"
+      ]
+    },
+    {
+      "stream": "Computer Science & IT",
+      "title": "Computer Science, AI/ML, Cloud Infrastructure & Cyber Defense",
+      "overview": "The bedrock of digital transformation, National Informatics Centre (NIC), smart governance platforms (UPI, Aadhaar, DigiLocker), and defense cybersecurity units (CERT-In).",
+      "popularCourses": [
+        "B.Tech in Computer Science & Engineering / Artificial Intelligence",
+        "Bachelor of Computer Applications (BCA) + MCA",
+        "M.Tech in Cybersecurity & Information Assurance",
+        "B.Sc Computer Science"
+      ],
+      "keyEntranceExams": [
+        "JEE Main & Advanced",
+        "GATE Computer Science",
+        "NIC Scientist 'B' Examination",
+        "ISRO Scientist SC (Computer Science)"
+      ],
+      "topRoles": [
+        "Full-Stack Cloud Architect",
+        "AI/ML Machine Learning Engineer",
+        "Cyber Defense Security Analyst (CERT-In)",
+        "Govt Database Administrator (NIC/UIDAI)"
+      ],
+      "averageStartingSalary": "₹8,50,000 - ₹28,00,000 / year",
+      "topEmployers": [
+        "National Informatics Centre (NIC)",
+        "UIDAI & NPCI (UPI Systems)",
+        "ISRO & DRDO Cyber Command",
+        "Google, Microsoft & Global R&D Hubs"
+      ],
+      "growthOutlook": "Exponential",
+      "roadmapSteps": [
+        {
+          "step": 1,
+          "title": "Strong Foundation in Algorithms",
+          "desc": "Master Data Structures, Algorithms, Discrete Mathematics and Database Management."
+        },
+        {
+          "step": 2,
+          "title": "Hands-on Projects & Open Source",
+          "desc": "Build cloud-native applications using React, Node.js, Python, Docker and Kubernetes."
+        },
+        {
+          "step": 3,
+          "title": "Appear for GATE CS or Competitive Hiring",
+          "desc": "Qualify for PSU Executive Trainee or Central Ministry Systems Analyst."
+        },
+        {
+          "step": 4,
+          "title": "Spearhead National Tech Platforms",
+          "desc": "Design high-scale architectures serving over 1.4 billion citizens."
+        }
+      ],
+      "relatedGovtExams": [
+        "ISRO Scientist SC (CS)",
+        "NIC Scientist B",
+        "SEBI Grade A (IT Stream)",
+        "IBPS SO IT Officer"
+      ]
+    },
+    {
+      "stream": "12th Commerce",
+      "title": "Chartered Accountancy, Corporate Finance & Investment Banking",
+      "overview": "The definitive career route for commerce students offering undisputed authority in statutory audits, corporate taxation, forensic accounting, capital markets, and central regulatory oversight.",
+      "popularCourses": [
+        "Chartered Accountancy (CA - ICAI)",
+        "Cost & Management Accountant (CMA)",
+        "Company Secretary (CS - ICSI)",
+        "Chartered Financial Analyst (CFA)"
+      ],
+      "keyEntranceExams": [
+        "CA Foundation (ICAI)",
+        "RBI Grade B Officer Examination",
+        "SEBI Grade A Officer",
+        "UPSC Indian Audit & Accounts Service (via CSE)"
+      ],
+      "topRoles": [
+        "Chartered Accountant (Partner)",
+        "SEBI / RBI Financial Analyst",
+        "Chief Financial Officer (CFO)",
+        "Statutory Auditor & Tax Consultant"
+      ],
+      "averageStartingSalary": "₹9,50,000 - ₹24,00,000 / year",
+      "topEmployers": [
+        "Reserve Bank of India (RBI)",
+        "Securities and Exchange Board of India (SEBI)",
+        "Big 4 Accounting Firms (Deloitte, PwC, EY, KPMG)",
+        "CAG Comptroller & Auditor General of India"
+      ],
+      "growthOutlook": "Very High",
+      "roadmapSteps": [
+        {
+          "step": 1,
+          "title": "Register for CA Foundation",
+          "desc": "Pass 12th Commerce with Accounts, Economics, and Business Studies."
+        },
+        {
+          "step": 2,
+          "title": "Clear CA Intermediate & Complete Articleship",
+          "desc": "3 years of practical articleship training with an established CA audit firm."
+        },
+        {
+          "step": 3,
+          "title": "Crack CA Final",
+          "desc": "Receive membership of the Institute of Chartered Accountants of India (ICAI)."
+        },
+        {
+          "step": 4,
+          "title": "Choose Corporate or Regulatory Path",
+          "desc": "Join multinational banking conglomerates or join SEBI/RBI as Class-A Finance Officer."
+        }
+      ],
+      "relatedGovtExams": [
+        "SEBI Grade A Finance",
+        "RBI Grade B",
+        "UPSC Indian Revenue Service (IRS)",
+        "IBPS SO Specialist Finance Officer"
+      ]
+    },
+    {
+      "stream": "12th Arts/Humanities",
+      "title": "School Teaching, Educational Administration & Higher Academic Pedagogy",
+      "overview": "A deeply respected, pension-secure career shaping the nation’s youth across Central Government Kendriya Vidyalayas (KVS), Navodaya Vidyalayas (NVS), Sainik Schools, and State Education Directorates.",
+      "popularCourses": [
+        "Integrated B.A. B.Ed / B.Sc B.Ed (4-Year)",
+        "Bachelor of Education (B.Ed)",
+        "Master of Education (M.Ed)",
+        "D.El.Ed (Diploma in Elementary Education)"
+      ],
+      "keyEntranceExams": [
+        "CTET (Central Teacher Eligibility Test)",
+        "UGC NET / JRF",
+        "KVS PGT/TGT Recruitment",
+        "State TET / REET / Super TET"
+      ],
+      "topRoles": [
+        "Kendriya Vidyalaya Post Graduate Teacher (PGT)",
+        "Navodaya Vidyalaya TGT Teacher",
+        "School Principal / Education Officer",
+        "University Assistant Professor"
+      ],
+      "averageStartingSalary": "₹5,50,000 - ₹12,00,000 / year",
+      "topEmployers": [
+        "Kendriya Vidyalaya Sangathan (KVS)",
+        "Navodaya Vidyalaya Samiti (NVS)",
+        "Army Public Schools (AWES)",
+        "State Government Schools"
+      ],
+      "growthOutlook": "High & Stable",
+      "roadmapSteps": [
+        {
+          "step": 1,
+          "title": "Graduation with Subject Specialization",
+          "desc": "Complete graduation in chosen subject (Maths, Science, Hindi, English, Social Science)."
+        },
+        {
+          "step": 2,
+          "title": "Complete B.Ed Degree",
+          "desc": "Enroll in NCTE-recognized Bachelor of Education program."
+        },
+        {
+          "step": 3,
+          "title": "Clear CTET Paper 1 & Paper 2",
+          "desc": "Score over 60% (90/150) in Central Teacher Eligibility Test."
+        },
+        {
+          "step": 4,
+          "title": "Appear for KVS / NVS / DSSSB Hiring",
+          "desc": "Join as Permanent Central Teacher with Level 7-8 pay and official quarters."
+        }
+      ],
+      "relatedGovtExams": [
+        "CTET",
+        "KVS PGT/TGT",
+        "NVS Recruitment",
+        "UGC NET"
+      ]
+    },
+    {
+      "stream": "Defense & Uniformed Services",
+      "title": "Armed Forces Commissioned Officers & Central Armed Police Services",
+      "overview": "The supreme path of valor, patriotism, and leadership leading troops in the Indian Army, Navy, Air Force, and Central Armed Police Forces (BSF, CRPF, CISF).",
+      "popularCourses": [
+        "National Defence Academy (NDA Khadakwasla)",
+        "Indian Military Academy (IMA Dehradun)",
+        "Officers Training Academy (OTA Chennai)",
+        "Air Force Academy (Dundigal)"
+      ],
+      "keyEntranceExams": [
+        "UPSC NDA & NA Exam",
+        "UPSC Combined Defence Services (CDS)",
+        "UPSC CAPF (Assistant Commandant)",
+        "IAF AFCAT"
+      ],
+      "topRoles": [
+        "Lieutenant (Indian Army)",
+        "Flying Officer (Indian Air Force)",
+        "Sub Lieutenant (Indian Navy)",
+        "Assistant Commandant (CAPF - BSF/CRPF/CISF)"
+      ],
+      "averageStartingSalary": "₹9,50,000 - ₹16,00,000 / year",
+      "topEmployers": [
+        "Indian Army",
+        "Indian Air Force",
+        "Indian Navy",
+        "Ministry of Home Affairs Central Armed Police Forces"
+      ],
+      "growthOutlook": "Prestigious & Secure",
+      "roadmapSteps": [
+        {
+          "step": 1,
+          "title": "Clear NDA (after 12th) or CDS (after Graduation)",
+          "desc": "Thorough preparation in Mathematics, English, General Knowledge and current defense affairs."
+        },
+        {
+          "step": 2,
+          "title": "Clear 5-Day SSB Interview Board",
+          "desc": "Psychological tests, Group obstacle tasks, and Interview with Board President."
+        },
+        {
+          "step": 3,
+          "title": "Complete Military Training Academy",
+          "desc": "Rigorous tactical, weapons, physical, and leadership military training."
+        },
+        {
+          "step": 4,
+          "title": "Commissioned as President’s Officer",
+          "desc": "Receive President’s Commission with sword of honor and immediate command of troops."
+        }
+      ],
+      "relatedGovtExams": [
+        "UPSC NDA",
+        "UPSC CDS",
+        "UPSC CAPF (AC)",
+        "IAF AFCAT"
+      ]
+    },
+    {
+      "stream": "Environmental & Earth Sciences",
+      "title": "Environmental Science, Forestry & Wildlife Ecological Conservation",
+      "overview": "Crucial domain addressing climate change, carbon accounting, wildlife corridor conservation, and statutory environmental impact assessments (EIA) for nation-building projects.",
+      "popularCourses": [
+        "B.Sc / M.Sc in Forestry (ICAR approved)",
+        "M.Sc in Environmental Science & Climate Change",
+        "M.Sc in Wildlife Biology & Conservation",
+        "B.Tech in Environmental Engineering"
+      ],
+      "keyEntranceExams": [
+        "UPSC Indian Forest Service (IFoS)",
+        "State Forest Ranger Examination",
+        "UGC NET Environmental Sciences",
+        "Wildlife Institute of India (WII) Entrance"
+      ],
+      "topRoles": [
+        "Divisional Forest Officer (DFO)",
+        "Forest Range Officer (FRO)",
+        "Wildlife Biologist & Tiger Reserve Scientist",
+        "Environmental Impact Consultant"
+      ],
+      "averageStartingSalary": "₹6,50,000 - ₹15,00,000 / year",
+      "topEmployers": [
+        "Indian Forest Service (MoEFCC)",
+        "State Forest Departments",
+        "Wildlife Trust of India & WWF",
+        "Central Pollution Control Board (CPCB)"
+      ],
+      "growthOutlook": "Very High",
+      "roadmapSteps": [
+        {
+          "step": 1,
+          "title": "B.Sc in Forestry, Botany, Zoology or Environment",
+          "desc": "Focus on ecology, silviculture, soil sciences, and biodiversity."
+        },
+        {
+          "step": 2,
+          "title": "Qualify UPSC Prelims for IFoS",
+          "desc": "Score above the high cutoff for Indian Forest Service."
+        },
+        {
+          "step": 3,
+          "title": "Clear IFoS Mains & 25km Walking Endurance",
+          "desc": "Write conventional papers on Forestry and chosen science optional."
+        },
+        {
+          "step": 4,
+          "title": "Indira Gandhi National Forest Academy (IGNFA)",
+          "desc": "Two years of elite training at Dehradun before posting as Assistant Conservator of Forests."
+        }
+      ],
+      "relatedGovtExams": [
+        "UPSC IFoS",
+        "State Forest Ranger Exam",
+        "CPCB Scientist B",
+        "UGC NET Environmental Science"
+      ]
+    },
+    {
+      "stream": "12th Science (PCB)",
+      "title": "Biotechnology, Bioinformatics & Molecular Clinical Diagnostics",
+      "overview": "The forefront of vaccine development, CRISPR gene editing, agricultural biotechnology, and diagnostic genomic sequencing powering India's $150 billion bio-economy.",
+      "popularCourses": [
+        "B.Tech / B.Sc in Biotechnology",
+        "M.Sc in Bioinformatics / Human Genetics",
+        "B.Sc in Medical Laboratory Technology (BMLT)",
+        "Ph.D in Molecular Biology"
+      ],
+      "keyEntranceExams": [
+        "GAT-B (Graduate Aptitude Test - Biotechnology)",
+        "CSIR NET Life Sciences",
+        "ICMR Junior Research Fellowship",
+        "FSSAI Technical Officer Exam"
+      ],
+      "topRoles": [
+        "Biotech Research Scientist",
+        "Genomic Bioinformatician",
+        "Clinical Trials Quality Auditor",
+        "Central Food Safety Officer"
+      ],
+      "averageStartingSalary": "₹6,00,000 - ₹16,00,000 / year",
+      "topEmployers": [
+        "Department of Biotechnology (DBT Institutes)",
+        "Serum Institute of India & Bharat Biotech",
+        "ICMR & National Institute of Virology",
+        "Biocon & Syngene International"
+      ],
+      "growthOutlook": "Very High",
+      "roadmapSteps": [
+        {
+          "step": 1,
+          "title": "12th Science with Biology & Chemistry",
+          "desc": "Build deep foundation in genetics and microbiology."
+        },
+        {
+          "step": 2,
+          "title": "B.Tech / B.Sc Biotechnology",
+          "desc": "Hands-on training in PCR, chromatography, cell culture and sequence analysis."
+        },
+        {
+          "step": 3,
+          "title": "Crack GAT-B / CSIR NET Life Sciences",
+          "desc": "Earn prestigious DBT/CSIR fellowship for master's and research."
+        },
+        {
+          "step": 4,
+          "title": "Enter Biopharma R&D or Govt Laboratories",
+          "desc": "Lead therapeutic development or join national testing laboratories."
+        }
+      ],
+      "relatedGovtExams": [
+        "CSIR NET Life Sciences",
+        "FSSAI Technical Officer",
+        "ICMR JRF",
+        "ESIC Pharmacist"
+      ]
+    },
+    {
+      "stream": "12th Science (PCM)",
+      "title": "Civil Infrastructure, Structural Architecture & Smart Cities Development",
+      "overview": "Drives India’s monumental infrastructure boom: Dedicated Freight Corridors, Bharatmala Expressways, Bullet Train Projects (NHSRCL), Metro Rails, and smart city urban planning.",
+      "popularCourses": [
+        "B.Tech / B.E in Civil Engineering",
+        "Bachelor of Architecture (B.Arch)",
+        "M.Tech in Structural / Transportation Engineering",
+        "Diploma in Civil Engineering (Polytechnic)"
+      ],
+      "keyEntranceExams": [
+        "JEE Main & Advanced (B.Tech & B.Arch)",
+        "UPSC ESE (Civil Engineering)",
+        "GATE Civil Engineering",
+        "SSC JE (Civil)"
+      ],
+      "topRoles": [
+        "Assistant Executive Engineer (CPWD/Railways)",
+        "Metro Rail Chief Resident Engineer",
+        "Structural Bridge Design Consultant",
+        "Urban Smart City Planner"
+      ],
+      "averageStartingSalary": "₹7,00,000 - ₹18,00,000 / year",
+      "topEmployers": [
+        "Central Public Works Department (CPWD)",
+        "National Highways Authority of India (NHAI)",
+        "Delhi Metro Rail Corporation (DMRC) & Regional Metros",
+        "Larsen & Toubro (L&T Construction)"
+      ],
+      "growthOutlook": "High & Continuous",
+      "roadmapSteps": [
+        {
+          "step": 1,
+          "title": "12th Science PCM + Entrance Exam",
+          "desc": "Clear JEE Main or State Engineering CET."
+        },
+        {
+          "step": 2,
+          "title": "B.Tech Civil Engineering",
+          "desc": "Focus on Structural Mechanics, Surveying, Concrete Technology, and Geotechnical analysis."
+        },
+        {
+          "step": 3,
+          "title": "Master CAD, Revit, ETABS & GIS Tools",
+          "desc": "Acquire proficiency in structural drafting and BIM simulation software."
+        },
+        {
+          "step": 4,
+          "title": "Crack UPSC ESE or SSC JE",
+          "desc": "Join prestigious CPWD or Indian Railways managing mega bridges and national highways."
+        }
+      ],
+      "relatedGovtExams": [
+        "UPSC ESE Civil",
+        "SSC JE Civil",
+        "RRB JE Civil",
+        "DMRC Assistant Manager"
+      ]
+    }
+  ],
+  "updates": [
+    {
+      "title": "AIIMS NORCET 2026 Nursing Officer Online Registration Open: 3,800 Posts",
+      "category": "Notification",
+      "department": "AIIMS New Delhi",
+      "date": "2026-09-12",
+      "priority": "High",
+      "link": "https://aiimsexams.ac.in",
+      "badge": "NEW"
+    },
+    {
+      "title": "RRB ALP & Technician 2026 CBT Stage-1 Schedule Confirmed: 18,799 Vacancies",
+      "category": "Exam Date",
+      "department": "Railway Recruitment Boards",
+      "date": "2026-09-11",
+      "priority": "High",
+      "link": "https://rrbapply.gov.in",
+      "badge": "CONFIRMED"
+    },
+    {
+      "title": "State Judiciary (PCS-J) Civil Judge 2026 Notification Announced",
+      "category": "Notification",
+      "department": "High Court Examination Cell",
+      "date": "2026-09-10",
+      "priority": "Normal",
+      "link": "https://highcourt.gov.in",
+      "badge": "UPDATE"
+    },
+    {
+      "title": "IBPS SO Agriculture Field Officer (AFO) Syllabus & Booklist Released",
+      "category": "Syllabus Update",
+      "department": "IBPS",
+      "date": "2026-09-09",
+      "priority": "Normal",
+      "link": "https://ibps.in",
+      "badge": "SYLLABUS"
+    },
+    {
+      "title": "SSC Junior Engineer (JE) Tier-1 Answer Key & Response Sheet Out",
+      "category": "Answer Key",
+      "department": "Staff Selection Commission",
+      "date": "2026-09-08",
+      "priority": "High",
+      "link": "https://ssc.gov.in",
+      "badge": "ACTIVE"
+    },
+    {
+      "title": "UGC NET June 2026 Session Official Notification & Application Window Opened",
+      "type": "Notification",
+      "examShortName": "UGC NET / JRF",
+      "date": "2026-03-01",
+      "important": true,
+      "link": "https://ugcnet.nta.nic.in",
+      "content": "National Testing Agency has invited online applications for UGC NET June 2026 for Junior Research Fellowship and Assistant Professorship across 83 subjects."
+    },
+    {
+      "title": "RBI Grade B Officers 2026 Phase-I Registration Begins for 291 Posts",
+      "type": "Admit Card",
+      "examShortName": "RBI Grade B",
+      "date": "2026-03-10",
+      "important": true,
+      "link": "https://opportunities.rbi.org.in",
+      "content": "Reserve Bank of India has announced recruitment of Officers in Grade B (General, DEPR, DSIM). Phase I CBT scheduled for May 2026."
+    },
+    {
+      "title": "CSIR NET 2026 JRF & Lectureship Application Process Commenced for Science Streams",
+      "type": "Notification",
+      "examShortName": "CSIR UGC NET",
+      "date": "2026-02-28",
+      "important": false,
+      "link": "https://csirnet.nta.nic.in",
+      "content": "Applications invited for CSIR UGC NET covering Chemical Sciences, Earth Sciences, Life Sciences, Mathematical Sciences, and Physical Sciences."
+    },
+    {
+      "title": "AAI Junior Executive (Air Traffic Control) Computer Based Test Exam Date Declared",
+      "type": "Notice",
+      "examShortName": "AAI ATC JE",
+      "date": "2026-03-05",
+      "important": true,
+      "link": "https://www.aai.aero",
+      "content": "Airports Authority of India has released the schedule for Junior Executive (Air Traffic Control) computer-based examination."
+    },
+    {
+      "title": "AFCAT 02/2026 Flying & Ground Duty Technical/Non-Technical Notification Out",
+      "type": "Notification",
+      "examShortName": "AFCAT",
+      "date": "2026-03-12",
+      "important": false,
+      "link": "https://afcat.cdac.in",
+      "content": "Indian Air Force opens direct commission entries for Male and Female candidates for Flying and Ground Duty branches."
+    }
+  ]
+}
