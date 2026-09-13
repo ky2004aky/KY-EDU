@@ -29,6 +29,7 @@ import {
   getUserInfo, 
   clearUserSession 
 } from './services/api';
+import fallbackData from './data/fallbackData.json';
 
 export default function App() {
   const { isFormatModalOpen, setIsFormatModalOpen } = useUIFormat();
@@ -121,21 +122,37 @@ export default function App() {
         api.getStats()
       ]);
 
-      if (examsRes.status === 'fulfilled' && examsRes.value.success) {
-        setExams(examsRes.value.data || []);
-      }
-      if (careersRes.status === 'fulfilled' && careersRes.value.success) {
-        setCareers(careersRes.value.data || []);
-      }
-      if (updatesRes.status === 'fulfilled' && updatesRes.value.success) {
-        setUpdates(updatesRes.value.data || []);
-      }
+      const loadedExams = (examsRes.status === 'fulfilled' && examsRes.value.success && examsRes.value.data?.length > 0)
+        ? examsRes.value.data
+        : (fallbackData.exams || []);
+
+      const loadedCareers = (careersRes.status === 'fulfilled' && careersRes.value.success && careersRes.value.data?.length > 0)
+        ? careersRes.value.data
+        : (fallbackData.careers || []);
+
+      const loadedUpdates = (updatesRes.status === 'fulfilled' && updatesRes.value.success && updatesRes.value.data?.length > 0)
+        ? updatesRes.value.data
+        : (fallbackData.updates || []);
+
+      setExams(loadedExams);
+      setCareers(loadedCareers);
+      setUpdates(loadedUpdates);
+
       if (statsRes.status === 'fulfilled' && statsRes.value.success) {
         setStats(statsRes.value.stats || null);
+      } else {
+        setStats({
+          totalExams: loadedExams.length,
+          totalCareers: loadedCareers.length,
+          totalUpdates: loadedUpdates.length,
+          activeAlerts: loadedUpdates.filter((u) => u.priority === 'High' || u.important).length
+        });
       }
     } catch (err) {
-      console.error('Failed to load portal data:', err);
-      showToast('Backend connection issue: Please verify PHP server is running', 'error', 'Network Error');
+      console.warn('Backend offline, using bundled data:', err.message);
+      setExams(fallbackData.exams || []);
+      setCareers(fallbackData.careers || []);
+      setUpdates(fallbackData.updates || []);
     } finally {
       setLoading(false);
     }
