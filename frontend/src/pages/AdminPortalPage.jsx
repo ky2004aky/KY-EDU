@@ -81,12 +81,12 @@ export default function AdminPortalPage({
   const fetchStats = React.useCallback(async () => {
     if (!adminUser) return;
     try {
-      const res = await api.getAdminDashboardStats();
-      if (res.success) {
-        setDashboardStats(res);
+      const res = await api.getAdminStats();
+      if (res && res.success) {
+        setDashboardStats(res.stats || res);
       }
-    } catch (err) {
-      console.warn('Dashboard stats notice:', err.message);
+    } catch {
+      // Graceful offline fallback
     }
   }, [adminUser]);
 
@@ -99,12 +99,12 @@ export default function AdminPortalPage({
         department: studentDept,
         limit: 100
       });
-      if (res.success) {
-        setStudents(res.users || []);
-        setStudentTotal(res.total || 0);
+      if (res && res.success) {
+        setStudents(res.users || res.data || []);
+        setStudentTotal(res.total || res.count || (res.data ? res.data.length : 0));
       }
-    } catch (err) {
-      console.warn('Students list notice:', err.message);
+    } catch {
+      // Graceful offline fallback
     }
   }, [adminUser, studentSearch, studentDept]);
 

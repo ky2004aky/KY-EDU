@@ -212,8 +212,8 @@ export function UIFormatProvider({ children }) {
       if (saved) {
         return { ...defaultSettings, ...JSON.parse(saved) };
       }
-    } catch (e) {
-      console.warn('Could not parse saved UI format settings:', e);
+    } catch {
+      // Return defaults on storage read failure
     }
     return defaultSettings;
   });
@@ -223,8 +223,8 @@ export function UIFormatProvider({ children }) {
   useEffect(() => {
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(settings));
-    } catch (e) {
-      console.warn('Could not save UI format settings:', e);
+    } catch {
+      // Ignore storage write failure
     }
   }, [settings]);
 

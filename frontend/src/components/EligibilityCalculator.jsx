@@ -36,8 +36,8 @@ export default function EligibilityCalculator({ onSelectExam }) {
       if (res.success) {
         setResults(res.results || []);
       }
-    } catch (err) {
-      console.warn('Eligibility check notice:', err.message);
+    } catch {
+      // Graceful offline fallback handled by api service
     } finally {
       setLoading(false);
     }

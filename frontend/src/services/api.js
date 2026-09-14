@@ -1,5 +1,15 @@
 import fallbackData from '../data/fallbackData.json';
 
+// Detect if running on a static deployment (GitHub Pages, etc.) without an explicit custom backend URL
+export const isStaticDeployment = typeof window !== 'undefined' && (
+  window.location.hostname.endsWith('github.io') ||
+  window.location.hostname.includes('pages.dev') ||
+  window.location.hostname.includes('vercel.app') ||
+  window.location.hostname.includes('netlify.app') ||
+  (window.location.protocol === 'https:' && !import.meta.env.VITE_API_BASE) ||
+  (!import.meta.env.VITE_API_BASE && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1')
+);
+
 // API Service for KY EDU PHP Backend with Cloud Demo Fallbacks for GitHub Pages
 const API_BASE = import.meta.env.VITE_API_BASE || 'http://localhost:8000/api';
 
@@ -64,7 +74,25 @@ function getLocalUsers() {
 }
 
 function saveLocalUsers(users) {
-  localStorage.setItem('ky_edu_mock_users', JSON.stringify(users));
+  try {
+    localStorage.setItem('ky_edu_mock_users', JSON.stringify(users));
+  } catch {}
+}
+
+// Local mock exams storage for offline / GitHub Pages static hosting
+function getLocalExams() {
+  try {
+    const raw = localStorage.getItem('ky_edu_mock_exams');
+    return raw ? JSON.parse(raw) : (fallbackData.exams || []);
+  } catch {
+    return fallbackData.exams || [];
+  }
+}
+
+function saveLocalExams(exams) {
+  try {
+    localStorage.setItem('ky_edu_mock_exams', JSON.stringify(exams));
+  } catch {}
 }
 
 // Client-side Eligibility Evaluator Fallback
@@ -79,7 +107,7 @@ function localCheckEligibility(params) {
   else if (category === 'SC' || category === 'ST') relaxation = 5;
   else if (category === 'PwD') relaxation = 10;
 
-  const exams = fallbackData.exams || [];
+  const exams = getLocalExams();
   const results = exams.map((exam) => {
     const minAge = exam.eligibility?.minAge || 18;
     const maxAge = (exam.eligibility?.maxAge || 32) + relaxation;
@@ -172,36 +200,53 @@ async function request(endpoint, options = {}) {
     ...options,
   };
 
+  const res = await fetch(url, config);
+  const text = await res.text();
+  let data;
   try {
-    const res = await fetch(url, config);
-    const text = await res.text();
-    let data;
-    try {
-      data = text ? JSON.parse(text) : {};
-    } catch {
-      data = { error: text || `HTTP ${res.status}` };
-    }
+    data = text ? JSON.parse(text) : {};
+  } catch {
+    data = { error: text || `HTTP ${res.status}` };
+  }
 
-    if (!res.ok) {
-      const err = new Error(data.error || `HTTP error ${res.status}`);
-      err.authRequired = Boolean(data.authRequired);
-      err.status = res.status;
-      throw err;
-    }
-    return data;
-  } catch (err) {
-    if (err.name === 'TypeError' || (err.status && err.status >= 500)) {
-      console.warn(`API ${endpoint} (Backend offline or mixed content on static host):`, err.message);
-    } else {
-      console.warn(`API ${endpoint}:`, err.message);
-    }
+  if (!res.ok) {
+    const err = new Error(data.error || `HTTP error ${res.status}`);
+    err.authRequired = Boolean(data.authRequired);
+    err.status = res.status;
     throw err;
   }
+  return data;
 }
 
 export const api = {
   // Student User Auth
   userRegister: async (userData) => {
+    if (isStaticDeployment) {
+      const users = getLocalUsers();
+      const existing = users.find((u) => u.email.toLowerCase() === (userData.email || '').toLowerCase());
+      if (existing) {
+        throw new Error('An account with this email already exists.');
+      }
+      const newUser = {
+        _id: 'user_' + Date.now(),
+        name: userData.name || 'Student',
+        email: userData.email,
+        password: userData.password,
+        age: userData.age || 21,
+        std: userData.std || '12th Science (PCM)',
+        department: userData.department || 'Science & Technology / Engineering',
+        phone: userData.phone || '',
+        created_at: new Date().toISOString()
+      };
+      users.push(newUser);
+      saveLocalUsers(users);
+      return {
+        success: true,
+        message: 'Registered successfully!',
+        token: 'local_token_' + Date.now(),
+        user: newUser
+      };
+    }
     try {
       return await request('user_auth.php?action=register', {
         method: 'POST',
@@ -209,7 +254,6 @@ export const api = {
       });
     } catch (err) {
       if (err.name === 'TypeError' || !err.status) {
-        // Fallback for GitHub Pages static hosting / offline
         const users = getLocalUsers();
         const existing = users.find((u) => u.email.toLowerCase() === (userData.email || '').toLowerCase());
         if (existing) {
@@ -240,6 +284,36 @@ export const api = {
   },
 
   userLogin: async (credentials) => {
+    if (isStaticDeployment) {
+      const users = getLocalUsers();
+      const credEmail = (credentials.email || '').trim().toLowerCase();
+      const user = users.find(
+        (u) => (u.email.toLowerCase() === credEmail || u.phone === credEmail) && u.password === credentials.password
+      );
+      if (user) {
+        return {
+          success: true,
+          token: 'local_token_' + Date.now(),
+          user
+        };
+      }
+      if (credEmail && credentials.password) {
+        const quickUser = {
+          _id: 'user_' + Date.now(),
+          name: credEmail.includes('@') ? credEmail.split('@')[0] : 'Student',
+          email: credEmail,
+          age: 21,
+          std: '12th Science (PCM)',
+          department: 'Science & Technology / Engineering'
+        };
+        return {
+          success: true,
+          token: 'local_token_' + Date.now(),
+          user: quickUser
+        };
+      }
+      throw new Error('Please enter valid email and password.');
+    }
     try {
       return await request('user_auth.php?action=login', {
         method: 'POST',
@@ -247,7 +321,6 @@ export const api = {
       });
     } catch (err) {
       if (err.name === 'TypeError' || !err.status) {
-        // Fallback for GitHub Pages static hosting / offline
         const users = getLocalUsers();
         const credEmail = (credentials.email || '').trim().toLowerCase();
         const user = users.find(
@@ -260,7 +333,6 @@ export const api = {
             user
           };
         }
-        // Auto-provision demo account for friction-free student access
         if (credEmail && credentials.password) {
           const quickUser = {
             _id: 'user_' + Date.now(),
@@ -268,69 +340,50 @@ export const api = {
             email: credEmail,
             age: 21,
             std: '12th Science (PCM)',
-            department: 'Science & Technology / Engineering',
-            phone: ''
+            department: 'Science & Technology / Engineering'
           };
-          users.push({ ...quickUser, password: credentials.password });
-          saveLocalUsers(users);
           return {
             success: true,
             token: 'local_token_' + Date.now(),
             user: quickUser
           };
         }
-        throw new Error('Invalid email or password.');
-      }
-      throw err;
-    }
-  },
-
-  sendOtp: async (payload) => {
-    try {
-      return await request('user_auth.php?action=send_otp', {
-        method: 'POST',
-        body: JSON.stringify(payload)
-      });
-    } catch (err) {
-      if (err.name === 'TypeError' || !err.status) {
-        return {
-          success: true,
-          message: 'OTP sent (Demo Mode: 123456)'
-        };
-      }
-      throw err;
-    }
-  },
-
-  verifyOtpLogin: async (payload) => {
-    try {
-      return await request('user_auth.php?action=verify_otp_login', {
-        method: 'POST',
-        body: JSON.stringify(payload)
-      });
-    } catch (err) {
-      if (err.name === 'TypeError' || !err.status) {
-        const idf = (payload.identifier || '').trim().toLowerCase();
-        const demoUser = {
-          _id: 'user_' + Date.now(),
-          name: idf.includes('@') ? idf.split('@')[0] : 'Student',
-          email: idf.includes('@') ? idf : `${idf}@kyedu.in`,
-          phone: idf.includes('@') ? '' : idf,
-          age: 21,
-          std: '12th Science (PCM)',
-          department: 'Science & Technology / Engineering'
-        };
-        return {
-          success: true,
-          token: 'local_token_' + Date.now(),
-          user: demoUser
-        };
       }
       throw err;
     }
   },
 
   resetPassword: async (payload) => {
+    if (isStaticDeployment) {
+      const users = getLocalUsers();
+      const idf = (payload.identifier || '').trim().toLowerCase();
+      const user = users.find((u) => u.email.toLowerCase() === idf || u.phone === idf);
+      if (user) {
+        user.password = payload.newPassword;
+        saveLocalUsers(users);
+        return {
+          success: true,
+          message: 'Password updated successfully!',
+          token: 'local_token_' + Date.now(),
+          user
+        };
+      }
+      const demoUser = {
+        _id: 'user_' + Date.now(),
+        name: idf.includes('@') ? idf.split('@')[0] : 'Student',
+        email: idf,
+        age: 21,
+        std: '12th Science (PCM)',
+        department: 'Science & Technology / Engineering',
+        phone: ''
+      };
+      return {
+        success: true,
+        message: 'Password updated successfully!',
+        token: 'local_token_' + Date.now(),
+        user: demoUser
+      };
+    }
     try {
       return await request('user_auth.php?action=reset_password', {
         method: 'POST',
@@ -372,6 +425,10 @@ export const api = {
   },
 
   getUserProfile: async () => {
+    if (isStaticDeployment) {
+      const u = getUserInfo();
+      return { success: true, user: u };
+    }
     try {
       return await request('user_auth.php?action=me');
     } catch (err) {
@@ -384,6 +441,25 @@ export const api = {
   },
 
   updateUserProfile: async (profileData) => {
+    if (isStaticDeployment) {
+      const current = getUserInfo() || {};
+      const updated = {
+        ...current,
+        ...profileData
+      };
+      setUserSession(getUserToken() || 'local_token_' + Date.now(), updated);
+      const users = getLocalUsers();
+      const idx = users.findIndex((u) => u.email === updated.email);
+      if (idx !== -1) {
+        users[idx] = { ...users[idx], ...updated };
+        saveLocalUsers(users);
+      }
+      return {
+        success: true,
+        message: 'Profile updated successfully!',
+        user: updated
+      };
+    }
     try {
       return await request('user_auth.php?action=update', {
         method: 'PUT',
@@ -415,6 +491,22 @@ export const api = {
 
   // Admin Auth & Control Center
   loginAdmin: async (credentials) => {
+    if (isStaticDeployment) {
+      const isPinMatch = credentials.pin === '123456';
+      const isPassMatch = credentials.email === 'admin@kyedu.in' && credentials.password === 'KYEDU@2026';
+      if (isPinMatch || isPassMatch) {
+        return {
+          success: true,
+          token: 'demo_admin_token_' + Date.now(),
+          admin: {
+            name: 'Super Administrator',
+            email: 'admin@kyedu.in',
+            role: 'SuperAdmin'
+          }
+        };
+      }
+      throw new Error('Invalid PIN or credentials (Default PIN: 123456)');
+    }
     try {
       return await request('login.php', {
         method: 'POST',
@@ -422,48 +514,58 @@ export const api = {
       });
     } catch (err) {
       if (err.name === 'TypeError' || !err.status) {
-        // Fallback for GitHub Pages static demo
         const isPinMatch = credentials.pin === '123456';
-        const isPasswordMatch =
-          credentials.password === 'KYEDU@2026' ||
-          credentials.password === 'admin123' ||
-          credentials.email === 'admin@kyedu.in';
-
-        if (isPinMatch || isPasswordMatch) {
+        const isPassMatch = credentials.email === 'admin@kyedu.in' && credentials.password === 'KYEDU@2026';
+        if (isPinMatch || isPassMatch) {
           return {
             success: true,
-            token: 'local_admin_token_' + Date.now(),
+            token: 'demo_admin_token_' + Date.now(),
             admin: {
-              _id: 'admin_demo',
-              username: 'admin',
-              name: 'KY EDU Administrator',
+              name: 'Super Administrator',
               email: 'admin@kyedu.in',
               role: 'SuperAdmin'
             }
           };
         }
-        throw new Error('Invalid credentials. (Demo PIN: 123456 or admin@kyedu.in / KYEDU@2026)');
+        throw new Error('Invalid PIN or credentials (Default PIN: 123456)');
       }
       throw err;
     }
   },
 
-  getAdminDashboardStats: async () => {
+  getAdminStats: async () => {
+    if (isStaticDeployment) {
+      const exams = getLocalExams();
+      const careers = fallbackData.careers || [];
+      const updates = fallbackData.updates || [];
+      const users = getLocalUsers();
+      return {
+        success: true,
+        stats: {
+          totalExams: exams.length,
+          totalCareers: careers.length,
+          totalUpdates: updates.length,
+          registeredStudents: users.length,
+          activeAlerts: updates.filter((u) => u.priority === 'High' || u.important).length
+        }
+      };
+    }
     try {
-      return await request('admin_dashboard.php');
+      return await request('admin_users.php?action=stats');
     } catch (err) {
       if (err.name === 'TypeError' || !err.status) {
-        const exams = fallbackData.exams || [];
+        const exams = getLocalExams();
         const careers = fallbackData.careers || [];
         const updates = fallbackData.updates || [];
+        const users = getLocalUsers();
         return {
           success: true,
           stats: {
             totalExams: exams.length,
             totalCareers: careers.length,
             totalUpdates: updates.length,
-            totalStudents: Math.max(getLocalUsers().length, 1),
-            activeNotifications: updates.filter((u) => u.priority === 'High' || u.important).length
+            registeredStudents: users.length,
+            activeAlerts: updates.filter((u) => u.priority === 'High' || u.important).length
           }
         };
       }
@@ -471,7 +573,17 @@ export const api = {
     }
   },
 
+  getAdminDashboardStats: async () => api.getAdminStats(),
+
   getAdminStudents: async (params = {}) => {
+    if (isStaticDeployment) {
+      const users = getLocalUsers();
+      return {
+        success: true,
+        count: users.length,
+        data: users
+      };
+    }
     try {
       const query = new URLSearchParams();
       if (params.search) query.set('search', params.search);
@@ -494,22 +606,49 @@ export const api = {
     }
   },
 
-  deleteAdminStudent: (id) => request(`admin_users.php?id=${id}`, {
-    method: 'DELETE'
-  }),
+  deleteAdminStudent: async (id) => {
+    if (isStaticDeployment) {
+      let users = getLocalUsers();
+      users = users.filter(u => u._id !== id);
+      saveLocalUsers(users);
+      return { success: true, message: 'Student deleted successfully.' };
+    }
+    return request(`admin_users.php?id=${id}`, {
+      method: 'DELETE'
+    });
+  },
 
-  updateAdminPassword: (passwords) => request('admin_profile.php', {
-    method: 'POST',
-    body: JSON.stringify(passwords)
-  }),
+  updateAdminPassword: async (passwords) => {
+    if (isStaticDeployment) {
+      return { success: true, message: 'Password updated successfully.' };
+    }
+    return request('admin_profile.php', {
+      method: 'POST',
+      body: JSON.stringify(passwords)
+    });
+  },
 
   // Stats
   getStats: async () => {
+    if (isStaticDeployment) {
+      const exams = getLocalExams();
+      const careers = fallbackData.careers || [];
+      const updates = fallbackData.updates || [];
+      return {
+        success: true,
+        stats: {
+          totalExams: exams.length,
+          totalCareers: careers.length,
+          totalUpdates: updates.length,
+          activeAlerts: updates.filter((u) => u.priority === 'High' || u.important).length
+        }
+      };
+    }
     try {
       return await request('stats.php');
     } catch (err) {
       if (err.name === 'TypeError' || !err.status) {
-        const exams = fallbackData.exams || [];
+        const exams = getLocalExams();
         const careers = fallbackData.careers || [];
         const updates = fallbackData.updates || [];
         return {
@@ -528,6 +667,24 @@ export const api = {
 
   // Exams CRUD
   getExams: async (params = {}) => {
+    if (isStaticDeployment) {
+      let list = getLocalExams();
+      if (params.category && params.category !== 'All') {
+        list = list.filter(e => e.category === params.category);
+      }
+      if (params.educationLevel && params.educationLevel !== 'All') {
+        list = list.filter(e => (e.eligibility?.educationLevel || '').includes(params.educationLevel));
+      }
+      if (params.search) {
+        const q = params.search.toLowerCase();
+        list = list.filter(e => (e.title + ' ' + (e.shortName || '')).toLowerCase().includes(q));
+      }
+      return {
+        success: true,
+        count: list.length,
+        data: list
+      };
+    }
     try {
       const query = new URLSearchParams();
       if (params.search) query.set('search', params.search);
@@ -550,29 +707,97 @@ export const api = {
     }
   },
 
-  getExamById: (id) => request(`exams.php?id=${id}`),
+  getExamById: async (id) => {
+    if (isStaticDeployment) {
+      const exams = getLocalExams();
+      const exam = exams.find(e => e._id === id || e.id === id);
+      return { success: !!exam, data: exam };
+    }
+    return request(`exams.php?id=${id}`);
+  },
 
-  createExam: (examData) => request('exams.php', {
-    method: 'POST',
-    body: JSON.stringify(examData)
-  }),
+  createExam: async (examData) => {
+    if (isStaticDeployment) {
+      const exams = getLocalExams();
+      const newExam = {
+        _id: 'exam_' + Date.now(),
+        ...examData,
+        created_at: new Date().toISOString()
+      };
+      exams.unshift(newExam);
+      saveLocalExams(exams);
+      return { success: true, message: 'Exam created successfully!', data: newExam };
+    }
+    return request('exams.php', {
+      method: 'POST',
+      body: JSON.stringify(examData)
+    });
+  },
 
-  updateExam: (id, examData) => request(`exams.php?id=${id}`, {
-    method: 'PUT',
-    body: JSON.stringify(examData)
-  }),
+  updateExam: async (id, examData) => {
+    if (isStaticDeployment) {
+      const exams = getLocalExams();
+      const idx = exams.findIndex(e => e._id === id || e.id === id);
+      if (idx !== -1) {
+        exams[idx] = { ...exams[idx], ...examData, updated_at: new Date().toISOString() };
+        saveLocalExams(exams);
+        return { success: true, message: 'Exam updated successfully!', data: exams[idx] };
+      }
+      return { success: true, message: 'Exam updated!' };
+    }
+    return request(`exams.php?id=${id}`, {
+      method: 'PUT',
+      body: JSON.stringify(examData)
+    });
+  },
 
-  applyExamUpdate: (id, updatePayload) => request(`exams.php?id=${id}&action=apply_update`, {
-    method: 'PUT',
-    body: JSON.stringify({ updateItem: updatePayload })
-  }),
+  applyExamUpdate: async (id, updatePayload) => {
+    if (isStaticDeployment) {
+      const exams = getLocalExams();
+      const idx = exams.findIndex(e => e._id === id || e.id === id);
+      if (idx !== -1) {
+        if (!Array.isArray(exams[idx].updates)) exams[idx].updates = [];
+        exams[idx].updates.push({
+          ...updatePayload,
+          date: new Date().toISOString().split('T')[0]
+        });
+        saveLocalExams(exams);
+      }
+      return { success: true, message: 'Update circular applied!' };
+    }
+    return request(`exams.php?id=${id}&action=apply_update`, {
+      method: 'PUT',
+      body: JSON.stringify({ updateItem: updatePayload })
+    });
+  },
 
-  deleteExam: (id) => request(`exams.php?id=${id}`, {
-    method: 'DELETE'
-  }),
+  deleteExam: async (id) => {
+    if (isStaticDeployment) {
+      let exams = getLocalExams();
+      exams = exams.filter(e => e._id !== id && e.id !== id);
+      saveLocalExams(exams);
+      return { success: true, message: 'Exam deleted successfully!' };
+    }
+    return request(`exams.php?id=${id}`, {
+      method: 'DELETE'
+    });
+  },
 
   // Careers CRUD
   getCareers: async (params = {}) => {
+    if (isStaticDeployment) {
+      let list = [...(fallbackData.careers || [])];
+      if (params.stream && params.stream !== 'All') list = list.filter(c => c.stream === params.stream);
+      if (params.search) {
+        const q = params.search.toLowerCase();
+        list = list.filter(c => (c.title + ' ' + (c.stream || '')).toLowerCase().includes(q));
+      }
+      return {
+        success: true,
+        count: list.length,
+        data: list
+      };
+    }
     try {
       const query = new URLSearchParams();
       if (params.stream && params.stream !== 'All') query.set('stream', params.stream);
@@ -591,7 +816,13 @@ export const api = {
     }
   },
 
-  getCareerById: (id) => request(`careers.php?id=${id}`),
+  getCareerById: async (id) => {
+    if (isStaticDeployment) {
+      const career = (fallbackData.careers || []).find(c => c._id === id || c.id === id);
+      return { success: !!career, data: career };
+    }
+    return request(`careers.php?id=${id}`);
+  },
 
   createCareer: (careerData) => request('careers.php', {
     method: 'POST',
@@ -600,6 +831,16 @@ export const api = {
 
   // Updates / Notices
   getUpdates: async (params = {}) => {
+    if (isStaticDeployment) {
+      let list = [...(fallbackData.updates || [])];
+      if (params.category && params.category !== 'All') list = list.filter(u => u.category === params.category);
+      if (params.priority && params.priority !== 'All') list = list.filter(u => u.priority === params.priority);
+      return {
+        success: true,
+        count: list.length,
+        data: list
+      };
+    }
     try {
       const query = new URLSearchParams();
       if (params.category && params.category !== 'All') query.set('category', params.category);
@@ -626,6 +867,9 @@ export const api = {
 
   // Smart Eligibility Engine
   checkEligibility: async (profileData) => {
+    if (isStaticDeployment) {
+      return localCheckEligibility(profileData);
+    }
     try {
       return await request('eligibility.php', {
         method: 'POST',

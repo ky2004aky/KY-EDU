@@ -148,8 +148,7 @@ export default function App() {
           activeAlerts: loadedUpdates.filter((u) => u.priority === 'High' || u.important).length
         });
       }
-    } catch (err) {
-      console.warn('Backend offline, using bundled data:', err.message);
+    } catch {
       setExams(fallbackData.exams || []);
       setCareers(fallbackData.careers || []);
       setUpdates(fallbackData.updates || []);
