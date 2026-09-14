@@ -1,13 +1,7 @@
 import React from 'react';
 import { 
-  Building2, 
-  Users, 
-  ArrowRight, 
-  BookOpen, 
   BellRing,
-  GraduationCap,
   Star,
-  CheckCircle,
   ChevronRight
 } from 'lucide-react';
 
@@ -23,10 +17,10 @@ export default function ExamCard({ exam, onSelect, onQuickUpdate }) {
   return (
     <div 
       onClick={() => onSelect(exam)}
-      className="group apple-glass-card liquid-shimmer rounded-[22px] p-4 sm:p-5 flex flex-col justify-between cursor-pointer relative overflow-hidden"
+      className="group apple-glass-card liquid-shimmer gpu-smooth rounded-[22px] p-4 sm:p-5 flex flex-col justify-between cursor-pointer relative overflow-hidden active-spring"
     >
       {/* Specular Top Reflection Line */}
-      <div className="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-white/80 dark:via-white/20 to-transparent pointer-events-none" />
+      <div className="liquid-specular-top" />
 
       <div>
         {/* Top Header: Conducting Body & Apple-Style Status Pill */}

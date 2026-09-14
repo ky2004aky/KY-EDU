@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, BellRing, Sparkles, Calendar, Link2, CheckCircle2 } from 'lucide-react';
+import { X, BellRing, CheckCircle2 } from 'lucide-react';
 
 export default function PostUpdateModal({ exam, onClose, onUpdateSubmitted }) {
   const [loading, setLoading] = useState(false);

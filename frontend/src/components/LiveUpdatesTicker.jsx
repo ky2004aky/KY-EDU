@@ -1,5 +1,4 @@
 import React from 'react';
-import { BellRing, Flame } from 'lucide-react';
 
 export default function LiveUpdatesTicker({ updates = [], onSelectUpdate }) {
   if (!updates || updates.length === 0) return null;

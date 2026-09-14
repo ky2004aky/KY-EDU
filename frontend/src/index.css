@@ -352,8 +352,66 @@
   }
 }
 
-/* Smooth Touch Scrolling */
+/* Smooth Touch Scrolling & Hardware Acceleration */
 * {
   -webkit-tap-highlight-color: transparent;
 }
+
+/* 120fps Hardware Acceleration & Liquid Specular Highlights */
+.gpu-smooth {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  will-change: transform, opacity;
+}
+
+.liquid-specular-top {
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.85) 50%, transparent 100%);
+  pointer-events: none;
+}
+
+.dark .liquid-specular-top {
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.22) 50%, transparent 100%);
+}
+
+.liquid-interactive {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              background-color 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateZ(0);
+}
+
+.liquid-interactive:active {
+  transform: scale(0.96) translateZ(0);
+  transition-duration: 0.1s;
+}
+
+.liquid-interactive:hover {
+  transform: translateY(-2px) translateZ(0);
+}
+
+/* Mobile fluid touch elasticity */
+.touch-elastic {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-y: contain;
+  scroll-behavior: smooth;
+}
+
+/* Shimmer Light Pulse */
+@keyframes liquid-ambient-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.15));
+  }
+  50% {
+    filter: drop-shadow(0 0 28px rgba(99, 102, 241, 0.28));
+  }
+}
+
+.liquid-ambient-glow {
+  animation: liquid-ambient-glow 5s ease-in-out infinite;
+}
+
 

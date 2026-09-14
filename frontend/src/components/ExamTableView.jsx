@@ -2,14 +2,8 @@ import React from 'react';
 import { 
   Building2, 
   Users, 
-  Calendar, 
-  ExternalLink, 
-  Eye, 
   BellRing, 
-  BookOpen, 
-  CheckCircle,
-  IndianRupee,
-  Clock
+  BookOpen
 } from 'lucide-react';
 import { useUIFormat } from '../context/UIFormatContext';
 
@@ -19,7 +13,7 @@ export default function ExamTableView({
   onQuickUpdate,
   adminUser 
 }) {
-  const { density, accentStyle, t } = useUIFormat();
+  const { density, t } = useUIFormat();
   const isCompact = density === 'compact';
 
   const getStatusBadge = (status) => {

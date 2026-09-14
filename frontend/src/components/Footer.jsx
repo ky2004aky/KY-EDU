@@ -1,5 +1,5 @@
 import React from 'react';
-import { Landmark, ExternalLink, Heart, Shield, Award, Sparkles } from 'lucide-react';
+import { ExternalLink, Shield, Award } from 'lucide-react';
 
 export default function Footer({ onNavigate }) {
   const officialPortals = [

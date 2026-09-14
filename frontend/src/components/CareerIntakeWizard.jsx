@@ -1,15 +1,8 @@
 import React, { useState } from 'react';
 import { 
   Sparkles, 
-  GraduationCap, 
-  Target, 
-  Clock, 
   ArrowRight, 
   CheckCircle2, 
-  IndianRupee, 
-  BookOpen, 
-  Landmark,
-  Compass, 
   RotateCcw,
   X,
   Check
@@ -19,7 +12,7 @@ export default function CareerIntakeWizard({
   isOpen = true,
   onClose,
   isModal = false,
-  onSelectExam, 
+  _onSelectExam, 
   onNavigateToExams 
 }) {
   const [step, setStep] = useState(1);

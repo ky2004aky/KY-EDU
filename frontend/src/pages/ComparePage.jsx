@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { SlidersHorizontal, ArrowLeftRight, Check, X, Building2, Users, IndianRupee } from 'lucide-react';
+import { ArrowLeftRight } from 'lucide-react';
 
 export default function ComparePage({ exams = [], onSelectExam }) {
   const [exam1Id, setExam1Id] = useState(exams[0]?._id || '');
@@ -8,7 +8,7 @@ export default function ComparePage({ exams = [], onSelectExam }) {
   useEffect(() => {
     if (!exam1Id && exams.length > 0) setExam1Id(exams[0]._id);
     if (!exam2Id && exams.length > 1) setExam2Id(exams[1]._id);
-  }, [exams]);
+  }, [exams, exam1Id, exam2Id]);
 
   const exam1 = exams.find((e) => e._id === exam1Id) || exams[0];
   const exam2 = exams.find((e) => e._id === exam2Id) || exams[1];

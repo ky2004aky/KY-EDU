@@ -51,15 +51,12 @@ export default function AdminPortalPage({
 
   // Student directory state
   const [students, setStudents] = useState([]);
-  const [loadingStudents, setLoadingStudents] = useState(false);
   const [studentSearch, setStudentSearch] = useState('');
   const [studentDept, setStudentDept] = useState('All');
-  const [studentStd, setStudentStd] = useState('All');
   const [studentTotal, setStudentTotal] = useState(0);
 
   // Dashboard analytics state
   const [dashboardStats, setDashboardStats] = useState(null);
-  const [loadingStats, setLoadingStats] = useState(false);
 
   // Circular broadcaster form state
   const [newNoticeTitle, setNewNoticeTitle] = useState('');
@@ -81,30 +78,25 @@ export default function AdminPortalPage({
   const [seeding, setSeeding] = useState(false);
 
   // Fetch dashboard stats
-  const fetchStats = async () => {
+  const fetchStats = React.useCallback(async () => {
     if (!adminUser) return;
-    setLoadingStats(true);
     try {
       const res = await api.getAdminDashboardStats();
       if (res.success) {
         setDashboardStats(res);
       }
     } catch (err) {
-      console.error('Failed to load dashboard stats:', err);
-    } finally {
-      setLoadingStats(false);
+      console.warn('Dashboard stats notice:', err.message);
     }
-  };
+  }, [adminUser]);
 
   // Fetch students list
-  const fetchStudents = async () => {
+  const fetchStudents = React.useCallback(async () => {
     if (!adminUser) return;
-    setLoadingStudents(true);
     try {
       const res = await api.getAdminStudents({
         search: studentSearch,
         department: studentDept,
-        std: studentStd,
         limit: 100
       });
       if (res.success) {
@@ -112,23 +104,21 @@ export default function AdminPortalPage({
         setStudentTotal(res.total || 0);
       }
     } catch (err) {
-      console.error('Failed to load students:', err);
-    } finally {
-      setLoadingStudents(false);
+      console.warn('Students list notice:', err.message);
     }
-  };
+  }, [adminUser, studentSearch, studentDept]);
 
   useEffect(() => {
     if (adminUser) {
       fetchStats();
     }
-  }, [adminUser]);
+  }, [adminUser, fetchStats]);
 
   useEffect(() => {
     if (adminUser && activeTab === 'students') {
       fetchStudents();
     }
-  }, [adminUser, activeTab, studentDept, studentStd]);
+  }, [adminUser, activeTab, fetchStudents]);
 
   // Handle student search with debounce
   useEffect(() => {
@@ -138,7 +128,7 @@ export default function AdminPortalPage({
       }, 300);
       return () => clearTimeout(timer);
     }
-  }, [studentSearch]);
+  }, [studentSearch, adminUser, activeTab, fetchStudents]);
 
   const handleSeed = async () => {
     if (!window.confirm('Reset and re-seed MongoDB database with authentic Indian examination records?')) {

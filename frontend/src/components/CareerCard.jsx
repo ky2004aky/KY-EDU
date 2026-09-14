@@ -4,8 +4,6 @@ import {
   ChevronDown, 
   ChevronUp, 
   IndianRupee, 
-  ArrowRight,
-  Landmark,
   GraduationCap
 } from 'lucide-react';
 
@@ -13,9 +11,9 @@ export default function CareerCard({ career, onSelectGovtExam }) {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="apple-glass-card liquid-shimmer rounded-2xl sm:rounded-3xl p-5 sm:p-6 flex flex-col justify-between relative overflow-hidden border border-white/60 dark:border-white/10">
+    <div className="apple-glass-card liquid-shimmer gpu-smooth rounded-2xl sm:rounded-3xl p-5 sm:p-6 flex flex-col justify-between relative overflow-hidden border border-white/60 dark:border-white/10 active-spring">
       {/* Specular Top Reflection Line */}
-      <div className="absolute inset-x-0 top-0 h-[1px] bg-gradient-to-r from-transparent via-white/80 dark:via-white/20 to-transparent pointer-events-none" />
+      <div className="liquid-specular-top" />
 
       <div>
         {/* Stream Tag & Outlook */}

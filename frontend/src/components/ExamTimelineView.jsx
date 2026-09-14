@@ -1,16 +1,9 @@
 import React from 'react';
 import { 
-  GitCommit, 
-  Calendar, 
   Users, 
-  ArrowUpRight, 
   BellRing, 
-  BookOpen, 
-  Sparkles,
-  Clock,
-  CheckCircle2
+  BookOpen 
 } from 'lucide-react';
-import { useUIFormat } from '../context/UIFormatContext';
 
 export default function ExamTimelineView({ 
   exams = [], 
@@ -18,7 +11,6 @@ export default function ExamTimelineView({
   onQuickUpdate,
   adminUser 
 }) {
-  const { accentStyle, t } = useUIFormat();
 
   const stages = [
     {

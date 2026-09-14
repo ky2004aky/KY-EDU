@@ -23,7 +23,7 @@ export function getAdminInfo() {
   try {
     const raw = localStorage.getItem('ky_edu_admin_info');
     return raw ? JSON.parse(raw) : null;
-  } catch (e) {
+  } catch {
     return null;
   }
 }
@@ -49,7 +49,7 @@ export function getUserInfo() {
   try {
     const raw = localStorage.getItem('ky_edu_user_info');
     return raw ? JSON.parse(raw) : null;
-  } catch (e) {
+  } catch {
     return null;
   }
 }

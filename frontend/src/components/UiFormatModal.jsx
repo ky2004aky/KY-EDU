@@ -11,9 +11,7 @@ import {
   Minimize2, 
   Palette, 
   RotateCcw,
-  Check,
   Zap,
-  BookmarkCheck,
   CheckCircle2,
   Sun,
   Moon

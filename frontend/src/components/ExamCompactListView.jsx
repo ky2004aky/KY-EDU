@@ -4,9 +4,6 @@ import {
   Users, 
   ChevronRight, 
   BookOpen, 
-  IndianRupee, 
-  Calendar,
-  Sparkles,
   BellRing
 } from 'lucide-react';
 import { useUIFormat } from '../context/UIFormatContext';
@@ -17,7 +14,7 @@ export default function ExamCompactListView({
   onQuickUpdate,
   adminUser 
 }) {
-  const { density, accentStyle, t } = useUIFormat();
+  const { density } = useUIFormat();
   const isCompact = density === 'compact';
 
   const getStatusBadge = (status) => {
@@ -121,6 +118,16 @@ export default function ExamCompactListView({
                   <BookOpen className="w-3.5 h-3.5" />
                   <span className="hidden sm:inline">Books</span>
                 </button>
+
+                {adminUser && onQuickUpdate && (
+                  <button
+                    onClick={() => onQuickUpdate(exam)}
+                    className="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-orange-500/20 text-slate-500 hover:text-orange-500 transition-all border border-slate-200 dark:border-slate-700"
+                    title="Post Notice Update"
+                  >
+                    <BellRing className="w-3.5 h-3.5" />
+                  </button>
+                )}
 
                 <div className="w-7 h-7 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-slate-400 group-hover:text-orange-500 group-hover:bg-orange-500/10 transition-all">
                   <ChevronRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Lock, KeyRound, ShieldAlert, Sparkles, CheckCircle2 } from 'lucide-react';
+import { X, Lock, KeyRound, ShieldAlert, CheckCircle2 } from 'lucide-react';
 import { api, setAdminSession } from '../services/api';
 
 export default function AdminLoginModal({ onClose, onLoginSuccess }) {

@@ -2,14 +2,15 @@ import React, { useEffect } from 'react';
 import { CheckCircle2, AlertCircle, X, Info } from 'lucide-react';
 
 export default function Toast({ toast, onClose }) {
-  if (!toast) return null;
-
   useEffect(() => {
+    if (!toast) return;
     const timer = setTimeout(() => {
       onClose();
     }, 4500);
     return () => clearTimeout(timer);
   }, [toast, onClose]);
+
+  if (!toast) return null;
 
   const getIcon = () => {
     switch (toast.type) {

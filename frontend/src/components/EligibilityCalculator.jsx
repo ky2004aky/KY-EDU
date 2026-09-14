@@ -4,19 +4,11 @@ import {
   AlertCircle, 
   Clock, 
   GraduationCap, 
-  Users, 
   Sparkles, 
   ArrowRight, 
   ShieldAlert, 
-  Search, 
-  BookOpen, 
-  Award, 
   ChevronDown, 
-  ChevronUp, 
-  ExternalLink,
-  ShieldCheck,
-  Building2,
-  FileText
+  ChevronUp
 } from 'lucide-react';
 import { api } from '../services/api';
 
@@ -26,13 +18,12 @@ export default function EligibilityCalculator({ onSelectExam }) {
   const [stream, setStream] = useState('Engineering / Technology');
   const [category, setCategory] = useState('General');
   const [degreeStatus, setDegreeStatus] = useState('completed'); // 'completed' | 'appearing'
-  const [minMarks, setMinMarks] = useState('pass'); // 'pass' | '50' | '55' | '60'
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState([]);
   const [filterOnlyEligible, setFilterOnlyEligible] = useState(false);
   const [expandedExamId, setExpandedExamId] = useState(null);
 
-  const calculate = async () => {
+  const calculate = React.useCallback(async () => {
     setLoading(true);
     try {
       const res = await api.checkEligibility({
@@ -50,11 +41,11 @@ export default function EligibilityCalculator({ onSelectExam }) {
     } finally {
       setLoading(false);
     }
-  };
+  }, [age, educationLevel, stream, category, degreeStatus]);
 
   useEffect(() => {
     calculate();
-  }, [age, educationLevel, stream, category, degreeStatus]);
+  }, [calculate]);
 
   const displayedResults = filterOnlyEligible 
     ? results.filter((r) => r.isEligible)
@@ -269,8 +260,7 @@ export default function EligibilityCalculator({ onSelectExam }) {
               isEligible, 
               matchScore, 
               ageCriteria = {}, 
-              eduCriteria = {}, 
-              streamCriteria = {} 
+              eduCriteria = {} 
             } = item;
             
             const isExpanded = expandedExamId === exam._id;

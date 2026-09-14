@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Compass, Search, BookOpen, TrendingUp, Sparkles } from 'lucide-react';
+import { Compass, Search, BookOpen, Sparkles } from 'lucide-react';
 import CareerCard from '../components/CareerCard';
 import { useUIFormat } from '../context/UIFormatContext';
 

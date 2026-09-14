@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, SlidersHorizontal, LayoutGrid, Table2, AlignJustify, GitCommit } from 'lucide-react';
+import { Sparkles, LayoutGrid, Table2, AlignJustify, GitCommit } from 'lucide-react';
 import { useUIFormat } from '../context/UIFormatContext';
 
 export default function UiFormatFloatingButton() {
